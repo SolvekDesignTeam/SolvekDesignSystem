@@ -1,64 +1,54 @@
-    <!DOCTYPE html>
-    <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- SEO를 위한 메타 태그 -->
-        <title>solvek | design system</title>
-        <meta name="description" content="디자인 및 퍼블 활용 자료 입니다.">
-        <meta name="keywords" content="ui, ux, publishing, date, solvek">
-        
-        <!-- Open Graph 태그 (소셜 미디어 공유용) -->
-        <meta property="og:title" content="솔브케이 디자인 시스템">
-        <meta property="og:description" content="디자인 및 퍼블 활용 자료 입니다.">
-        <!-- <meta property="og:image" content="https://example.com/image.jpg">
+    <!-- SEO를 위한 메타 태그 -->
+    <title>solvek | design system</title>
+    <meta name="description" content="디자인 및 퍼블 활용 자료 입니다." />
+    <meta name="keywords" content="ui, ux, publishing, date, solvek" />
+
+    <!-- Open Graph 태그 (소셜 미디어 공유용) -->
+    <meta property="og:title" content="솔브케이 디자인 시스템" />
+    <meta
+      property="og:description"
+      content="디자인 및 퍼블 활용 자료 입니다."
+    />
+    <!-- <meta property="og:image" content="https://example.com/image.jpg">
         <meta property="og:url" content="https://example.com/page"> -->
-        
-        <!-- Twitter 카드 -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="페이지 제목">
-        <meta name="twitter:description" content="페이지 설명">
-        <meta name="twitter:image" content="https://example.com/image.jpg">
-        
-        <!-- 캐노니컬 URL -->
-        <!-- <link rel="canonical" href="https://example.com/page"> -->
-        
-        <title>solvek | system</title>
-    </head>
-    <body>
-        <!-- header -->
-        <header>
 
-        </header>
+    <!-- Twitter 카드 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta name="twitter:image" content="https://example.com/image.jpg" />
+    <!-- 캐노니컬 URL -->
+    <!-- <link rel="canonical" href="https://example.com/page"> -->
+    <title>solvek | system</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header></header>
 
-        <!-- content -->
-        <main>
-            <article>
-                <!-- 왼쪽 메뉴 탭 -->
-                <aside class="aside-tab">
-                    <!-- 검색 s -->
-                    <label for="search" class="tab-search">검색</label>
-                    <input type="text" id="search">
-                    <!-- 검색 e -->
+    <!-- content -->
+    <main>
+      <article>
+        <!-- 왼쪽 메뉴 탭 -->
+        <aside class="aside-tab">
+          <nav class="tab" role="tablist">
+            <!-- 아이콘이 들어가는 경우  aria-label="공지사항" 속성 사용-->
+            <li><button role="tab" type="button">1</button></li>
+          </nav>
+        </aside>
 
-                    <!-- 탭 리스트 s -->
-                    <nav class="tab" role="tablist">
-                        <!-- 아이콘이 들어가는 경우  aria-label="아이콘 이름" 속성 사용-->
-                        <li><button role="tab" type="button">1</button></li>
-                    </nav>
-                    <!-- 탭 리스트 s -->
-                </aside>
+        <!-- 메인 정보 -->
+        <section id="content"></section>
+        <div></div>
+      </article>
+    </main>
 
-                <!-- 메인 정보 -->
-                <section id="content"></section>
-
-            </article>
-        </main>
-
-        <!-- footer -->
-        <footer>
-
-        </footer>
-    </body>
-    </html>
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>
