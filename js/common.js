@@ -6,16 +6,12 @@ function loadPage(page, callback) {
             if (xhr.status === 200) {
                 document.getElementById('content').innerHTML = xhr.responseText
 
-                const firstpage = ['index.html']
+                // main.html에 이용이 필요할 때 넣기 -> 함수 사용해서 넣어야함
+                // const firstpage = ['main.html']
 
-                if (firstpage.includes(page)) {
+                // if (firstpage.includes(page)) {
 
-                }
-                if (decopage.includes(page)) {
-                }
-
-                if (selecpage.includes(page)) {
-                }
+                // }
             }
 
             if (callback) callback()
@@ -24,3 +20,7 @@ function loadPage(page, callback) {
     xhr.send()
 
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    loadPage('main.html')
+})

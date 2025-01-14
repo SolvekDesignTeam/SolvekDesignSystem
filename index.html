@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     
     <link rel="stylesheet" href="./css/common.css">
+
+    <!-- script -->
+    <script src="/js/common.js"></script>
     
     <title>solvek | system</title>
   </head>
@@ -46,10 +49,9 @@
           <!-- 탭 리스트 -->
           <nav class="tab" role="tablist">
             <!-- 아이콘이 들어가는 경우  aria-label="공지사항" 속성 사용-->
-            <li><button role="tab" type="button">1</button></li>
-            <li><button role="tab" type="button">2</button></li>
-            <li><button role="tab" type="button">3</button></li>
-            <li><button role="tab" type="button">4</button></li>
+            <li><button role="tab" type="button" aria-label="인풋 페이지 이동" class="addInput">input</button></li>
+            <li><button role="tab" type="button" aria-label="테이블 페이지 이동" class="addTable">table</button></li>
+            <li><button role="tab" type="button" aria-label="타이포그래피 페이지 이동" class="addTypo">typography</button></li>
           </nav>
         </aside>
 
