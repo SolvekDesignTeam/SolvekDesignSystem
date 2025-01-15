@@ -1,31 +1,101 @@
-// 페이지 경로
-const pagePaths = {
-  button: "Wcomponent/button.html",
+// 컴포넌트
+const Wbutton = {
+  text:"Wbutton/text.html",
+  select:"Wbutton/select.html",
+  checkbox:"Wbutton/checkbox.html",
+  radio:"Wbutton/radio.html",
+  time:"Wbutton/time.html",
+  range:"Wbutton/range.html",
+  number:"Wbutton/number.html",
+  color:"Wbutton/color.html",
+  button: "Wbutton/button.html",
+}
+// 테이블
+const Wtable = {
   table: "Wtable/table.html",
-  tab: "Wtab/tab.html",
-  popup: "Wpopup/popup.html",
+}
+// 폰트
+const Wfont = {
   font: "Wfont/font.html",
-  font: "Wlibrary/library.html",
-};
+}
+// 라이브러리
+const Wlibrary = {
+  flatpicker: "Wlibrary/flatpicker.html",
+  niceselect: "Wlibrary/niceselect.html",
+  sortable: "Wlibrary/sortable.html",
+  swiper: "Wlibrary/swiper.html",
+}
+// 팝업
+const Wpopup = {
+  popup: "Wpopup/popup.html",
+}
+// 탭
+const Wtab = {
+  tab: "Wtab/tab.html",
+}
+
 
 // 버튼
-const buttonClasses = {
-  button: "addButton",
-  table: "addTable",
-  tab: "addTab",
-  popup: "addPopup",
-  font: "addFont",
-  library: "addLibrary",
+const WbuttonClasses = {
+  text: "addText",
+  select: "addSelect",
+  checkbox: "addCheckbox",
+  radio: "addRadio",
+  time: "addTime",
+  range: "addRange",
+  number: "addNumber",
+  color: "addColor",
+  button: "addButton"
 };
+const WTableClasses = {
+  table: "addTable"
+}
+const WTabClasses = {
+  tab: "addTab"
+}
+const WpopupClasses = {
+  popup: "addPopup"
+}
+const WfontClasses = {
+  font: "addFont"
+}
+const WLibClasses = {
+  swiper: "addSwiper",
+  niceselect: "addNice",
+  sortable: "addSor",
+  flatpicker: "addFlat"
+}
 
 // 버튼과 페이지 매핑
 const pageMapping = {
-  [buttonClasses.button]: pagePaths.button,
-  [buttonClasses.table]: pagePaths.table,
-  [buttonClasses.tab]: pagePaths.tab,
-  [buttonClasses.popup]: pagePaths.popup,
-  [buttonClasses.font]: pagePaths.font,
-  [buttonClasses.library]: pagePaths.library,
+  // 컴포넌트
+  [WbuttonClasses.text]: Wbutton.text,
+  [WbuttonClasses.select]: Wbutton.select,
+  [WbuttonClasses.checkbox]: Wbutton.checkbox,
+  [WbuttonClasses.radio]: Wbutton.radio,
+  [WbuttonClasses.time]: Wbutton.time,
+  [WbuttonClasses.range]: Wbutton.range,
+  [WbuttonClasses.number]: Wbutton.number,
+  [WbuttonClasses.color]: Wbutton.color,
+  [WbuttonClasses.button]: Wbutton.button,
+
+  // 테이블
+  [WTableClasses.table]: Wtable.table,
+
+  // 탭
+  [WTabClasses.tab]: Wtab.tab,
+
+  // 팝업
+  [WpopupClasses.popup]: Wpopup.popup,
+
+  // 폰트
+  [WfontClasses.font]: Wfont.font,
+
+  // 라이브러리
+  [WLibClasses.swiper]: Wlibrary.swiper,
+  [WLibClasses.niceselect]: Wlibrary.niceselect,
+  [WLibClasses.sortable]: Wlibrary.sortable,
+  [WLibClasses.flatpicker]: Wlibrary.flatpicker,
 };
 
 // 페이지 로드 ajax
@@ -57,11 +127,11 @@ function handleNavigationClick(e) {
 
 // 이벤트 리스너 등록
 document.addEventListener("click", function (e) {
-  if (
-    e.target.classList.contains("addButton") ||
-    e.target.classList.contains("addTable") ||
-    e.target.classList.contains("addTab")
-  ) {
+  const hasMatchingClass = Object.keys(pageMapping).some(className => 
+    e.target.classList.contains(className)
+  );
+
+  if (hasMatchingClass) {
     handleNavigationClick(e);
   }
 });
