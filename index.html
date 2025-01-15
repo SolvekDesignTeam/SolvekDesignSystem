@@ -11,7 +11,10 @@
 
     <!-- Open Graph 태그 (소셜 미디어 공유용) -->
     <meta property="og:title" content="솔브케이 디자인 시스템" />
-    <meta property="og:description" content="디자인 및 퍼블 활용 자료 입니다." />
+    <meta
+      property="og:description"
+      content="디자인 및 퍼블 활용 자료 입니다."
+    />
     <!-- <meta property="og:image" content="https://example.com/image.jpg">
         <meta property="og:url" content="https://example.com/page"> -->
 
@@ -22,14 +25,18 @@
     <meta name="twitter:image" content="https://example.com/image.jpg" />
     <!-- 캐노니컬 URL -->
     <!-- <link rel="canonical" href="https://example.com/page"> -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
-    
-    <link rel="stylesheet" href="./css/common.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <!-- script -->
     <script src="/js/common.js"></script>
-    
+
     <title>solvek | system</title>
   </head>
   <body>
@@ -39,7 +46,6 @@
     <!-- content -->
     <main>
       <article>
-
         <!-- 왼쪽 메뉴 탭 -->
         <aside class="aside-tab">
           <!-- 검색 -->
@@ -49,16 +55,41 @@
           <!-- 탭 리스트 -->
           <nav class="tab" role="tablist">
             <!-- 아이콘이 들어가는 경우  aria-label="공지사항" 속성 사용-->
-            <li><button role="tab" type="button" aria-label="인풋 페이지 이동" class="addInput">input</button></li>
-            <li><button role="tab" type="button" aria-label="테이블 페이지 이동" class="addTable">table</button></li>
-            <li><button role="tab" type="button" aria-label="타이포그래피 페이지 이동" class="addTypo">typography</button></li>
+            <li>
+              <button
+                role="tab"
+                type="button"
+                aria-label="인풋 페이지 이동"
+                class="addInput"
+              >
+                input
+              </button>
+            </li>
+            <li>
+              <button
+                role="tab"
+                type="button"
+                aria-label="테이블 페이지 이동"
+                class="addTable"
+              >
+                table
+              </button>
+            </li>
+            <li>
+              <button
+                role="tab"
+                type="button"
+                aria-label="타이포그래피 페이지 이동"
+                class="addTypo"
+              >
+                typography
+              </button>
+            </li>
           </nav>
         </aside>
 
         <!-- 메인 정보 -->
-        <section id="content">
-        </section>
-        
+        <section id="content"></section>
       </article>
     </main>
 
