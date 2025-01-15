@@ -1,3 +1,13 @@
-/* 왼쪽 메뉴 탭 */
+/* 왼쪽 메뉴 탭 s */
 .aside-tab {
+  width: 35rem;
+  height: 100%;
+  position: absolute;
+  border-right: 1px solid #d9d9d9;
 }
+/* 왼쪽 메뉴 탭 e */
+
+/* 메인 정보 s */
+.main-content {
+}
+/* 메인 정보 e */
