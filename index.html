@@ -29,6 +29,17 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
+    <!-- 폰트 -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fonts-archive/GmarketSans/GmarketSans.css"
+      type="text/css"
+    />
+
     <!-- script -->
     <script src="/js/common.js"></script>
 
@@ -43,9 +54,19 @@
       <article>
         <!-- 왼쪽 메뉴 탭 -->
         <aside class="aside-tab">
+          <!-- 메인 바-->
+          <div class="main-bar">
+            <div class="logo-img"></div>
+            <div class="menu-img"></div>
+          </div>
           <!-- 검색 -->
-          <label for="search">검색</label>
-          <input type="text" id="search" />
+          <label for="search" class="search-btn"></label>
+          <input
+            type="text"
+            id="search"
+            class="search-box"
+            placeholder="검색"
+          />
 
           <!-- 탭 리스트 -->
           <nav class="tab" role="tablist">
@@ -54,11 +75,23 @@
               <button
                 role="tab"
                 type="button"
-                aria-label="인풋 페이지 이동"
-                class="addInput"
+                aria-label="버튼 페이지 이동"
+                class="addButton"
               >
-                input
+                <span></span>
+                BUTTON[버튼]
               </button>
+              <div class="side-tab">
+                <button>TEXT[텍스트]</button>
+                <button>SELECT[셀렉트]</button>
+                <button>CHECKBOX[체크박스]</button>
+                <button>RADIO[라디오]</button>
+                <button>TIME[타임]</button>
+                <button>RANG[렌지]</button>
+                <button>NUMBER[넘버]</button>
+                <button>COLOR[컬러]</button>
+                <button>BUTTON[버튼]</button>
+              </div>
             </li>
             <li>
               <button
@@ -67,18 +100,71 @@
                 aria-label="테이블 페이지 이동"
                 class="addTable"
               >
-                table
+                <span></span>
+                TABLE[테이블]
               </button>
+              <div class="side-tab">
+                <button>TABLE[테이블]</button>
+              </div>
             </li>
             <li>
               <button
                 role="tab"
                 type="button"
-                aria-label="타이포그래피 페이지 이동"
-                class="addTypo"
+                aria-label="탭 페이지 이동"
+                class="addTab"
               >
-                typography
+                <span></span>
+                TAB[탭]
               </button>
+              <div class="side-tab">
+                <button>TAB[탭]</button>
+              </div>
+            </li>
+            <li>
+              <button
+                role="tab"
+                type="button"
+                aria-label="팝업 페이지 이동"
+                class="addPopup"
+              >
+                <span></span>
+                POPUP[팝업]
+              </button>
+              <div class="side-tab">
+                <button>POPUP[팝업]</button>
+              </div>
+            </li>
+            <li>
+              <button
+                role="tab"
+                type="button"
+                aria-label="폰트 페이지 이동"
+                class="addFont"
+              >
+                <span></span>
+                FONT[폰트]
+              </button>
+              <div class="side-tab">
+                <button>FONT[폰트]</button>
+              </div>
+            </li>
+            <li>
+              <button
+                role="tab"
+                type="button"
+                aria-label="라이브러리 페이지 이동"
+                class="addLibrary"
+              >
+                <span></span>
+                LIBRARY[라이브러리]
+              </button>
+              <div class="side-tab">
+                <button>SWIPER[스와이퍼]</button>
+                <button>NICESELECT[나이스셀렉트]</button>
+                <button>SORTABLE[솔테이블블]</button>
+                <button>FLATPICKR[플랫픽커]</button>
+              </div>
             </li>
           </nav>
         </aside>
