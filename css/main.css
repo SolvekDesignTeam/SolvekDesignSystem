@@ -54,6 +54,9 @@
 .tab {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100% - 10rem);
 }
 .tab > li {
   margin: 0;
