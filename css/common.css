@@ -1,13 +1,23 @@
 :root {
   /* 루트값을 입력해주세요 */
+  --colorff: #fff;
   --color00: #000;
   --color94: #949494;
   --colord9: #d9d9d9;
+  --color90: #90B5F3;
   --font14: 14px;
-
+  --font40: 40px;
   --font-w1: 100;
-
-  --font-f1: "pretendard";
+  --font-w2: 200;
+  --font-w3: 300;
+  --font-w4: 400;
+  --font-w5: 500;
+  --font-w6: 600;
+  --font-w8: 800;
+  --font-f
+  --font-family-p: 'pretendard';
+  --font-family-s: 'SUIT';
+  --font-family-g: 'Gmarket Sans';
 
   --border-c1: 1px solid #d9d9d9;
 
@@ -61,10 +71,11 @@ li {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #2f3542;
+  background-color: #d9d9d9;
+  border-radius: 16rem;
 }
 ::-webkit-scrollbar-track {
-  background-color: grey;
+  background-color: #f2f2f2;
 }
 .img {
   background-repeat: no-repeat;

@@ -1,0 +1,80 @@
+/* 반응형 미디어 쿼리 */
+@media (max-width: 1920px) {
+}
+@media (max-width: 1280px) {
+  .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .solvek-home {
+    grid-column: 1 / 2;
+    /* aspect-ratio: 1 / 1; */
+  }
+  .side-project {
+    grid-column: 2 / 3;
+    aspect-ratio: initial;
+  }
+}
+@media (max-width: 1024px) {
+  .layout {
+    /* 2열 레이아웃 */
+    /* max-height: initial; */
+  }
+
+  .solvekdesign-system {
+    background-size: cover; /* 전체 너비 */
+  }
+
+  .solvek-home {
+    /* grid-column: 1 / 2; */ /* 첫 번째 열 */
+  }
+
+  .side-project {
+    /* grid-column: 2 / 3; */ /* 두 번째 열 */
+  }
+}
+
+@media (max-width: 768px) {
+  /* 왼쪽 메뉴 탭 s */
+  .aside-tab {
+    left: -35rem;
+  }
+  .main-content {
+    width: 100%;
+    left: 0;
+  }
+  .right-menu-img {
+    /* display: block; */
+  }
+
+  /* 왼쪽 메뉴 탭 e */
+
+  .layout {
+    /* 한 줄에 하나씩 표시 */
+    margin: 0;
+    width: 100%;
+  }
+
+  .solvekdesign-system {
+    /* 한 열 전체 */
+    border-radius: 0;
+  }
+  .grid-box {
+    grid-template-columns: 1fr;
+    width: calc(100% - 4rem);
+    /* height: -webkit-fill-available; */
+  }
+  .solvek-home {
+    grid-column: 1 / 2; /* 한 열 전체 */
+    /* aspect-ratio: 1 / 1; */
+  }
+
+  .side-project {
+    grid-column: 1 /2; /* 한 열 전체 */
+    aspect-ratio: initial;
+  }
+}
+@media (max-width: 360px) {
+}
+
+@media (max-width: 320px) {
+}
