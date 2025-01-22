@@ -12,20 +12,24 @@ $(document).ready(function () {
     .on("click", ".menu-img", function () {
       $(".aside-tab").removeClass("on");
       $(".main-content").removeClass("on");
-      $(".right-menu-img").addClass("on");
+      setTimeout(function () {
+        $(".menu-bar").addClass("on");
+      }, 500);
     });
   $(document)
     .off("click", ".right-menu-img") // 기존 클릭 이벤트 제거
     .on("click", ".right-menu-img", function () {
       $(".aside-tab").addClass("on");
       $(".main-content").addClass("on");
-      $(".right-menu-img").removeClass("on");
+      $(".menu-bar").removeClass("on");
     });
   $(window).on("resize", function () {
     if ($(window).width() <= 768) {
       $(".aside-tab").removeClass("on"); // 'on' 클래스 제거
       $(".main-content").removeClass("on"); // 'on' 클래스 제거
-      $(".right-menu-img").addClass("on"); // 'on' 클래스 제거
+      setTimeout(function () {
+        $(".menu-bar").addClass("on");
+      }, 500);
     }
   });
 
@@ -33,7 +37,9 @@ $(document).ready(function () {
   if ($(window).width() <= 768) {
     $(".aside-tab").removeClass("on");
     $(".main-content").removeClass("on"); // 'on' 클래스 제거
-    $(".right-menu-img").addClass("on"); // 'on' 클래스 제거
+    setTimeout(function () {
+      $(".menu-bar").addClass("on");
+    }, 500);
   }
 
   //메뉴 탭
@@ -44,9 +50,7 @@ $(document).ready(function () {
 
       if ($tab.hasClass("on")) {
         $tab.removeClass("on");
-        $(this).removeClass("on");
       } else {
-        $tab.addClass("on");
         $(this).addClass("on");
       }
     });

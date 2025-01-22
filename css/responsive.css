@@ -31,6 +31,17 @@
   .side-project {
     /* grid-column: 2 / 3; */ /* 두 번째 열 */
   }
+  .layout > div a {
+    padding: 3rem;
+    gap: 1rem;
+    /* text-align: center; */
+    max-width: 100%;
+    /* align-items: center; */
+  }
+  .title {
+    font-size: 2.8rem;);
+    line-height: 4rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -41,11 +52,15 @@
   .main-content {
     width: 100%;
     left: 0;
+    align-items: flex-start;
   }
   .right-menu-img {
     /* display: block; */
   }
-
+  .menu-bar.on {
+    width: 100%;
+    background: #fff;
+  }
   /* 왼쪽 메뉴 탭 e */
 
   .layout {
@@ -53,7 +68,10 @@
     margin: 0;
     width: 100%;
   }
-
+  .layout > div a {
+      text-align: center; 
+      align-items: center;
+  }
   .solvekdesign-system {
     /* 한 열 전체 */
     border-radius: 0;
@@ -66,14 +84,25 @@
   .solvek-home {
     grid-column: 1 / 2; /* 한 열 전체 */
     /* aspect-ratio: 1 / 1; */
+    min-height: 10rem;
   }
 
   .side-project {
     grid-column: 1 /2; /* 한 열 전체 */
     aspect-ratio: initial;
+    min-height: 10rem;
   }
 }
 @media (max-width: 360px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .layout > div a {
+      padding: 3rem;
+      gap: 1rem;
+      /* justify-content: center; */
+      text-align: center;
+  }
 }
 
 @media (max-width: 320px) {
