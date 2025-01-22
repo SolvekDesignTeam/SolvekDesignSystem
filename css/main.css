@@ -112,6 +112,10 @@
   text-align: left;
   cursor: pointer;
 }
+.tab > li.on > button {
+  color: var(--color90);
+  font-weight: var(--font-w8);
+}
 .tab > li > button span {
   display: inline-block;
   border: 0.5rem solid transparent;
@@ -138,6 +142,7 @@
   text-align: left;
   padding-left: 3rem;
   cursor: pointer;
+  color: var(--color94);
 }
 /* 왼쪽 메뉴 탭 e */
 
