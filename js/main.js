@@ -41,17 +41,4 @@ $(document).ready(function () {
       $(".menu-bar").addClass("on");
     }, 500);
   }
-
-  //메뉴 탭
-  $(document)
-    .off("click", ".tab > li")
-    .on("click", ".tab > li", function () {
-      var $tab = $(this).closest(".tab > li");
-
-      if ($tab.hasClass("on")) {
-        $tab.removeClass("on");
-      } else {
-        $(this).addClass("on");
-      }
-    });
 });

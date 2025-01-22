@@ -134,7 +134,21 @@ document.addEventListener("click", function (e) {
   if (hasMatchingClass) {
     handleNavigationClick(e);
   }
+  menuTab()
 });
+
+// 메뉴 클릭시 이벤트
+function menuTab() {
+  const tabLis = document.querySelectorAll('.tab li');
+  tabLis.forEach(li => {
+    const button = li.querySelector('button');
+    if(button) {
+      button.addEventListener("click", () => {
+        li.classList.toggle('on');
+      });
+    }
+  });  
+}
 
 // dom 로드시 main 로드
 document.addEventListener("DOMContentLoaded", function () {
