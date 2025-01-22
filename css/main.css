@@ -250,3 +250,39 @@
 }
 
 /* 메인 정보 e */
+
+/* 상단 타이틀 s */
+.main-content .top-title {
+  
+}
+.main-content.on .top-title {
+
+height: 6.5rem;
+
+position: absolute;
+
+top: 0;
+
+width: 100%;
+
+padding: 0 2rem;
+
+display: flex;
+
+align-items: center;
+
+font-size: var(--font14);
+
+border-bottom: 1px solid var(--colord9);
+}
+.sub-txt {
+
+margin: 0;
+
+font-size: var(--font14);
+
+color: var(--color94);
+
+margin-left: .3rem;
+}
+/* 상단 타이틀 e */
