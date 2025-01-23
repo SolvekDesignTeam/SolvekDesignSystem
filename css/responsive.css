@@ -92,6 +92,15 @@
     aspect-ratio: initial;
     min-height: 10rem;
   }
+  .main-title{
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .scroll-box {
+    padding: 2rem
+  }
 }
 @media (max-width: 360px) {
   .title {

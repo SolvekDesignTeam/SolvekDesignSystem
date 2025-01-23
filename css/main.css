@@ -63,6 +63,7 @@
   left: 2.5rem;
   /* display: none; */
   box-sizing: border-box;
+  z-index: 1000;
 }
 .right-menu-img.on {
   /* display:block; */
@@ -111,6 +112,7 @@
   width: 100%;
   text-align: left;
   cursor: pointer;
+  box-sizing: border-box;
 }
 .tab > li.on > button {
   color: var(--color90);
@@ -143,6 +145,7 @@
   padding-left: 3rem;
   cursor: pointer;
   color: var(--color94);
+  box-sizing: border-box;
 }
 /* 왼쪽 메뉴 탭 e */
 
@@ -253,36 +256,96 @@
 
 /* 상단 타이틀 s */
 .main-content .top-title {
-  
+  height: 6.5rem;
+  position: absolute;
+  top: 0;
+  /* padding-left: 6rem; */
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  font-size: var(--font14);
+  border-bottom: 1px solid var(--colord9);
+  padding-left: 8rem;
+  box-sizing: border-box;
+  z-index: 1;
+  pointer-events: none;
 }
 .main-content.on .top-title {
-
-height: 6.5rem;
-
-position: absolute;
-
-top: 0;
-
-width: 100%;
-
-padding: 0 2rem;
-
-display: flex;
-
-align-items: center;
-
-font-size: var(--font14);
-
-border-bottom: 1px solid var(--colord9);
+  padding-left: 2rem;
 }
 .sub-txt {
-
-margin: 0;
-
-font-size: var(--font14);
-
-color: var(--color94);
-
-margin-left: .3rem;
+  margin: 0;
+  font-size: var(--font14);
+  color: var(--color94);
+  margin-left: .3rem;
 }
 /* 상단 타이틀 e */
+.main-title {
+  
+display: flex;
+  
+align-items: center;
+  
+width: 100%;
+  
+box-sizing: border-box;
+}
+.main-title > .title {
+
+font-size: var(--font35);
+
+font-weight: 700;
+
+color: var(--color00);
+
+font-family: 'SUIT';
+
+width: calc(100% - 25rem);
+}
+.scroll-box {
+  height: calc(100% - 6.5rem);
+  width: 100%;
+  position: absolute;
+  top: 6.5rem;
+  box-sizing: border-box;
+  padding: 4rem;
+}
+.work-tab {
+
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 25rem;
+  margin: 0;
+  gap: .5rem;
+}
+.work-tab > li {
+  height: 100%;
+  width: 100%;
+  border-radius: .6rem;
+}
+.work-tab > li > a {
+  font-size:  var(--font14);   
+  width: 100%;   
+  height: 100%;   
+  display: flex;   
+  justify-content: center;    
+  align-items: center;    
+  color: var(--colorff);  
+  cursor: pointer;
+}
+.html {
+
+background: #c8daf9;
+}
+.css {
+  
+background: #ffe098;
+}
+.js {
+  
+background: #ffdada;
+}

@@ -1,39 +1,39 @@
 // 컴포넌트
 const Wbutton = {
-  text:"Wbutton/text.html",
-  select:"Wbutton/select.html",
-  checkbox:"Wbutton/checkbox.html",
-  radio:"Wbutton/radio.html",
-  time:"Wbutton/time.html",
-  range:"Wbutton/range.html",
-  number:"Wbutton/number.html",
-  color:"Wbutton/color.html",
+  text: "Wbutton/text.html",
+  select: "Wbutton/select.html",
+  checkbox: "Wbutton/checkbox.html",
+  radio: "Wbutton/radio.html",
+  time: "Wbutton/time.html",
+  range: "Wbutton/range.html",
+  number: "Wbutton/number.html",
+  color: "Wbutton/color.html",
   button: "Wbutton/button.html",
-}
+  icon: "Wbutton/icon.html",
+};
 // 테이블
 const Wtable = {
   table: "Wtable/table.html",
-}
+};
 // 폰트
 const Wfont = {
   font: "Wfont/font.html",
-}
+};
 // 라이브러리
 const Wlibrary = {
   flatpicker: "Wlibrary/flatpicker.html",
   niceselect: "Wlibrary/niceselect.html",
   sortable: "Wlibrary/sortable.html",
   swiper: "Wlibrary/swiper.html",
-}
+};
 // 팝업
 const Wpopup = {
   popup: "Wpopup/popup.html",
-}
+};
 // 탭
 const Wtab = {
   tab: "Wtab/tab.html",
-}
-
+};
 
 // 버튼
 const WbuttonClasses = {
@@ -45,26 +45,27 @@ const WbuttonClasses = {
   range: "addRange",
   number: "addNumber",
   color: "addColor",
-  button: "addButton"
+  button: "addButton",
+  icon: "addIcon",
 };
 const WTableClasses = {
-  table: "addTable"
-}
+  table: "addTable",
+};
 const WTabClasses = {
-  tab: "addTab"
-}
+  tab: "addTab",
+};
 const WpopupClasses = {
-  popup: "addPopup"
-}
+  popup: "addPopup",
+};
 const WfontClasses = {
-  font: "addFont"
-}
+  font: "addFont",
+};
 const WLibClasses = {
   swiper: "addSwiper",
   niceselect: "addNice",
   sortable: "addSor",
-  flatpicker: "addFlat"
-}
+  flatpicker: "addFlat",
+};
 
 // 버튼과 페이지 매핑
 const pageMapping = {
@@ -78,6 +79,7 @@ const pageMapping = {
   [WbuttonClasses.number]: Wbutton.number,
   [WbuttonClasses.color]: Wbutton.color,
   [WbuttonClasses.button]: Wbutton.button,
+  [WbuttonClasses.icon]: Wbutton.icon,
 
   // 테이블
   [WTableClasses.table]: Wtable.table,
@@ -127,27 +129,27 @@ function handleNavigationClick(e) {
 
 // 이벤트 리스너 등록
 document.addEventListener("click", function (e) {
-  const hasMatchingClass = Object.keys(pageMapping).some(className => 
+  const hasMatchingClass = Object.keys(pageMapping).some((className) =>
     e.target.classList.contains(className)
   );
 
   if (hasMatchingClass) {
     handleNavigationClick(e);
   }
-  menuTab()
+  menuTab();
 });
 
 // 메뉴 클릭시 이벤트
 function menuTab() {
-  const tabLis = document.querySelectorAll('.tab li');
-  tabLis.forEach(li => {
-    const button = li.querySelector('button');
-    if(button) {
+  const tabLis = document.querySelectorAll(".tab li");
+  tabLis.forEach((li) => {
+    const button = li.querySelector("button");
+    if (button) {
       button.addEventListener("click", () => {
-        li.classList.toggle('on');
+        li.classList.toggle("on");
       });
     }
-  });  
+  });
 }
 
 // dom 로드시 main 로드
