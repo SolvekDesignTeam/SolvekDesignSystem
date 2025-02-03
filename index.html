@@ -54,7 +54,13 @@
   </head>
   <body>
     <!-- header -->
-    <header></header>
+    <header>
+      <div class="menu-bar">
+        <button type="button" class="right-menu-img" aria-label="메뉴 펼치기">
+          <span class="blind">메뉴</span>
+        </button>
+      </div>
+    </header>
 
     <!-- content -->
     <main>
@@ -63,10 +69,10 @@
         <aside class="aside-tab on">
           <!-- 메인 바-->
           <div class="main-bar">
-            <button type="button" class="logo-img">
+            <button type="button" class="logo-img" aria-label="메인으로 돌아가기">
               <span class="blind">로고</span>
             </button>
-            <button type="button" class="menu-img">
+            <button type="button" class="menu-img" aria-label="메뉴 접기">
               <span class="blind">메뉴</span>
             </button>
           </div>
@@ -306,11 +312,6 @@
         <!-- 메인 정보 -->
         <section id="content" class="main-content on"></section>
 
-        <div class="menu-bar">
-          <button type="button" class="right-menu-img">
-            <span class="blind">메뉴</span>
-          </button>
-        </div>
       </article>
     </main>
 

@@ -10,30 +10,30 @@ const Wbutton = {
   color: "Wbutton/color.html",
   button: "Wbutton/button.html",
   icon: "Wbutton/icon.html",
-};
+}
 // 테이블
 const Wtable = {
   table: "Wtable/table.html",
-};
+}
 // 폰트
 const Wfont = {
   font: "Wfont/font.html",
-};
+}
 // 라이브러리
 const Wlibrary = {
   flatpicker: "Wlibrary/flatpicker.html",
   niceselect: "Wlibrary/niceselect.html",
   sortable: "Wlibrary/sortable.html",
   swiper: "Wlibrary/swiper.html",
-};
+}
 // 팝업
 const Wpopup = {
   popup: "Wpopup/popup.html",
-};
+}
 // 탭
 const Wtab = {
   tab: "Wtab/tab.html",
-};
+}
 
 // 버튼
 const WbuttonClasses = {
@@ -47,25 +47,25 @@ const WbuttonClasses = {
   color: "addColor",
   button: "addButton",
   icon: "addIcon",
-};
+}
 const WTableClasses = {
   table: "addTable",
-};
+}
 const WTabClasses = {
   tab: "addTab",
-};
+}
 const WpopupClasses = {
   popup: "addPopup",
-};
+}
 const WfontClasses = {
   font: "addFont",
-};
+}
 const WLibClasses = {
   swiper: "addSwiper",
   niceselect: "addNice",
   sortable: "addSor",
   flatpicker: "addFlat",
-};
+}
 
 // 버튼과 페이지 매핑
 const pageMapping = {
@@ -98,32 +98,32 @@ const pageMapping = {
   [WLibClasses.niceselect]: Wlibrary.niceselect,
   [WLibClasses.sortable]: Wlibrary.sortable,
   [WLibClasses.flatpicker]: Wlibrary.flatpicker,
-};
+}
 
 // 페이지 로드 ajax
 function loadPage(page, callback) {
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET", page, true);
+  const xhr = new XMLHttpRequest()
+  xhr.open("GET", page, true)
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
-        document.getElementById("content").innerHTML = xhr.responseText;
+        document.getElementById("content").innerHTML = xhr.responseText
       }
 
-      if (callback) callback();
+      if (callback) callback()
     }
-  };
-  xhr.send();
+  }
+  xhr.send()
 }
 
 // 페이지 네비게이션 관련 클릭 이벤트 처리
 function handleNavigationClick(e) {
   const pageKey = Object.keys(pageMapping).find((className) =>
     e.target.classList.contains(className)
-  );
+  )
 
   if (pageKey) {
-    loadPage(pageMapping[pageKey]);
+    loadPage(pageMapping[pageKey])
   }
 }
 
@@ -131,28 +131,36 @@ function handleNavigationClick(e) {
 document.addEventListener("click", function (e) {
   const hasMatchingClass = Object.keys(pageMapping).some((className) =>
     e.target.classList.contains(className)
-  );
+  )
 
   if (hasMatchingClass) {
-    handleNavigationClick(e);
+    handleNavigationClick(e)
   }
-  menuTab();
-});
 
 // 메뉴 클릭시 이벤트
-function menuTab() {
-  const tabLis = document.querySelectorAll(".tab li");
-  tabLis.forEach((li) => {
-    const button = li.querySelector("button");
-    if (button) {
-      button.addEventListener("click", () => {
-        li.classList.toggle("on");
-      });
+  if (e.target.matches('.tab > li > button')) {
+    const parentLi = e.target.closest('li')
+    if (parentLi) {
+      parentLi.classList.toggle('on')
     }
-  });
-}
+
+  }
+  const tabLi = document.querySelector('.tab li');
+  if (tabLi) {
+    const tab = document.querySelector('.tab li .side-tab');
+    if(tab) {
+      const buttons = document.querySelectorAll('button');
+      buttons.forEach(item => {
+        item.onclick = () => {
+          tab.querySelector('button.on')?.classList.remove('on')
+          item.classList.add('on')
+        }
+      })
+    }
+  }
+})
 
 // dom 로드시 main 로드
 document.addEventListener("DOMContentLoaded", function () {
-  loadPage("main.html");
-});
+  loadPage("main.html")
+})

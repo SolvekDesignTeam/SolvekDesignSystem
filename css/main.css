@@ -2,12 +2,14 @@
 .aside-tab {
   width: 30rem;
   height: 100%;
-  position: absolute;
+  position: fixed;
   border-right: var(--border-c1);
   padding: 2rem;
   box-sizing: border-box;
   transition: 0.3s ease;
   left: -30rem;
+  z-index: 10;
+  background: #fff;
 }
 .aside-tab.on {
   left:0;
@@ -34,22 +36,42 @@
   margin: 0;
   cursor: pointer;
 }
+
+header {
+  width: 6.5rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  z-index: 0;
+  left: 0;
+  transition: 0.3s ease;
+  justify-content: flex-start;
+}
+header.on {
+  width: 30rem;
+  justify-content: flex-end;
+}
 .menu-bar {
   /* background: #ffffff; */
-  width: calc(100% - 35rem);
+  /* width: calc(100% - 35rem);
   height: 6.5rem;
   align-items: center;
   left: 35rem;
-  position: fixed;
+  position: fixed; */
   display:none;
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 .menu-bar.on {
-  display: flex;
-  width: 100%;
+   display: flex;
+  /*width: 100%;
   left: 0;
-  padding: 0 2rem;
-  /* height: 2.5rem; */
+  padding: 0 2rem; */
+  /* height: 2.5rem;*/
 }
 .right-menu-img {
   background: url(./img/menu.png);
@@ -66,7 +88,7 @@
   z-index: 1000;
 }
 .right-menu-img.on {
-  /* display:block; */
+   display:block; 
 }
 .search-btn {
   background: url(./img/search.png);
@@ -147,22 +169,28 @@
   color: var(--color94);
   box-sizing: border-box;
 }
+.side-tab button.on {
+  color: var(--color00);
+  font-weight: var(--font-w6);
+}
 /* 왼쪽 메뉴 탭 e */
 
 /* 메인 정보 s */
 
 .main-content {
-  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   left: 0rem;
-  transform .2s ease;
   display: flex;
-  align-items: center;
   transition: 0.3s ease;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  flex-direction: column;
 }
 .main-content.on {
   left: 30rem;
+  margin-left: 30rem;
   width: calc(100% - 30rem);
 }
 .layout {
@@ -176,6 +204,7 @@
   flex-direction: column;
   grid-template-rows: repeat(2, 1fr);
   overflow: hidden;
+  margin: 0;
 }
 .grid-box {
   width: 100%;
@@ -257,7 +286,7 @@
 /* 상단 타이틀 s */
 .main-content .top-title {
   height: 6.5rem;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   /* padding-left: 6rem; */
   width: 100%;
@@ -306,10 +335,10 @@ width: calc(100% - 25rem);
 .scroll-box {
   height: calc(100% - 6.5rem);
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   top: 6.5rem;
   box-sizing: border-box;
-  padding: 4rem;
+  padding: 4rem 2rem;
 }
 .work-tab {
 
