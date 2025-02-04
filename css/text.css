@@ -1,0 +1,14 @@
+.part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 4.8rem;
+}
+.part .field p {
+    font-size: var(--font14);
+    padding-bottom: 1rem;
+}
+
+.part .field:nth-child(3) p {
+    color: var(--color94);
+}
