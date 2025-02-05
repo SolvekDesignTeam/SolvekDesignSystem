@@ -1,0 +1,31 @@
+:root {
+    /* 루트값을 입력해주세요 */
+    --colorff: #fff;
+    --color00: #000;
+    --color94: #949494;
+    --colord9: #d9d9d9;
+    --color90: #90b5f3;
+    --font14: 14px;
+    --font35: 35px;
+    --font40: 40px;
+    --font-w1: 100;
+    --font-w2: 200;
+    --font-w3: 300;
+    --font-w4: 400;
+    --font-w5: 500;
+    --font-w6: 600;
+    --font-w8: 800;
+  
+    --font-family-p: "pretendard";
+    --font-family-s: "SUIT";
+    --font-family-g: "Gmarket Sans";
+  
+    --border-c1: 1px solid #d9d9d9;
+  
+    --border8: 8px;
+  
+    --shadow10: 0px 3px 10px #0000002e;
+  
+    --transition-up: cubic-bezier(0.53, 0.01, 0.09, 0.99) 0s;
+  }
+  

@@ -221,6 +221,20 @@ h2 {
 }
 /* h1~h3 e */
 
+
+
+/* 기본값 수정 필요 */
+p {
+  font-size: var(--font-default);
+  color: var(--color00);
+  font-weight: var(--font-weight-default);
+}
+
+.color-d9 {
+  color: var(--color-font);
+}
+
+
 .blind {
   overflow: hidden !important;
   position: absolute !important;
@@ -230,3 +244,5 @@ h2 {
   color: transparent !important;
   clip: rect(0px, 0px, 0px, 0px) !important;
 }
+
+
