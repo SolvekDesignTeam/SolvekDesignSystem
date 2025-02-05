@@ -108,6 +108,11 @@ function loadPage(page, callback) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         document.getElementById("content").innerHTML = xhr.responseText
+        
+        // 페이지별 초기화 함수 호출
+        if(page === 'Wbutton/text.html') {
+          initText()
+        }
       }
 
       if (callback) callback()
@@ -144,19 +149,6 @@ document.addEventListener("click", function (e) {
       parentLi.classList.toggle('on')
     }
 
-  }
-  const tabLi = document.querySelector('.tab li');
-  if (tabLi) {
-    const tab = document.querySelector('.tab li .side-tab');
-    if(tab) {
-      const buttons = document.querySelectorAll('button');
-      buttons.forEach(item => {
-        item.onclick = () => {
-          tab.querySelector('button.on')?.classList.remove('on')
-          item.classList.add('on')
-        }
-      })
-    }
   }
 })
 
