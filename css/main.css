@@ -118,7 +118,7 @@ header.on .menu-bar {
   background: none;
   border: none;
   font-size: var(--font14);
-  color: var(--color00);
+  color: var(--color-black);
   height: 5rem;
   width: 100%;
   text-align: left;
@@ -126,17 +126,17 @@ header.on .menu-bar {
   box-sizing: border-box;
 }
 .tab > li.on > button {
-  color: var(--color90);
+  color: var(--color-main);
   font-weight: var(--font-w8);
 }
 .tab > li > button span {
   display: inline-block;
   border: 0.5rem solid transparent;
-  border-left-color: var(--colord9);
+  border-left-color: var(--color-border);
 }
 .tab li.on > button span {
-  border-top-color: var(--color90);
-  border-left-color: var(--colorff);
+  border-top-color: var(--color-main);
+  border-left-color: var(--color-white);
   vertical-align: middle;
   margin-right: 0.5rem;
 }
@@ -155,11 +155,11 @@ header.on .menu-bar {
   text-align: left;
   padding-left: 3rem;
   cursor: pointer;
-  color: var(--color94);
+  color: var(--color-font);
   box-sizing: border-box;
 }
 .side-tab button.on {
-  color: var(--color00);
+  color: var(--color-black);
   font-weight: var(--font-w6);
 }
 /* 왼쪽 메뉴 탭 e */
@@ -232,7 +232,7 @@ header.on .menu-bar {
 }
 .title {
   word-break: keep-all;
-  color: var(--colorff);
+  color: var(--color-white);
   font-size: var(--font40);
   font-weight: var(--font-w8);
   font-family: var(--font-family-g);
@@ -242,7 +242,7 @@ header.on .menu-bar {
 
 .txt {
   word-break: keep-all;
-  color: var(--colorff);
+  color: var(--color-white);
   font-size: var(--font14);
   max-width: 30rem;
   margin: 0;
@@ -283,7 +283,7 @@ header.on .menu-bar {
   display: flex;
   align-items: center;
   font-size: var(--font14);
-  border-bottom: 1px solid var(--colord9);
+  border-bottom: 1px solid var(--color-border);
   padding-left: 8rem;
   box-sizing: border-box;
   z-index: 1;
@@ -295,7 +295,7 @@ header.on .menu-bar {
 .sub-txt {
   margin: 0;
   font-size: var(--font14);
-  color: var(--color94);
+  color: var(--color-font);
   margin-left: .3rem;
 }
 /* 상단 타이틀 e */
@@ -315,7 +315,7 @@ font-size: var(--font35);
 
 font-weight: 700;
 
-color: var(--color00);
+color: var(--color-black);
 
 font-family: 'SUIT';
 
@@ -352,7 +352,7 @@ width: calc(100% - 25rem);
   display: flex;   
   justify-content: center;    
   align-items: center;    
-  color: var(--colorff);  
+  color: var(--color-white);  
   cursor: pointer;
 }
 .html {
