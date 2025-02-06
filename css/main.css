@@ -206,7 +206,7 @@ header.on .menu-bar {
 }
 
 .solvekdesign-system {
-  background-image: url(/css/img/solvekdesign.png);
+  background-image: url(../css/img/solvekdesign.png);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -250,7 +250,7 @@ header.on .menu-bar {
   /* width: 100%; */
 }
 .solvek-home {
-  background-image: url(/css/img/solvekhome.png);
+  background-image: url(../css/img/solvekhome.png);
   background-position: center;
   background-size: cover;
   grid-column: 1 / 3;
@@ -260,7 +260,7 @@ header.on .menu-bar {
 }
 
 .side-project {
-  background-image: url(/css/img/sideproject.png);
+  background-image: url(../css/img/sideproject.png);
   background-position: center;
   background-size: cover;
   grid-column: 3 / 4;
