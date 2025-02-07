@@ -1,14 +1,15 @@
-/* input s */
 
-input {
-  height: 3.5rem;
-  border: 1px solid #D9D9D9;
-  box-sizing: border-box;
-  padding: 0 1.6rem;
-  font-size: 1.4rem;
+
+/* 반응형 flex 추가 s */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--border-radius-default );
 }
-
-/* input e */
+.flex input {
+  flex: 1 0 auto;
+}
+/* 반응형 flex 추가 e */
 
 
 /* input - search s */
@@ -39,26 +40,23 @@ label.search {
 
 .password p {
   font-size: 1.2rem;
-  color: var(--color94);
+  color: var(--color-font);
 }
 .password p em {
   font-size: 1.3rem;
-  color: var(--color90);
+  color: var(--color-main);
   font-weight: 500;
   font-style: normal;
   font-size: 1.2rem;
 }
 
 .error input {
-  border: 1px solid red;
+  border: 1px solid var(--color-error);
 }
 .password.error p {
-  color: red;
+  color: var(--color-error);
 }
 
-.error::placeholder {
-  color: rgb(234, 180, 180);
-}
 .password-input {
   position: relative;
 }

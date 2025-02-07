@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: "SUIT";
+  font-family: var(--font-family-sub);
 }
 
 a {
@@ -26,6 +26,40 @@ li {
   list-style-type: none;
 }
 
+fieldset {
+  border: none;
+}
+textarea {
+  min-height: 8.4rem;
+  border-radius: var(--border-radius-default);
+  padding: var(--padding-default);
+  color: var(--color-font);
+  font-weight: var(--font-weight-default);
+  font-size: var(--font-default);
+  border: var(--border-default);
+  font-family: var(--font-family-sub);
+}
+input {
+  height: 3.5rem;
+  border: var(--border-default);
+  box-sizing: border-box;
+  color: var(--color-font);
+  font-weight: var(--font-weight-default);
+  padding: 0 var(--padding-default);
+  font-size: var(--font-default);
+  border-radius: var(--border-radius-default);
+}
+pre {
+  font-size: var(--font-default);
+  font-weight: var(--font-weight-default);
+  color: var(--color-font);
+  overflow: auto;
+  white-space: pre-wrap;
+  text-align: left !important;
+  text-align: center;
+  word-break: break-all;
+}
+
 ::marker {
   unicode-bidi: none;
   font-variant-numeric: none;
@@ -36,7 +70,7 @@ li {
 }
 ::placeholder {
   font-size: var(--font14);
-  color: var(--color94);
+  color: var(--color-font);
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -73,24 +107,6 @@ table td {
   box-sizing: border-box;
 }
 
-pre {
-  overflow: auto;
-  white-space: pre-wrap;
-  text-align: left !important;
-  text-align: center;
-  font-weight: 300;
-  word-break: break-all;
-}
-
-textarea {
-  border: 1px solid #ddd;
-  width: 100%;
-  resize: none;
-  height: 100%;
-  box-sizing: border-box;
-  vertical-align: middle;
-  font-weight: 200;
-}
 button {
   background: none;
   border: none;
@@ -171,22 +187,10 @@ textarea:focus:not(:focus-visible) {
 }
 /* width e */
 
-/* border s */
-.border-6 {
-  border-radius: .6rem;
-}
-.border-4 {
-  border-radius: .4rem;
-}
-.border-2 {
-  border-radius: .2rem;
-}
-/* border e */
-
 /* h1~h3 s */
 h2 {
   font-size: 1.9rem;
-  color: var(--color94);
+  color: var(--color-font);
   text-transform: uppercase;
 }
 /* h1~h3 e */
@@ -196,7 +200,7 @@ h2 {
 /* 기본값 수정 s*/
 p {
   font-size: var(--font-default);
-  color: var(--color00);
+  color: var(--color-black);
   font-weight: var(--font-weight-default);
 }
 

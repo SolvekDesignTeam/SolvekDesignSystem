@@ -143,7 +143,7 @@ document.addEventListener("click", function (e) {
   }
 
 // 메뉴 클릭시 이벤트
-  if (e.target.matches('.tab > li > button')) {
+  if (e.target.matches('.depth-one')) {
     const parentLi = e.target.closest('li')
     if (parentLi) {
       parentLi.classList.toggle('on')

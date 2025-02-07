@@ -45,6 +45,15 @@
 }
 
 @media (max-width: 768px) {
+  /* 반응형 s */
+  .part .flex {
+    flex-direction: column;
+  }
+  .flex input {
+    flex: 1 0 100%;
+  }
+  /* 반응형 e */
+
   /* 왼쪽 메뉴 탭 s */
   .aside-tab {
     left: -35rem;
@@ -99,11 +108,15 @@
     aspect-ratio: initial;
     min-height: 10rem;
   }
-  .main-title{
+  .scroll-box .main-title{
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
+    margin: 4rem 0 3rem;
+  }
+  .scroll-box .work-tab {
+    width: 100%;
   }
   .scroll-box {
     padding: 2rem

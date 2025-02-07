@@ -26,9 +26,9 @@
     <!-- <link rel="canonical" href="https://example.com/page"> -->
 
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/text.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -72,234 +72,238 @@
           </div>
 
           <!-- 검색 -->
-          <label for="search" class="search-btn"></label>
-          <input
-            type="text"
-            id="search"
-            class="search-box"
-            placeholder="검색"
-          />
+          <fieldset class="component-search">
+            <label for="search" class="search-btn"></label>
+            <input
+              type="text"
+              id="search"
+              class="search-box"
+              placeholder="검색"
+            />
+          </fieldset>
 
           <!-- 탭 리스트 -->
-          <nav class="tab" role="tablist">
+          <nav class="tab">
             <!-- 아이콘이 들어가는 경우  aria-label="공지사항" 속성 사용-->
-            <li>
-              <button role="tab" type="button">
-                <span></span>
-                BUTTON[버튼]
-              </button>
-              <div class="side-tab">
-                <button
-                  role="tab"
-                  class="addText"
-                  type="button"
-                  aria-label="텍스트로페이지 이동"
-                >
-                  TEXT[텍스트]
-                </button>
-                <button
-                  role="tab"
-                  class="addSelect"
-                  type="button"
-                  aria-label="셀렉트페이지 이동"
-                >
-                  SELECT[셀렉트]
-                </button>
-                <button
-                  role="tab"
-                  class="addCheckbox"
-                  type="button"
-                  aria-label="체크박스페이지 이동"
-                >
-                  CHECKBOX[체크박스]
-                </button>
-                <button
-                  role="tab"
-                  class="addRadio"
-                  type="button"
-                  aria-label="라디오페이지 이동"
-                >
-                  RADIO[라디오]
-                </button>
-                <button
-                  role="tab"
-                  class="addTime"
-                  type="button"
-                  aria-label="타임페이지 이동"
-                >
-                  TIME[타임]
-                </button>
-                <button
-                  role="tab"
-                  class="addRange"
-                  type="button"
-                  aria-label="렌지페이지 이동"
-                >
-                  RANG[렌지]
-                </button>
-                <button
-                  role="tab"
-                  class="addNumber"
-                  type="button"
-                  aria-label="넘버페이지 이동"
-                >
-                  NUMBER[넘버]
-                </button>
-                <button
-                  role="tab"
-                  class="addColor"
-                  type="button"
-                  aria-label="컬러페이지 이동"
-                >
-                  COLOR[컬러]
-                </button>
-                <button
-                  role="tab"
-                  class="addButton"
-                  type="button"
-                  aria-label="버튼페이지 이동"
-                >
+            <ul role="menubar">
+              <li>
+                <button role="tab" type="button" role="menuitem" class="depth-one">
+                  <span></span>
                   BUTTON[버튼]
                 </button>
+                <div class="side-tab">
+                  <button
+                    role="tab"
+                    class="addText"
+                    type="button"
+                    aria-label="텍스트로페이지 이동"
+                  >
+                    TEXT[텍스트]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addSelect"
+                    type="button"
+                    aria-label="셀렉트페이지 이동"
+                  >
+                    SELECT[셀렉트]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addCheckbox"
+                    type="button"
+                    aria-label="체크박스페이지 이동"
+                  >
+                    CHECKBOX[체크박스]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addRadio"
+                    type="button"
+                    aria-label="라디오페이지 이동"
+                  >
+                    RADIO[라디오]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addTime"
+                    type="button"
+                    aria-label="타임페이지 이동"
+                  >
+                    TIME[타임]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addRange"
+                    type="button"
+                    aria-label="렌지페이지 이동"
+                  >
+                    RANG[렌지]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addNumber"
+                    type="button"
+                    aria-label="넘버페이지 이동"
+                  >
+                    NUMBER[넘버]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addColor"
+                    type="button"
+                    aria-label="컬러페이지 이동"
+                  >
+                    COLOR[컬러]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addButton"
+                    type="button"
+                    aria-label="버튼페이지 이동"
+                  >
+                    BUTTON[버튼]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addIcon"
+                    type="button"
+                    aria-label="아이콘페이지 이동"
+                  >
+                    ICON[아이콘]
+                  </button>
+                </div>
+              </li>
+              <li>
                 <button
                   role="tab"
-                  class="addIcon"
                   type="button"
-                  aria-label="아이콘페이지 이동"
+                  aria-label="테이블 페이지 이동"
+                  class="addTable depth-one"
                 >
-                  ICON[아이콘]
-                </button>
-              </div>
-            </li>
-            <li>
-              <button
-                role="tab"
-                type="button"
-                aria-label="테이블 페이지 이동"
-                class="addTable"
-              >
-                <span></span>
-                TABLE[테이블]
-              </button>
-              <div class="side-tab">
-                <button
-                  role="tab"
-                  class="addTable"
-                  type="button"
-                  aria-label="테이블페이지 이동"
-                >
+                  <span></span>
                   TABLE[테이블]
                 </button>
-              </div>
-            </li>
-            <li>
-              <button
-                role="tab"
-                type="button"
-                aria-label="탭 페이지 이동"
-                class="addTab"
-              >
-                <span></span>
-                TAB[탭]
-              </button>
-              <div class="side-tab">
+                <div class="side-tab">
+                  <button
+                    role="tab"
+                    class="addTable"
+                    type="button"
+                    aria-label="테이블페이지 이동"
+                  >
+                    TABLE[테이블]
+                  </button>
+                </div>
+              </li>
+              <li>
                 <button
                   role="tab"
-                  class="addTab"
                   type="button"
-                  aria-label="테이블페이지 이동"
+                  aria-label="탭 페이지 이동"
+                  class="addTab depth-one"
                 >
+                  <span></span>
                   TAB[탭]
                 </button>
-              </div>
-            </li>
-            <li>
-              <button
-                role="tab"
-                type="button"
-                aria-label="팝업 페이지 이동"
-                class="addPopup"
-              >
-                <span></span>
-                POPUP[팝업]
-              </button>
-              <div class="side-tab">
+                <div class="side-tab">
+                  <button
+                    role="tab"
+                    class="addTab"
+                    type="button"
+                    aria-label="테이블페이지 이동"
+                  >
+                    TAB[탭]
+                  </button>
+                </div>
+              </li>
+              <li>
                 <button
                   role="tab"
-                  class="addPopup"
                   type="button"
-                  aria-label="팝업페이지 이동"
+                  aria-label="팝업 페이지 이동"
+                  class="addPopup depth-one"
                 >
+                  <span></span>
                   POPUP[팝업]
                 </button>
-              </div>
-            </li>
-            <li>
-              <button
-                role="tab"
-                type="button"
-                aria-label="폰트 페이지 이동"
-                class="addFont"
-              >
-                <span></span>
-                FONT[폰트]
-              </button>
-              <div class="side-tab">
+                <div class="side-tab">
+                  <button
+                    role="tab"
+                    class="addPopup"
+                    type="button"
+                    aria-label="팝업페이지 이동"
+                  >
+                    POPUP[팝업]
+                  </button>
+                </div>
+              </li>
+              <li>
                 <button
                   role="tab"
-                  class="addFont"
                   type="button"
-                  aria-label="팝업페이지 이동"
+                  aria-label="폰트 페이지 이동"
+                  class="addFont depth-one"
                 >
+                  <span></span>
                   FONT[폰트]
                 </button>
-              </div>
-            </li>
-            <li>
-              <button
-                role="tab"
-                type="button"
-                aria-label="라이브러리 페이지 이동"
-                class="addLibrary"
-              >
-                <span></span>
-                LIBRARY[라이브러리]
-              </button>
-              <div class="side-tab">
+                <div class="side-tab">
+                  <button
+                    role="tab"
+                    class="addFont"
+                    type="button"
+                    aria-label="팝업페이지 이동"
+                  >
+                    FONT[폰트]
+                  </button>
+                </div>
+              </li>
+              <li>
                 <button
                   role="tab"
-                  class="addSwiper"
                   type="button"
-                  aria-label="스와이퍼페이지 이동"
+                  aria-label="라이브러리 페이지 이동"
+                  class="addLibrary depth-one"
                 >
-                  SWIPER[스와이퍼]
+                  <span></span>
+                  LIBRARY[라이브러리]
                 </button>
-                <button
-                  role="tab"
-                  class="addNice"
-                  type="button"
-                  aria-label="나이스셀렉트 이동"
-                >
-                  NICESELECT[나이스셀렉트]
-                </button>
-                <button
-                  role="tab"
-                  class="addSor"
-                  type="button"
-                  aria-label="솔테이블 이동"
-                >
-                  SORTABLE[솔테이블]
-                </button>
-                <button
-                  role="tab"
-                  class="addFlat"
-                  type="button"
-                  aria-label="플랫픽커 이동"
-                >
-                  FLATPICKR[플랫픽커]
-                </button>
-              </div>
-            </li>
+                <div class="side-tab">
+                  <button
+                    role="tab"
+                    class="addSwiper"
+                    type="button"
+                    aria-label="스와이퍼페이지 이동"
+                  >
+                    SWIPER[스와이퍼]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addNice"
+                    type="button"
+                    aria-label="나이스셀렉트 이동"
+                  >
+                    NICESELECT[나이스셀렉트]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addSor"
+                    type="button"
+                    aria-label="솔테이블 이동"
+                  >
+                    SORTABLE[솔테이블]
+                  </button>
+                  <button
+                    role="tab"
+                    class="addFlat"
+                    type="button"
+                    aria-label="플랫픽커 이동"
+                  >
+                    FLATPICKR[플랫픽커]
+                  </button>
+                </div>
+              </li>
+            </ul>
           </nav>
         </aside>
 
@@ -319,9 +323,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 
     <!-- script -->
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/text.js"></script>
-    <script defer src="./js/main.js"></script>
+    <script  src="./js/common.js"></script>
+    <script  src="./js/text.js"></script>
+    <script  src="./js/main.js"></script>
 
   </body>
 </html>

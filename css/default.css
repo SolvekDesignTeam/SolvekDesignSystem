@@ -1,52 +1,37 @@
 :root {
     /* 루트값을 입력해주세요 */
-    --colorff: #fff;
     --color-white: #fff;
-    --color00: #000;
     --color-black: #000;
-    --color94: #949494;
     --color-font: #949494;
-    --colord9: #d9d9d9;
     --color-border: #d9d9d9;
-    --color90: #90b5f3;
     --color-main: #90b5f3;
     --color-sub: #90b5f3;
     --color-point: #90b5f3;
+    --color-error: red;
 
-    --font14: 14px;
-    --font-default: 13px;
-    --font-title-sub: 28px;
-    --font35: 35px;
-    --font-title-sub: 35px;
-    --font40: 40px;
-    --font-title: 40px;
+    --font-default: 1.3rem;
+    --font-title-sub: 2.8rem;
+    --font-title-sub: 3.5rem;
+    --font-title: 4rem;
 
-    --font-w1: 100;
-    --font-w2: 200;
-    --font-w3: 300;
     --font-weight-default: 300;
-    --font-w4: 400;
-    --font-w5: 500;
-    --font-w6: 600;
-    --font-w8: 800;
     --font-weight-title: 800;
   
-    --font-family-p: "pretendard";
     --font-family-main: "pretendard";
-    --font-family-s: "SUIT";
     --font-family-sub: "SUIT";
     --font-family-g: "Gmarket Sans";
   
     --border-c1: 1px solid #d9d9d9;
     --border-default: 1px solid #d9d9d9;
   
-    --border8: 8px; 
-    --border-radius-default: 6px;
+    --border-radius-default: .6rem;
+
+    --padding-default: .8rem;
   
     --shadow10: 0px 3px 10px #0000002e;
     --shadow-default: 0px 3px 10px #0000002e;
 
-    --hight-default: 35px;
+    --hight-default: 3.5rem;
   
     --transition-up: cubic-bezier(0.53, 0.01, 0.09, 0.99) 0s;
 

@@ -4,22 +4,26 @@
   height: 100%;
   position: fixed;
   border-right: var(--border-c1);
-  padding: 2rem;
   box-sizing: border-box;
   transition: 0.3s ease;
   left: -30rem;
   z-index: 10;
   background: #fff;
 }
+
 .aside-tab.on {
-  left:0;
+  left: 0;
 }
+
 .main-bar {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
+  padding: 2.4rem 2.4rem 0;
+  box-sizing: border-box;
 }
+
 .logo-img {
   background: url(./img/logo.png);
   width: 2.5rem;
@@ -27,6 +31,7 @@
   margin: 0;
   cursor: pointer;
 }
+
 .menu-img {
   background: url(./img/menu.png);
   background-repeat: no-repeat;
@@ -49,19 +54,23 @@ header {
   transition: 0.3s ease;
   justify-content: flex-start;
 }
+
 header.on {
   width: 30rem;
   justify-content: flex-end;
 }
+
 header.on .menu-bar {
   display: none;
 }
+
 .menu-bar {
   transition: 0.3s ease;
   margin: 0;
   display: flex;
   align-items: center;
 }
+
 .right-menu-img {
   background: url(./img/menu.png);
   background-repeat: no-repeat;
@@ -76,9 +85,17 @@ header.on .menu-bar {
   box-sizing: border-box;
   z-index: 1000;
 }
+
 .right-menu-img.on {
-   display:block; 
+  display: block;
 }
+
+.component-search {
+  padding: 0 2.4rem 2.4rem;
+  box-sizing: border-box;
+  border: none;
+}
+
 .search-btn {
   background: url(./img/search.png);
   width: 2rem;
@@ -91,6 +108,7 @@ header.on .menu-bar {
   margin-left: 1rem;
   cursor: pointer;
 }
+
 .search-box {
   width: 100%;
   height: 3.5rem;
@@ -98,70 +116,82 @@ header.on .menu-bar {
   border-radius: 0.5rem;
   position: relative;
   box-sizing: border-box;
-  padding: 0 1rem 0 4rem;
-  margin-bottom: 2.5rem;
+  padding: 0 .8rem 0 3.6rem;
 }
+
 .tab {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100% - 10rem);
-  width: 26.9rem;
-  padding-right: 1rem;
+  height: calc(100% - 15rem);
 }
-.tab > li {
+
+.tab ul {
+  padding-left: 2.4rem;
+}
+
+.tab li {
   margin: 0;
   /* width: 31rem; */
 }
-.tab > li > button {
+
+.tab li .depth-one {
   background: none;
   border: none;
-  font-size: var(--font14);
+  font-size: var(--font-default);
   color: var(--color-black);
-  height: 5rem;
+  height: 3.5rem;
   width: 100%;
   text-align: left;
   cursor: pointer;
   box-sizing: border-box;
 }
-.tab > li.on > button {
+
+.tab li.on .depth-one {
   color: var(--color-main);
-  font-weight: var(--font-w8);
+  font-weight: var(--font-weight-title);
 }
-.tab > li > button span {
+
+.tab li button span {
   display: inline-block;
   border: 0.5rem solid transparent;
   border-left-color: var(--color-border);
 }
-.tab li.on > button span {
+
+.tab li.on button span {
   border-top-color: var(--color-main);
   border-left-color: var(--color-white);
   vertical-align: middle;
-  margin-right: 0.5rem;
+  margin-right: 1.2rem;
 }
+
 .side-tab {
   display: flex;
   flex-direction: column;
   display: none;
 }
+
 .tab li.on .side-tab {
   display: block;
 }
+
 .side-tab button {
   width: 100%;
   height: 4rem;
-  font-size: var(--font14);
+  font-size: var(--font-default);
   text-align: left;
-  padding-left: 3rem;
+  padding-left: 3.6rem;
   cursor: pointer;
   color: var(--color-font);
   box-sizing: border-box;
 }
+
 .side-tab button.on {
   color: var(--color-black);
-  font-weight: var(--font-w6);
+  font-weight: var(--font-weight-title);
 }
+
 /* 왼쪽 메뉴 탭 e */
 
 /* 메인 정보 s */
@@ -169,7 +199,6 @@ header.on .menu-bar {
 .main-content {
   width: 100%;
   height: 100vh;
-  left: 0rem;
   display: flex;
   transition: 0.3s ease;
   align-items: center;
@@ -177,16 +206,19 @@ header.on .menu-bar {
   justify-content: center;
   flex-direction: column;
 }
+
 .main-content.on {
-  left: 30rem;
   margin-left: 30rem;
   width: calc(100% - 30rem);
 }
+
 .layout {
   width: calc(100% - 4rem);
   max-width: 128rem;
-  max-height: 90rem; /* 최대 높이 설정 */
-  height: calc(100% - 4rem); /* 높이를 컨텐츠에 맞게 조정 */
+  max-height: 90rem;
+  /* 최대 높이 설정 */
+  height: calc(100% - 4rem);
+  /* 높이를 컨텐츠에 맞게 조정 */
   display: grid;
   align-items: center;
   gap: 2rem;
@@ -195,6 +227,7 @@ header.on .menu-bar {
   overflow: hidden;
   margin: 0;
 }
+
 .grid-box {
   width: 100%;
   max-height: 45rem;
@@ -216,7 +249,8 @@ header.on .menu-bar {
   height: 100%;
   /* aspect-ratio: 1/1; */
 }
-.layout > div a{
+
+.layout>div a {
   max-width: 50rem;
   /* position: absolute; */
   /* bottom: 6rem; */
@@ -230,25 +264,28 @@ header.on .menu-bar {
   justify-content: flex-end;
   margin: 0;
 }
+
 .title {
   word-break: keep-all;
   color: var(--color-white);
-  font-size: var(--font40);
-  font-weight: var(--font-w8);
+  font-size: var(--font-title);
+  font-weight: var(--font-weight-title);
   font-family: var(--font-family-g);
   line-height: 5rem;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .txt {
   word-break: keep-all;
   color: var(--color-white);
-  font-size: var(--font14);
+  font-size: var(--font-default);
   max-width: 30rem;
   margin: 0;
   line-height: 2.5rem;
   /* width: 100%; */
 }
+
 .solvek-home {
   background-image: url(../css/img/solvekhome.png);
   background-position: center;
@@ -274,63 +311,56 @@ header.on .menu-bar {
 
 /* 상단 타이틀 s */
 .main-content .top-title {
-  height: 6.5rem;
-  /* position: absolute; */
-  top: 0;
-  /* padding-left: 6rem; */
   width: 100%;
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  font-size: var(--font14);
+  font-size: var(--font-default);
   border-bottom: 1px solid var(--color-border);
-  padding-left: 8rem;
   box-sizing: border-box;
   z-index: 1;
+  padding: 2.4rem 2.4rem 2.4rem 7.2rem;
   pointer-events: none;
+  transition: .3s var(--transition-default);
 }
 .main-content.on .top-title {
-  padding-left: 2rem;
+  padding: 2.4rem;
 }
+
 .sub-txt {
   margin: 0;
-  font-size: var(--font14);
+  font-size: var(--font-default);
   color: var(--color-font);
   margin-left: .3rem;
 }
+
 /* 상단 타이틀 e */
 .main-title {
-  
-display: flex;
-  
-align-items: center;
-  
-width: 100%;
-  
-box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin:7rem 0;
+  box-sizing: border-box;
 }
-.main-title > .title {
 
-font-size: var(--font35);
-
-font-weight: 700;
-
-color: var(--color-black);
-
-font-family: 'SUIT';
-
-width: calc(100% - 25rem);
+.main-title>.title {
+  font-size: var(--font-title-sub);
+  font-weight: 700;
+  color: var(--color-black);
+  font-family: 'SUIT';
+  width: calc(100% - 25rem);
 }
+
 .scroll-box {
   height: calc(100% - 6.5rem);
   width: 100%;
   /* position: absolute; */
   top: 6.5rem;
   box-sizing: border-box;
-  padding: 4rem 2rem;
+  padding: 0 2.4rem;
 }
-.work-tab {
 
+.work-tab {
   display: flex;
   height: 3.5rem;
   align-items: center;
@@ -340,30 +370,33 @@ width: calc(100% - 25rem);
   margin: 0;
   gap: .5rem;
 }
-.work-tab > li {
+
+.work-tab>li {
   height: 100%;
   width: 100%;
   border-radius: .6rem;
 }
-.work-tab > li > a {
-  font-size:  var(--font14);   
-  width: 100%;   
-  height: 100%;   
-  display: flex;   
-  justify-content: center;    
-  align-items: center;    
-  color: var(--color-white);  
+
+.work-tab>li>button {
+  font-size: var(--font-default);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
   cursor: pointer;
 }
-.html {
 
-background: #c8daf9;
+.html {
+  background: #c8daf9;
 }
+
 .css {
-  
-background: #ffe098;
+  background: #ffe098;
 }
+
 .js {
-  
-background: #ffdada;
+
+  background: #ffdada;
 }
