@@ -1,19 +1,4 @@
 
-
-/* 반응형 flex 추가 s */
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--border-radius-default );
-}
-.flex div {
-  flex: 1 0 auto;
-}
-.flex input {
-  flex: 1 0 auto;
-}
-/* 반응형 flex 추가 e */
-
 /* input s */
 input {
   height: 3.5rem;
@@ -59,7 +44,7 @@ label.search {
 /* input - search e */
 
 
-/* input -password */
+/* input -password s */
 .password {
   display: flex;
   flex-direction: column;
@@ -96,3 +81,4 @@ label.search {
   right: 0;
   cursor: pointer;
 }
+/* input -password e */

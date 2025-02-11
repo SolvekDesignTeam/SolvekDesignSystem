@@ -1,3 +1,19 @@
+
+/* 반응형 flex 추가 s */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--border-radius-default );
+}
+.flex div {
+  flex: 1 0 auto;
+}
+.flex input {
+  flex: 1 0 auto;
+}
+/* 반응형 flex 추가 e */
+
+
 /* 반응형 미디어 쿼리 */
 @media (max-width: 1920px) {
 }
@@ -46,10 +62,8 @@
 
 @media (max-width: 768px) {
   /* 반응형 s */
-  .part .flex {
-    flex-direction: column;
-  }
-  .flex input {
+  .flex input,
+  .flex div {
     flex: 1 0 100%;
   }
   /* 반응형 e */
