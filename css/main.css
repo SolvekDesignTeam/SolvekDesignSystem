@@ -3,7 +3,7 @@
   width: 30rem;
   height: 100%;
   position: fixed;
-  border-right: var(--border-c1);
+  border-right: var(--border-default);
   box-sizing: border-box;
   transition: 0.3s ease;
   left: -30rem;
@@ -112,7 +112,7 @@ header.on .menu-bar {
 .search-box {
   width: 100%;
   height: 3.5rem;
-  border: var(--border-c1);
+  border: var(--border-default);
   border-radius: 0.5rem;
   position: relative;
   box-sizing: border-box;
