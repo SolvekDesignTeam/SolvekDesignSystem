@@ -1,4 +1,7 @@
 // 컴포넌트
+const main = {
+  main: "index.html"
+}
 const Wbutton = {
     text: "Wbutton/text.html",
     select: "Wbutton/select.html",
@@ -36,6 +39,9 @@ const Wbutton = {
   }
   
   // 버튼
+  const mainBtn = {
+    main:"logo-img"
+  }
   const WbuttonClasses = {
     text: "addText",
     select: "addSelect",
@@ -69,6 +75,9 @@ const Wbutton = {
   
   // 버튼과 페이지 매핑
   const pageMapping = {
+    //메인
+    [main.main] : main.main,
+
     // 컴포넌트
     [WbuttonClasses.text]: Wbutton.text,
     [WbuttonClasses.select]: Wbutton.select,
@@ -201,6 +210,7 @@ const Wbutton = {
         loadPage(pageMapping[pageKey], hash)
       }
     }
+    
   }
   
   // 해시 변경 이벤트 리스너
