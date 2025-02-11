@@ -29,71 +29,7 @@ li {
 fieldset {
   border: none;
 }
-/* textarea s */
-textarea {
-  min-height: 8.4rem;
-  border-radius: var(--border-radius-default);
-  padding: var(--padding-default);
-  color: var(--color-font);
-  font-weight: var(--font-weight-default);
-  font-size: var(--font-default);
-  border: var(--border-default);
-  font-family: var(--font-family-sub);
-}
-/* textarea e */
 
-/* input s */
-input {
-  height: 3.5rem;
-  border: var(--border-default);
-  box-sizing: border-box;
-  color: var(--color-font);
-  font-weight: var(--font-weight-default);
-  padding: 0 var(--padding-default);
-  font-size: var(--font-default);
-  border-radius: var(--border-radius-default);
-}
-/* input e*/
-
-/* select s */
-.select {
-  position: relative;
-}
-.select .arrow {
-  position: absolute;
-  right: .8rem;
-  width: 0;
-  height: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border-style: solid;
-  border-width: 6px 5px 0px 5px;
-  border-color: #d9d9d9 transparent transparent transparent;
-}
-select {
-  height: 3.5rem;
-  border: var(--border-default);
-  box-sizing: border-box;
-  color: var(--color-font);
-  font-weight: var(--font-weight-default);
-  padding: 0 var(--padding-default);
-  font-size: var(--font-default);
-  border-radius: var(--border-radius-default);
-  
-}
-option {
-  font-size: var(--font-default);
-}
-select::-ms-expand { 
-	display: none;
-}
-select {
-  -o-appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-/* select e */
 
 /* pre s */
 pre {

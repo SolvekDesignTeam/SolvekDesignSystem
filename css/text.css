@@ -14,6 +14,31 @@
 }
 /* 반응형 flex 추가 e */
 
+/* input s */
+input {
+  height: 3.5rem;
+  border: var(--border-default);
+  box-sizing: border-box;
+  color: var(--color-font);
+  font-weight: var(--font-weight-default);
+  padding: 0 var(--padding-default);
+  font-size: var(--font-default);
+  border-radius: var(--border-radius-default);
+}
+/* input e*/
+
+/* textarea s */
+textarea {
+  min-height: 8.4rem;
+  border-radius: var(--border-radius-default);
+  padding: var(--padding-default);
+  color: var(--color-font);
+  font-weight: var(--font-weight-default);
+  font-size: var(--font-default);
+  border: var(--border-default);
+  font-family: var(--font-family-sub);
+}
+/* textarea e */
 
 /* input - search s */
 input.search {
