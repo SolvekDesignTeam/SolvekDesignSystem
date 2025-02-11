@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   gap: var(--border-radius-default );
 }
+.flex div {
+  flex: 1 0 auto;
+}
 .flex input {
   flex: 1 0 auto;
 }
