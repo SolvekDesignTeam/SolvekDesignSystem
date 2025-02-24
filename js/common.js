@@ -27,9 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // 클릭 이벤트
 document.addEventListener('click', (e) => {
   // 로고 클릭시 로드 초기화
-  // if(e.target.classList.contains('logo-img')) {
-  //   location.reload();
-  // }
 
   // 메뉴 열고 닫기
   if(e.target.classList.contains('menu-img')){

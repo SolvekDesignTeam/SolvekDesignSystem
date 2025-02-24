@@ -44,6 +44,12 @@ pre {
 }
 /* pre e */
 
+/* form s */
+form {
+  width: 100%;
+}
+/* form e */
+
 ::marker {
   unicode-bidi: none;
   font-variant-numeric: none;

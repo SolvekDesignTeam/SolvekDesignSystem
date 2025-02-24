@@ -76,7 +76,7 @@ const Wbutton = {
   // 버튼과 페이지 매핑
   const pageMapping = {
     //메인
-    [main.main] : main.main,
+    [mainBtn.main] : main.main,
 
     // 컴포넌트
     [WbuttonClasses.text]: Wbutton.text,
@@ -193,6 +193,9 @@ const Wbutton = {
         if (hash && window.location.hash !== hash) {
           window.location.hash = hash
         }
+        if (hash === '#/button/text') {
+          initText()
+        }
       }
     }
     xhr.send()
@@ -200,6 +203,11 @@ const Wbutton = {
   
   // 네비게이션 클릭 이벤트 핸들러
   function handleNavigationClick(e) {
+    if(e.target.classList.contains('logo-img')) {
+      loadPage('index.html');
+      return;
+    }
+
     const pageKey = Object.keys(pageMapping).find((className) =>
       e.target.classList.contains(className)
     )
@@ -210,10 +218,9 @@ const Wbutton = {
         loadPage(pageMapping[pageKey], hash)
       }
     }
-    
   }
   
-  // 해시 변경 이벤트 리스너
+  // 해시 변경 이벤트 리스너 
   window.addEventListener('hashchange', function() {
     const hash = window.location.hash
     const page = hashMapping[hash]
@@ -221,6 +228,13 @@ const Wbutton = {
     if (page) {
       loadPage(page)
     }
+  })
+
+  // 브라우저 뒤로가기/앞으로가기 처리
+  window.addEventListener('popstate', function() {
+    const hash = window.location.hash
+    const page = hashMapping[hash] || 'main.html'
+    loadPage(page, hash)
   })
   
   // 초기 해시 기반 페이지 로드
@@ -233,5 +247,4 @@ const Wbutton = {
   
   // 페이지 로드 시 초기화
   document.addEventListener('DOMContentLoaded', initializeFromHash)
-  
   

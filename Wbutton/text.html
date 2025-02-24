@@ -15,13 +15,17 @@
   <!-- title e -->
 
   <!-- text s -->
+   <form action="#">
    <fieldset>
     <div class="part">
       <h2>TEXT</h2>
       <span class="blind">텍스트 입력 영역</span> 
       <div class="field">
         <!-- input 복사붙여넣기 s-->
+        <label for="txt1" class="blind">텍스트 입력해주세요.</label>
+        
         <input
+          id="txt1"
           class="w-100 "
           type="text"
           placeholder="해당 텍스트 내용 작성"
@@ -31,27 +35,15 @@
       <!-- 반응형시 felx 클래스 추가 -->
       <div class="field flex">
         <!-- input 복사붙여넣기 s-->
+        <label for="txt2" class="blind">텍스트 입력해주세요.</label>
         <input
+          id="txt2"
           type="text"
           placeholder="해당 텍스트 내용 작성"
         />
+        <label for="txt3" class="blind">텍스트 입력해주세요.</label>
         <input
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <!-- input 복사붙여넣기 e-->
-      </div>
-      <div class="field flex">
-        <!-- input 복사붙여넣기 s-->
-        <input
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <input
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <input
+          id="txt3"
           type="text"
           placeholder="해당 텍스트 내용 작성"
         />
@@ -59,19 +51,49 @@
       </div>
       <div class="field flex">
         <!-- input 복사붙여넣기 s-->
+        <label for="txt4" class="blind">텍스트 입력해주세요.</label>
         <input
+          id="txt4"
           type="text"
           placeholder="해당 텍스트 내용 작성"
         />
+        <label for="txt5" class="blind">텍스트 입력해주세요.</label>
         <input
+          id="txt5"
           type="text"
           placeholder="해당 텍스트 내용 작성"
         />
+        <label for="txt6" class="blind">텍스트 입력해주세요.</label>
         <input
+          id="txt6"
           type="text"
           placeholder="해당 텍스트 내용 작성"
         />
+        <!-- input 복사붙여넣기 e-->
+      </div>
+      <div class="field flex">
+        <!-- input 복사붙여넣기 s-->
+        <label for="txt7" class="blind">텍스트 입력해주세요.</label>
         <input
+          id="txt7"
+          type="text"
+          placeholder="해당 텍스트 내용 작성"
+        />
+        <label for="txt8" class="blind">텍스트 입력해주세요.</label>
+        <input
+          id="txt8"
+          type="text"
+          placeholder="해당 텍스트 내용 작성"
+        />
+        <label for="txt9" class="blind">텍스트 입력해주세요.</label>
+        <input
+          id="txt9"
+          type="text"
+          placeholder="해당 텍스트 내용 작성"
+        />
+        <label for="txt10" class="blind">텍스트 입력해주세요.</label>
+        <input
+          id="txt10"
           type="text"
           placeholder="해당 텍스트 내용 작성"
         />
@@ -90,7 +112,7 @@
       <div class="field">
         <!-- search 복사붙여넣기 s-->
         <div class="search-input">
-          <label for="search1" class="search"></label>
+          <label for="search1" class="search blind">검색어를 입력해주세요.</label>
           <input
             id="search1"
             class="search w-100 "
@@ -115,12 +137,13 @@
         <!-- password 여기서부터 복사 붙여넣기 s-->
         <div class="password">
           <div class="w-100 password-input">
+            <label for="pwd1" class="blind">비밀번호를 입력해주세요.</label>
             <input
+              id="pwd1"
               class="w-100 "
               type="password"
               name="password"
               aria-required="true"
-              placeholder="비밀번호 입력해주세요."
               minlength="8"
               pattern="^(?=.*[a-z])|(?=.*[A-Z])|(?=.*\d)|(?=.*[@$!%*#?&])(?:.{8,})$"
             />
@@ -145,15 +168,16 @@
         <!-- 에러 표시는 error 클래스 추가 -->
         <div class="password error">
           <div class="w-100 password-input">
-            <input
-              class="w-100 "
-              type="password"
-              name="password"
-              aria-required="true"
-              placeholder="비밀번호 입력해주세요."
-              minlength="8"
-              pattern="^(?=.*[a-z])|(?=.*[A-Z])|(?=.*\d)|(?=.*[@$!%*#?&])(?:.{8,})$"
-            />
+              <label for="pwd2" class="blind">비밀번호를 입력해주세요.</label>
+              <input
+                id="pwd2"
+                class="w-100 "
+                type="password"
+                name="password"
+                aria-required="true"
+                minlength="8"
+                pattern="^(?=.*[a-z])|(?=.*[A-Z])|(?=.*\d)|(?=.*[@$!%*#?&])(?:.{8,})$"
+              />
             <button
               type="button"
               class="password-btn"
@@ -177,7 +201,9 @@
         <span class="blind">이메일 입력 영역</span> 
         <div class="field">
           <!-- email 복사붙여넣기 s-->
+            <label for="email1" class="blind">이메일을 입력해주세요.</label>
             <input
+            id="email1"
             class="w-100 "
             type="email"
             placeholder="예: hong@example.com"
@@ -198,7 +224,9 @@
         <span class="blind">링크(url) 입력 영역</span> 
         <div class="field">
           <!-- url 복사붙여넣기 s-->
+            <label for="url1" class="blind">URL을 입력해주세요.</label>
             <input
+            id="url1"
             class="w-100"
             type="url"
             placeholder="예: www.abc.com"
@@ -218,11 +246,12 @@
         <span class="blind">전화번호 입력 영역</span> 
         <div class="field">
           <!-- tel 복사붙여넣기 s-->
+            <label for="tel1" class="blind">전화번호를 입력해주세요</label>
             <input
+            id="tel1"
             class="w-100"
             type="tel"
             placeholder="예: 010-0000-0000"
-            title="전화번호를 입력해주세요"
           />
           <!-- tel 복사붙여넣기 e-->
       </div>
@@ -238,13 +267,12 @@
         <span class="blind">텍스트박스 입력 영역</span> 
         <div class="field">
           <!-- textarea 복사붙여넣기 s-->
+          <label for="textarea1" class="blind">내용을 입력해주세요</label>
           <textarea 
-          name="textarea" 
-          id=""
-          class="w-100"
-          placeholder="내용을 입력해주세요"
-          >
-        </textarea>
+            name="textarea"
+            id="textarea1"
+            class="w-100"
+          ></textarea>
           <!-- textarea 복사붙여넣기 e-->
       </div>
     </div>
@@ -271,5 +299,5 @@ pre 요소 내의 텍스트는
     </div>
   </fieldset>
   <!-- textarea e-->
-
+</form>
 </div>
