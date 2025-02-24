@@ -320,6 +320,10 @@ header.on .menu-bar {
 }
 .main-content.on .top-title {
   padding: 2.4rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-default);
 }
 
 .sub-txt {
