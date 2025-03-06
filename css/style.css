@@ -1,7 +1,7 @@
 .part {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 1.6rem;
     padding-bottom: 4rem;
 }
 .part .field p:first-child {

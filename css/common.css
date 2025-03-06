@@ -30,7 +30,18 @@ fieldset {
   border: none;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
 /* pre s */
 pre {
   font-size: var(--font-default);
