@@ -105,7 +105,7 @@ button {
 
 /* 포커스 s */
 :focus {
-  outline: 3px solid #aaa;
+  outline: 3px solid #B9CFFA;
 }
 
 :focus:not(:focus-visible) {
@@ -122,7 +122,7 @@ select:focus {
 }
 
 input[type="checkbox"]:focus {
-  outline: 3px solid #aaa;
+  outline: 3px solid #B9CFFA;
 }
 
 input[type="checkbox"]:focus:not(:focus-visible) {
@@ -130,7 +130,7 @@ input[type="checkbox"]:focus:not(:focus-visible) {
 }
 
 input[type="radio"]:focus {
-  outline: 3px solid #aaa;
+  outline: 3px solid #B9CFFA;
 }
 
 input[type="radio"]:focus:not(:focus-visible) {
@@ -138,7 +138,7 @@ input[type="radio"]:focus:not(:focus-visible) {
 }
 
 textarea:focus {
-  outline: 3px solid #aaa;
+  outline: 3px solid #B9CFFA;
 }
 
 textarea:focus:not(:focus-visible) {

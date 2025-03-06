@@ -4,14 +4,14 @@
     --color-black: #000;
     --color-font: #949494;
     --color-border: #d9d9d9;
+    --color-gray: #e9e9e9;
     --color-main: #90b5f3;
     --color-sub: #90b5f3;
     --color-point: #90b5f3;
     --color-error: red;
 
     --font-default: 1.3rem;
-    --font-title-sub: 2.8rem;
-    --font-title-sub: 3.5rem;
+    --font-title-sub: 1.8rem;
     --font-title: 4rem;
 
     --font-weight-default: 300;

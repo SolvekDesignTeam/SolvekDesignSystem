@@ -3,301 +3,238 @@
   <p class="sub-txt">TEXT[텍스트]</p>
 </div>
 <div class="scroll-box">
-  <!-- title s -->
   <div class="main-title">
     <h1 class="title">TEXT[텍스트]</h1>
-    <ul class="work-tab">
+    <ul class="work-tab" role="tablist">
       <li class="html"><button type="button" role="tab">HTML</button></li>
-      <li class="css"><button type="button" role="tab">CSS</a></li>
-      <li class="js"><button type="button" role="tab">JS</a></li>
+      <li class="css"><button type="button" role="tab">CSS</button></li>
+      <li class="js"><button type="button" role="tab">JS</button></li>
     </ul>
   </div>
-  <!-- title e -->
 
-  <!-- text s -->
-   <form action="#">
-   <fieldset>
-    <div class="part">
-      <h2>TEXT</h2>
-      <span class="blind">텍스트 입력 영역</span> 
-      <div class="field">
-        <!-- input 복사붙여넣기 s-->
-        <label for="txt1" class="blind">텍스트 입력해주세요.</label>
-        
-        <input
-          id="txt1"
-          class="w-100 "
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <!-- input 복사붙여넣기 e-->
-      </div>
-      <!-- 반응형시 felx 클래스 추가 -->
-      <div class="field flex">
-        <!-- input 복사붙여넣기 s-->
-        <label for="txt2" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt2"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <label for="txt3" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt3"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <!-- input 복사붙여넣기 e-->
-      </div>
-      <div class="field flex">
-        <!-- input 복사붙여넣기 s-->
-        <label for="txt4" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt4"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <label for="txt5" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt5"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <label for="txt6" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt6"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <!-- input 복사붙여넣기 e-->
-      </div>
-      <div class="field flex">
-        <!-- input 복사붙여넣기 s-->
-        <label for="txt7" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt7"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <label for="txt8" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt8"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <label for="txt9" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt9"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <label for="txt10" class="blind">텍스트 입력해주세요.</label>
-        <input
-          id="txt10"
-          type="text"
-          placeholder="해당 텍스트 내용 작성"
-        />
-        <!-- input 복사붙여넣기 e-->
-      </div>
-    </div>
-   </fieldset>
-  <!-- text e -->
-
-
-  <!-- search s -->
-  <fieldset>
-    <div class="part">
-      <h2>search</h2>
-      <span class="blind">서치 입력 영역</span> 
-      <div class="field">
-        <!-- search 복사붙여넣기 s-->
-        <div class="search-input">
-          <label for="search1" class="search blind">검색어를 입력해주세요.</label>
+  <form>
+    <fieldset>
+      <div class="part">
+        <h2>TEXT</h2>
+        <span class="blind">텍스트 입력 영역</span>
+        <div class="field">
+          <label for="txt1" class="blind">텍스트 입력해주세요.</label>
           <input
-            id="search1"
-            class="search w-100 "
-            type="search"
-            placeholder="검색할 단어를 입력해주세요."
+            id="txt1"
+            class="w-100"
+            type="text"
           />
         </div>
-        <!-- search 복사붙여넣기 e-->
-      </div>
-    </div>
-  </fieldset>
-  <!-- search e -->
 
-
-  <!-- password s -->
-  <fieldset>
-    <div class="part">
-      <!-- 로그인 ui 제작할 때 form 필요시 사용 -->
-      <h2>password</h2>
-      <span class="blind">패스워드 입력 영역</span> 
-      <div class="field">
-        <!-- password 여기서부터 복사 붙여넣기 s-->
-        <div class="password">
-          <div class="w-100 password-input">
-            <label for="pwd1" class="blind">비밀번호를 입력해주세요.</label>
-            <input
-              id="pwd1"
-              class="w-100 "
-              type="password"
-              name="password"
-              aria-required="true"
-              minlength="8"
-              pattern="^(?=.*[a-z])|(?=.*[A-Z])|(?=.*\d)|(?=.*[@$!%*#?&])(?:.{8,})$"
-            />
-            <button
-              type="button"
-              class="password-btn"
-              aria-label="비밀번호 표시"
-            >
-              <span class="icon" aria-hidden="true"></span>
-            </button>
-          </div>
-          <p>
-            알파벳 <em>대소문자, 특수문자, 숫자 등 두 종류 이상</em>의 포함해
-            <em>8자리 이상</em>이어야합니다.
-          </p>
+        <div class="field flex">
+          <label for="txt2" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt2"
+            type="text"
+          />
+          <label for="txt3" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt3"
+            type="text"
+          />
         </div>
-        <!-- password 여기서부터 복사 붙여넣기 e-->
+
+        <div class="field flex">
+          <label for="txt4" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt4"
+            type="text"
+          />
+          <label for="txt5" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt5"
+            type="text"
+          />
+          <label for="txt6" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt6"
+            type="text"
+          />
+        </div>
+
+        <div class="field flex">
+          <label for="txt7" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt7"
+            type="text"
+          />
+          <label for="txt8" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt8"
+            type="text"
+          />
+          <label for="txt9" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt9"
+            type="text"
+          />
+          <label for="txt10" class="blind">텍스트 입력해주세요.</label>
+          <input
+            id="txt10"
+            type="text"
+          />
+        </div>
       </div>
-  
-      <div class="field">
-        <p>[ERROR]</p>
-        <!-- 에러 표시는 error 클래스 추가 -->
-        <div class="password error">
-          <div class="w-100 password-input">
-              <label for="pwd2" class="blind">비밀번호를 입력해주세요.</label>
+    </fieldset>
+
+    <fieldset>
+      <div class="part">
+        <h2>SEARCH</h2>
+        <span class="blind">서치 입력 영역</span>
+        <div class="field">
+          <div class="search-input">
+            <label for="search1" class="blind">검색어를 입력해주세요.</label>
+            <input
+              id="search1"
+              class="search w-100"
+              type="search"
+              placeholder="검색할 단어를 입력해주세요"
+            />
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="part">
+        <h2>PASSWORD</h2>
+        <span class="blind">패스워드 입력 영역</span>
+        <div class="field">
+          <div class="password">
+            <div class="w-100 password-input">
+              <label for="pwd1" class="blind">비밀번호를 입력해주세요.</label>
               <input
-                id="pwd2"
-                class="w-100 "
+                id="pwd1"
+                class="w-100"
                 type="password"
+                autocomplete="current-password"
                 name="password"
-                aria-required="true"
+                required
                 minlength="8"
                 pattern="^(?=.*[a-z])|(?=.*[A-Z])|(?=.*\d)|(?=.*[@$!%*#?&])(?:.{8,})$"
               />
-            <button
-              type="button"
-              class="password-btn"
-              aria-label="비밀번호 표시"
-            >
-              <span class="icon" aria-hidden="true"></span>
-            </button>
+              <button
+                type="button"
+                class="password-btn"
+                aria-label="비밀번호 표시"
+              >
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+            </div>
+            <p>알파벳 대소문자, 특수문자, 숫자 등 두 종류 이상의 포함해 8자리 이상이어야합니다.</p>
           </div>
-          <p>잘못된 조건입니다 다시 확인해주세요</p>
+        </div>
+
+        <div class="field">
+          <div class="password error">
+            <div class="w-100 password-input">
+              <label for="pwd2" class="blind">비밀번호를 입력해주세요.</label>
+              <input
+                id="pwd2"
+                class="w-100"
+                type="password"
+                autocomplete="current-password"
+                name="password"
+                required
+                minlength="8"
+                pattern="^(?=.*[a-z])|(?=.*[A-Z])|(?=.*\d)|(?=.*[@$!%*#?&])(?:.{8,})$"
+                aria-invalid="true"
+              />
+              <button
+                type="button"
+                class="password-btn"
+                aria-label="비밀번호 표시"
+              >
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+            </div>
+            <p role="alert">잘못된 조건입니다 다시 확인해주세요</p>
+          </div>
         </div>
       </div>
-    </div>
-  </fieldset>
-  <!-- password e-->
-   
-  <!-- email s-->
-   <fieldset>
-    <div class="email">
+    </fieldset>
+
+    <fieldset>
       <div class="part">
-        <h2>email</h2>
-        <span class="blind">이메일 입력 영역</span> 
+        <h2>EMAIL</h2>
+        <span class="blind">이메일 입력 영역</span>
         <div class="field">
-          <!-- email 복사붙여넣기 s-->
-            <label for="email1" class="blind">이메일을 입력해주세요.</label>
-            <input
+          <label for="email1" class="blind">이메일을 입력해주세요.</label>
+          <input
             id="email1"
-            class="w-100 "
+            class="w-100"
             type="email"
             placeholder="예: hong@example.com"
-            title="이메일 주소를 입력해주세요"
           />
-          <!-- email 복사붙여넣기 e-->
+        </div>
       </div>
-     </div>
-   </fieldset>
-  <!-- email e-->
+    </fieldset>
 
-   
-  <!-- url s-->
-   <fieldset>
-    <div class="url">
+    <fieldset>
       <div class="part">
-        <h2>url</h2>
-        <span class="blind">링크(url) 입력 영역</span> 
+        <h2>URL</h2>
+        <span class="blind">링크(url) 입력 영역</span>
         <div class="field">
-          <!-- url 복사붙여넣기 s-->
-            <label for="url1" class="blind">URL을 입력해주세요.</label>
-            <input
+          <label for="url1" class="blind">URL을 입력해주세요.</label>
+          <input
             id="url1"
             class="w-100"
             type="url"
             placeholder="예: www.abc.com"
-            title="url 링크를 입력해주세요"
           />
-          <!-- url 복사붙여넣기 e-->
+        </div>
       </div>
-    </div>
-   </fieldset>
-  <!-- url e-->
+    </fieldset>
 
-  <!-- tel s-->
-   <fieldset>
-    <div class="tel">
+    <fieldset>
       <div class="part">
-        <h2>tel</h2>
-        <span class="blind">전화번호 입력 영역</span> 
+        <h2>TEL</h2>
+        <span class="blind">전화번호 입력 영역</span>
         <div class="field">
-          <!-- tel 복사붙여넣기 s-->
-            <label for="tel1" class="blind">전화번호를 입력해주세요</label>
-            <input
+          <label for="tel1" class="blind">전화번호를 입력해주세요.</label>
+          <input
             id="tel1"
             class="w-100"
             type="tel"
             placeholder="예: 010-0000-0000"
           />
-          <!-- tel 복사붙여넣기 e-->
+        </div>
       </div>
-     </div>
-  </fieldset>
-  <!-- tel e-->
-   
-  <!-- textarea s-->
-  <fieldset>
-    <div class="textarea">
+    </fieldset>
+
+    <fieldset>
       <div class="part">
-        <h2>textarea</h2>
-        <span class="blind">텍스트박스 입력 영역</span> 
+        <h2>TEXTAREA</h2>
+        <span class="blind">텍스트박스 입력 영역</span>
         <div class="field">
-          <!-- textarea 복사붙여넣기 s-->
-          <label for="textarea1" class="blind">내용을 입력해주세요</label>
-          <textarea 
+          <label for="textarea1" class="blind">내용을 입력해주세요.</label>
+          <textarea
             name="textarea"
             id="textarea1"
             class="w-100"
           ></textarea>
-          <!-- textarea 복사붙여넣기 e-->
+        </div>
       </div>
-    </div>
-  </fieldset>
-  <!-- textarea e-->
+    </fieldset>
 
-
-  <!-- textarea s-->
-  <fieldset>
-    <div class="pre">
+    <fieldset>
       <div class="part">
-        <h2>pre</h2>
-        <span class="blind">pre 사용 영역</span> 
+        <h2>PRE</h2>
+        <span class="blind">pre 사용 영역</span>
         <div class="field">
-          <!-- pre 복사붙여넣기 s-->
-           <pre>
+          <pre>
 pre 요소 내의 텍스트는
 고정폭 글꼴(fixed-width font)을 사용하여 표현되며,
 사용된 띄어쓰기와 줄바꿈이 모두 그대로
 브라우저 화면에 나타납니다.
-           </pre>
-          <!-- pre 복사붙여넣기 e-->
+          </pre>
+        </div>
       </div>
-    </div>
-  </fieldset>
-  <!-- textarea e-->
-</form>
+    </fieldset>
+  </form>
 </div>

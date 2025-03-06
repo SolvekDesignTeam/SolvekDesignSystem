@@ -25,7 +25,7 @@
     <!-- 캐노니컬 URL -->
     <!-- <link rel="canonical" href="https://example.com/page"> -->
 
-    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -50,7 +50,7 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header role="banner">
       <div class="menu-bar">
         <button type="button" class="right-menu-img" aria-label="메뉴 펼치기">
           <span class="blind">메뉴</span>
@@ -59,10 +59,10 @@
     </header>
 
     <!-- content -->
-    <main>
+    <main role="main">
       <article>
         <!-- 왼쪽 메뉴 탭 -->
-        <aside class="aside-tab on">
+        <aside class="aside-tab on" role="complementary">
           <!-- 메인 바-->
           <div class="main-bar">
             <button type="button" class="logo-img" aria-label="메인으로 돌아가기">
@@ -74,22 +74,24 @@
           </div>
 
           <!-- 검색 -->
-          <fieldset class="component-search">
-            <label for="search" class="search-btn"></label>
+          <fieldset role="search" class="component-search">
+            <legend class="blind">검색</legend>
+            <label for="search" class="search-btn blind">검색어 입력</label>
             <input
-              type="text"
+              type="search"
               id="search"
               class="search-box"
               placeholder="검색"
+              aria-label="검색어를 입력하세요"
             />
           </fieldset>
 
           <!-- 탭 리스트 -->
-          <nav class="tab">
-            <!-- 아이콘이 들어가는 경우  aria-label="공지사항" 속성 사용-->
-            <ul role="menubar">
+          <nav class="tab" role="navigation">
+            <h2 class="blind">메인 메뉴</h2>
+            <ul>
               <li>
-                <button type="button" class="depth-one">
+                <button type="button" class="depth-one" aria-haspopup="true" aria-expanded="false">
                   <span></span>
                   BUTTON[버튼]
                 </button>
@@ -97,70 +99,60 @@
                   <button
                     class="addText"
                     type="button"
-                    aria-label="텍스트로페이지 이동"
                   >
                     TEXT[텍스트]
                   </button>
                   <button
                     class="addSelect"
                     type="button"
-                    aria-label="셀렉트페이지 이동"
                   >
                     SELECT[셀렉트]
                   </button>
                   <button
                     class="addCheckbox"
                     type="button"
-                    aria-label="체크박스페이지 이동"
                   >
                     CHECKBOX[체크박스]
                   </button>
                   <button
                     class="addRadio"
                     type="button"
-                    aria-label="라디오페이지 이동"
                   >
                     RADIO[라디오]
                   </button>
                   <button
                     class="addTime"
                     type="button"
-                    aria-label="타임페이지 이동"
                   >
                     TIME[타임]
                   </button>
                   <button
                     class="addRange"
                     type="button"
-                    aria-label="렌지페이지 이동"
                   >
                     RANG[렌지]
                   </button>
                   <button
                     class="addNumber"
                     type="button"
-                    aria-label="넘버페이지 이동"
                   >
                     NUMBER[넘버]
                   </button>
                   <button
                     class="addColor"
                     type="button"
-                    aria-label="컬러페이지 이동"
                   >
                     COLOR[컬러]
                   </button>
                   <button
                     class="addButton"
                     type="button"
-                    aria-label="버튼페이지 이동"
                   >
                     BUTTON[버튼]
                   </button>
                   <button
                     class="addIcon"
                     type="button"
-                    aria-label="아이콘페이지 이동"
                   >
                     ICON[아이콘]
                   </button>
@@ -169,8 +161,9 @@
               <li>
                 <button
                   type="button"
-                  aria-label="테이블 페이지 이동"
                   class="addTable depth-one"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   <span></span>
                   TABLE[테이블]
@@ -179,7 +172,6 @@
                   <button
                     class="addTable"
                     type="button"
-                    aria-label="테이블페이지 이동"
                   >
                     TABLE[테이블]
                   </button>
@@ -188,8 +180,9 @@
               <li>
                 <button
                   type="button"
-                  aria-label="탭 페이지 이동"
                   class="addTab depth-one"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   <span></span>
                   TAB[탭]
@@ -198,7 +191,6 @@
                   <button
                     class="addTab"
                     type="button"
-                    aria-label="테이블페이지 이동"
                   >
                     TAB[탭]
                   </button>
@@ -207,8 +199,9 @@
               <li>
                 <button
                   type="button"
-                  aria-label="팝업 페이지 이동"
                   class="addPopup depth-one"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   <span></span>
                   POPUP[팝업]
@@ -217,7 +210,6 @@
                   <button
                     class="addPopup"
                     type="button"
-                    aria-label="팝업페이지 이동"
                   >
                     POPUP[팝업]
                   </button>
@@ -226,8 +218,9 @@
               <li>
                 <button
                   type="button"
-                  aria-label="폰트 페이지 이동"
                   class="addFont depth-one"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   <span></span>
                   FONT[폰트]
@@ -236,7 +229,6 @@
                   <button
                     class="addFont"
                     type="button"
-                    aria-label="팝업페이지 이동"
                   >
                     FONT[폰트]
                   </button>
@@ -245,8 +237,9 @@
               <li>
                 <button
                   type="button"
-                  aria-label="라이브러리 페이지 이동"
                   class="addLibrary depth-one"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
                   <span></span>
                   LIBRARY[라이브러리]
@@ -255,28 +248,24 @@
                   <button
                     class="addSwiper"
                     type="button"
-                    aria-label="스와이퍼페이지 이동"
                   >
                     SWIPER[스와이퍼]
                   </button>
                   <button
                     class="addNice"
                     type="button"
-                    aria-label="나이스셀렉트 이동"
                   >
                     NICESELECT[나이스셀렉트]
                   </button>
                   <button
                     class="addSor"
                     type="button"
-                    aria-label="솔테이블 이동"
                   >
                     SORTABLE[솔테이블]
                   </button>
                   <button
                     class="addFlat"
                     type="button"
-                    aria-label="플랫픽커 이동"
                   >
                     FLATPICKR[플랫픽커]
                   </button>
@@ -287,13 +276,13 @@
         </aside>
 
         <!-- 메인 정보 -->
-        <section id="content" class="main-content on"></section>
+        <section id="content" class="main-content on" aria-label="메인 콘텐츠"></section>
 
       </article>
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer role="contentinfo"></footer>
 
     
     <!-- jQuery CDN -->

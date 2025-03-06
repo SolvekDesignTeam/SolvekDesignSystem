@@ -193,7 +193,9 @@ const Wbutton = {
         if (hash && window.location.hash !== hash) {
           window.location.hash = hash
         }
-        if (hash === '#/button/text') {
+        
+        const currentHash = window.location.hash
+        if (currentHash === '#/button/text') {
           initText()
         }
       }
@@ -201,10 +203,12 @@ const Wbutton = {
     xhr.send()
   }
   
+
   // 네비게이션 클릭 이벤트 핸들러
   function handleNavigationClick(e) {
     if(e.target.classList.contains('logo-img')) {
-      loadPage('index.html');
+      window.location.hash = '';
+      loadPage('main.html');
       return;
     }
 
@@ -219,7 +223,7 @@ const Wbutton = {
       }
     }
   }
-  
+
   // 해시 변경 이벤트 리스너 
   window.addEventListener('hashchange', function() {
     const hash = window.location.hash
@@ -238,13 +242,8 @@ const Wbutton = {
   })
   
   // 초기 해시 기반 페이지 로드
-  function initializeFromHash() {
+  window.addEventListener('load', function() {
     const hash = window.location.hash
-    const page = hashMapping[hash] || 'index.html'
-    
-    loadPage(page, hash || '#/')
-  }
-  
-  // 페이지 로드 시 초기화
-  document.addEventListener('DOMContentLoaded', initializeFromHash)
-  
+    const page = hashMapping[hash] || 'main.html'
+    loadPage(page, hash)
+  })

@@ -1,3 +1,28 @@
+/* style 참고 s */
+.checkbox-field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.checkbox-field .flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.checkbox-field .flex-row {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+.checkbox-field h3 {
+    font-size: var(--font-title-sub);
+    font-weight: var(--font-weight-title);
+}
+/* style 참고 e */
+
+
+/* 체크박스 기본 스타일 */
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -17,7 +42,6 @@
     cursor: pointer;
 }
 
-/* 체크박스 기본 스타일 */
 .checkbox label::before {
     content: '';
     position: absolute;
@@ -53,6 +77,16 @@
 .checkbox input:checked + label::after {
     opacity: 1;
 }
+
+/* 비활성화 스타일 */
+.checkbox input:disabled + label::before {
+    background-color: var(--color-gray);
+    cursor: not-allowed;
+}
+.checkbox input:disabled + label {
+    color: var(--color-font);
+}
+
 
 /* 호버 효과 */
 .checkbox label:hover::before {

@@ -1,7 +1,6 @@
 
 /* input s */
 input {
-  height: 3.5rem;
   border: var(--border-default);
   box-sizing: border-box;
   color: var(--color-font);
@@ -10,6 +9,34 @@ input {
   font-size: var(--font-default);
   border-radius: var(--border-radius-default);
 }
+input[type="text"] {
+  height: 3.5rem;
+}
+input[type="password"] {
+  height: 3.5rem;
+}
+input[type="email"] {
+  height: 3.5rem;
+}
+input[type="number"] {
+  height: 3.5rem;
+}
+input[type="tel"] {
+  height: 3.5rem;
+}
+input[type="search"] {
+  height: 3.5rem;
+}
+input[type="date"] {
+  height: 3.5rem;
+}
+input[type="time"] {
+  height: 3.5rem;
+}
+input[type="url"] {
+  height: 3.5rem;
+}
+
 /* input e*/
 
 /* textarea s */
@@ -40,7 +67,6 @@ label.search {
   width: 3.2rem;
   height: 100%;
 }
-
 /* input - search e */
 
 
