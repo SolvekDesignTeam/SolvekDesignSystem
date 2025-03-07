@@ -2,3 +2,38 @@
   BUTTON[버튼] /
   <p class="sub-txt">TIME[타임]</p>
 </div>
+<div class="scroll-box">
+  <!-- title s -->
+  <div class="main-title">
+    <h1 class="title">time[타임]</h1>
+    <ul class="work-tab">
+      <li class="html"><button type="button" role="tab">HTML</button></li>
+      <li class="css"><button type="button" role="tab">CSS</a></li>
+      <li class="js"><button type="button" role="tab">JS</a></li>
+    </ul>
+  </div>
+  <!-- title e -->
+  <fieldset>
+    <div class="part">
+      <h2>time</h2>
+      <span class="blind">타임 선택 영역</span>
+      <div class="part time-field">
+        <h3>기본</h3>
+        <div class="flex-column">
+          <div class="time">
+            <label for="time1" class="blind">시간 선택</label>
+            <input type="time" id="time1" name="time1" aria-label="시간 선택" />
+          </div>
+          <div class="time">
+            <label for="time2" class="blind">날짜 선택</label>
+            <input type="date" id="time2" name="time2" aria-label="날짜 선택" />
+          </div>
+          <div class="time">
+            <label for="time3" class="blind">날짜 및 시간 선택</label>
+            <input type="datetime-local" id="time3" name="time3" aria-label="날짜 및 시간 선택" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>

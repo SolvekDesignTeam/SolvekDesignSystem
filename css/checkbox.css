@@ -1,9 +1,5 @@
 /* style 참고 s */
-.checkbox-field {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+
 .checkbox-field h3 {
     font-size: var(--font-title-sub);
     font-weight: var(--font-weight-title);

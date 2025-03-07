@@ -221,6 +221,10 @@ const Wbutton = {
       if (hash) {
         loadPage(pageMapping[pageKey], hash)
       }
+      if(e.target.classList.contains('.side-tab button')) {
+        const box = e.target.closest('.part')
+        box.classList.toggle('on')
+      }
     }
   }
 

@@ -30,6 +30,11 @@ fieldset {
   border: none;
 }
 
+h3 {
+  font-size: var(--font-title-sub);
+  font-weight: var(--font-weight-title);
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
