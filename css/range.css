@@ -1,0 +1,57 @@
+input[type="range"] {
+  width: 100%;
+}
+
+[type="range"]::-webkit-slider-thumb { /* Webkit 기반 브라우저 */
+  appearance: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #007475;
+  transition: all 0.15s ease-in-out;
+  margin-top: calc((0.5rem - 1.5rem) * 0.5); 
+}
+[type="range"]::-moz-range-thumb { /* 파이어폭스 */
+  appearance: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #007475;
+  transition: all 0.15s ease-in-out;
+  margin-top: calc((0.5rem - 1.5rem) * 0.5); 
+}
+
+[type="range"]:focus::-webkit-slider-thumb { /* Webkit 기반 브라우저 */
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem rgba(0, 116, 117, .4);
+}
+[type="range"]:focus::-moz-range-thumb { /* 파이어폭스 */
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem rgba(0, 116, 117, .4);
+}
+[type="range"]::-webkit-slider-thumb:active { /* Webkit 기반 브라우저 */
+    background-color: #99c7c7;
+}
+[type="range"]::-moz-range-thumb:active { /* 파이어폭스 */
+    background-color: #99c7c7;
+}
+/* track */
+[type="range"]::-webkit-slider-runnable-track { /* Webkit 기반 브라우저 */
+    cursor: pointer;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #d3d9de;
+    border-radius: 0.25rem;
+}
+[type="range"]::-moz-range-track { /* 파이어폭스 */
+    cursor: pointer;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #d3d9de;
+    border-radius: 0.25rem;
+}
+
+/* disabled 속성 적용 시 */
+[type="range"]:disabled::-webkit-slider-thumb { /* Webkit 기반 브라우저 */
+    pointer-events: none;
+    background-color: #8b9aa7;
+}
+[type="range"]:disabled::-moz-range-thumb { /* 파이어폭스 */
+    background-color: #8b9aa7;
+}
