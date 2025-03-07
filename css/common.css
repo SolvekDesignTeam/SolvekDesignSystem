@@ -136,6 +136,9 @@ select:focus {
   border: 1px solid var(--color-b-04);
   background: #fff url(./img/icon/arrow-top.png) 94% 50% / 8px no-repeat;
 }
+input {
+  height: 3.5rem;
+}
 input[type="checkbox"]:focus {
   outline: 3px solid #B9CFFA;
 }
