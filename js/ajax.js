@@ -198,6 +198,9 @@ const Wbutton = {
         if (currentHash === '#/button/text') {
           initText()
         }
+        if (currentHash === '#/button/range') {
+          initRange()
+        }
       }
     }
     xhr.send()
