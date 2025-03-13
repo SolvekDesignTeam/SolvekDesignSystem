@@ -201,6 +201,9 @@ const Wbutton = {
         if (currentHash === '#/button/range') {
           initRange()
         }
+        if (currentHash === '#/button/number') {
+          initNumber()
+        }
       }
     }
     xhr.send()
