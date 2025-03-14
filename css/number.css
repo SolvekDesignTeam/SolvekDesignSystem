@@ -17,6 +17,8 @@ input[type="number"] {
   height: 3.5rem;
 }
 
+
+
 .input-number {
   width: 100%;
   position: absolute;
@@ -49,4 +51,9 @@ input[type="number"] {
   cursor: pointer;
   border-radius: var(--border-radius-default);
   position: relative;
+  transition: .3s var(--transition-default);
 } 
+
+.number-custom .number-custom-btn:hover {
+  background-color: var(--color-sub);
+}
