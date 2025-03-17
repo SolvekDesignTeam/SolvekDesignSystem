@@ -42,6 +42,10 @@ h3 {
   align-items: flex-start;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;

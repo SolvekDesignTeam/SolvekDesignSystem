@@ -1,0 +1,64 @@
+.button-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-btn {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: var(--border-default);
+  padding: .9rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--font-default);
+  min-width: 10rem;
+}
+
+.sub-btn {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: var(--border-default);
+  padding: .9rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--font-default);
+  min-width: 10rem;
+}
+
+.default-btn {
+  background-color: var(--color-border);
+  color: var(--color-white);
+  border: none;
+  padding: .9rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--font-default);
+  min-width: 10rem;
+}
+
+.width-btn {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: var(--font-default);
+  width: 100%;
+  border: var(--border-default);
+  padding: .9rem 2rem;
+  border-radius: 5px;
+}
+
+/* 파일 커스텀 */
+.file-btn {
+  display: none;
+}
+
+.file-field label {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: var(--border-default);
+  font-size: var(--font-default);
+  padding: .9rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+} 

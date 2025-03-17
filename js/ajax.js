@@ -10,7 +10,6 @@ const Wbutton = {
     time: "Wbutton/time.html",
     range: "Wbutton/range.html",
     number: "Wbutton/number.html",
-    color: "Wbutton/color.html",
     button: "Wbutton/button.html",
     icon: "Wbutton/icon.html",
   }
@@ -50,7 +49,6 @@ const Wbutton = {
     time: "addTime",
     range: "addRange",
     number: "addNumber",
-    color: "addColor",
     button: "addButton",
     icon: "addIcon",
   }
@@ -86,7 +84,6 @@ const Wbutton = {
     [WbuttonClasses.time]: Wbutton.time,
     [WbuttonClasses.range]: Wbutton.range,
     [WbuttonClasses.number]: Wbutton.number,
-    [WbuttonClasses.color]: Wbutton.color,
     [WbuttonClasses.button]: Wbutton.button,
     [WbuttonClasses.icon]: Wbutton.icon,
   
