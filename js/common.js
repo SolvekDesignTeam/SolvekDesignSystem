@@ -41,6 +41,13 @@ document.addEventListener('click', (e) => {
     $(".menu-bar").removeClass("on");
   }
 
+  // 페이징 버튼 클릭시 이벤트
+  if (e.target.closest('.side-tab') && e.target.tagName === 'BUTTON') {
+    document.querySelectorAll('.side-tab button').forEach(btn => {
+      btn.classList.remove('on');
+    });
+    e.target.classList.add('on');
+  }
 })
 
 // 리사이즈 설정

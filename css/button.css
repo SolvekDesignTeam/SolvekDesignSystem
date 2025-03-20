@@ -62,3 +62,95 @@
   border-radius: 5px;
   cursor: pointer;
 } 
+
+/* 파일 이미지 업로드 */
+.file-img {
+  height: 100%;
+  display: flex;
+  gap:.8rem;
+  flex-direction: column;
+}
+
+.file-img ul {
+  padding: 1rem;
+  height: 100%;
+  min-height: 12rem;
+  gap: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.8rem, auto));
+  border: var(--border-default);
+  border-radius: var(--border-radius-default);
+}
+
+.file-img ul li {
+  position: relative;
+  aspect-ratio: 1 / 1; 
+  max-width: 12rem;
+  border: var(--border-default);
+  border-radius: var(--border-radius-default);
+}
+
+.file-img ul li .file-img-box {
+  display: flex;
+  height: 100%;
+}
+
+.file-img ul li img {
+  height: 100%;
+  width: 100%;  
+  border-radius: var(--border-radius-default);
+}
+
+.file-img ul li .file-img-box img {
+  height: 100%;
+  width: 100%;  
+  background-color: #ddd;
+  border-radius: var(--border-radius-default);
+}
+
+.file-img label {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: var(--border-default);
+  font-size: var(--font-default);
+  padding: var(--padding-default);
+  border-radius: 5px;
+  max-width: 12rem;
+  text-align: center;
+  cursor: pointer;
+} 
+.file-img ul li .delete-btn {
+  right: .8rem;
+  top: .8rem;;
+  background-color: var(--color-border);
+  border-radius: var(--border-radius-default);
+  color: var(--color-black);
+  font-size: var(--font-default);
+  position: absolute;
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.file-img ul li .delete-btn:before {
+  color: var(--color-black);
+  width: 1.2rem;
+  height: .1rem;
+  background-color: var(--color-black);
+  content: '';
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+.file-img ul li .delete-btn:after {
+  color: var(--color-black);
+  width: 1.2rem;
+  height: .1rem;
+  left: 50%;
+  background-color: var(--color-black);
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-45deg);
+
+}

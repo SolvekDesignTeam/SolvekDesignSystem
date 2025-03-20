@@ -11,7 +11,6 @@ const Wbutton = {
     range: "Wbutton/range.html",
     number: "Wbutton/number.html",
     button: "Wbutton/button.html",
-    icon: "Wbutton/icon.html",
   }
   // 테이블
   const Wtable = {
@@ -50,7 +49,6 @@ const Wbutton = {
     range: "addRange",
     number: "addNumber",
     button: "addButton",
-    icon: "addIcon",
   }
   const WTableClasses = {
     table: "addTable",
@@ -85,7 +83,6 @@ const Wbutton = {
     [WbuttonClasses.range]: Wbutton.range,
     [WbuttonClasses.number]: Wbutton.number,
     [WbuttonClasses.button]: Wbutton.button,
-    [WbuttonClasses.icon]: Wbutton.icon,
   
     // 테이블
     [WTableClasses.table]: Wtable.table,
@@ -200,6 +197,10 @@ const Wbutton = {
         }
         if (currentHash === '#/button/number') {
           initNumber()
+        }
+        if (currentHash === '#/button/button') {
+          fileUpload()
+          fileUploadImg()
         }
       }
     }

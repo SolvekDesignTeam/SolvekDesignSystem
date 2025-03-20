@@ -185,11 +185,12 @@ header.on .menu-bar {
   cursor: pointer;
   color: var(--color-font);
   box-sizing: border-box;
+  transition: .3s var(--transition-default);
 }
 
 .side-tab button.on {
   color: var(--color-black);
-  font-weight: var(--font-weight-title);
+  font-weight: 600;
 }
 
 /* 왼쪽 메뉴 탭 e */
