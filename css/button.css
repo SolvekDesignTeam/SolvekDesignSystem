@@ -154,3 +154,37 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 
 }
+
+
+/* 페이징 */
+.paging-list {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.paging-list button {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: var(--border-default);
+  padding: .8rem 1.5rem;
+  border-radius: var(--border-radius-default);
+  cursor: pointer;
+  font-size: var(--font-default);
+  transition: .3s var(--transition-default);
+}
+
+.paging-list button:hover {
+  background-color: var(--color-border);
+  color: var(--color-white);
+}
+
+.paging-list button:active {
+  background-color: var(--color-border);
+  color: var(--color-white);
+}
+.paging-list button.on {
+  background-color: var(--color-border);
+  color: var(--color-white);
+}
+
