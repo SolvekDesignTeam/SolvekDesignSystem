@@ -51,16 +51,16 @@ document.addEventListener('click', (e) => {
 })
 
 // 리사이즈 설정
-window.addEventListener('resize', handleMenuState)
+// window.addEventListener('resize', handleMenuState)
 
-function handleMenuState() {
-  if ($(window).width() <= 768) {
-    $(".aside-tab, .main-content").removeClass("on");
-    $("header").removeClass("on");
-    setTimeout(function() {
-      $(".menu-bar").addClass("on");
-    }, 500);
-  }
-}
+// function handleMenuState() {
+//   if ($(window).width() <= 768) {
+//     $(".aside-tab, .main-content").removeClass("on");
+//     $("header").removeClass("on");
+//     setTimeout(function() {
+//       $(".menu-bar").addClass("on");
+//     }, 500);
+//   }
+// }
 
-handleMenuState()
+// handleMenuState()

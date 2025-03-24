@@ -125,7 +125,8 @@ button {
 
 /* 포커스 s */
 :focus {
-  outline: 3px solid #B9CFFA;
+  outline: 3px solid #5890ff;
+  transition: .3s var(--transition-default);
 }
 
 :focus:not(:focus-visible) {
@@ -138,13 +139,13 @@ select:invalid {
 
 select:focus {
   border: 1px solid var(--color-b-04);
-  background: #fff url(./img/icon/arrow-top.png) 94% 50% / 8px no-repeat;
+  background: #5890ff url(./img/icon/arrow-top.png) 94% 50% / 8px no-repeat;
 }
 input {
   height: 3.5rem;
 }
 input[type="checkbox"]:focus {
-  outline: 3px solid #B9CFFA;
+  outline: 3px solid #5890ff;
 }
 
 input[type="checkbox"]:focus:not(:focus-visible) {
@@ -152,7 +153,7 @@ input[type="checkbox"]:focus:not(:focus-visible) {
 }
 
 input[type="radio"]:focus {
-  outline: 3px solid #B9CFFA;
+  outline: 3px solid #5890ff;
 }
 
 input[type="radio"]:focus:not(:focus-visible) {
@@ -160,7 +161,7 @@ input[type="radio"]:focus:not(:focus-visible) {
 }
 
 textarea:focus {
-  outline: 3px solid #B9CFFA;
+  outline: 3px solid #5890ff;
 }
 
 textarea:focus:not(:focus-visible) {
