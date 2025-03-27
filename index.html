@@ -63,7 +63,9 @@
           <button type="button" class="logo-img" aria-label="메인으로 돌아가기">
             <span class="logo-box"></span>
             <span>solvek design system</span>
-        </button>
+          </button>
+          <!-- 모바일 메뉴 열기 -->
+          <button type="button" class="menu-img" aria-label="메뉴 열기"></button>
         </div>
         <div class="menu-bar-right">
           <!-- 검색 -->
@@ -78,8 +80,10 @@
               aria-label="검색어를 입력하세요"
             />
           </fieldset>
-          <span class="github-link-txt">github</span>
-          <a href="https://github.com/ujunghee/designSystem" class="github-link" aria-label="깃허브 링크"></a>
+          <div class="git">
+            <span class="github-link-txt">Github</span>
+            <a href="https://github.com/ujunghee/designSystem" class="github-link"></a>
+          </div>
         </div>
       </div>
     </header>
@@ -96,57 +100,81 @@
             <ul>
               <li>
                 <button type="button" class="depth-one" aria-haspopup="true" aria-expanded="false">
-                  BUTTON[버튼]
+                  Components
                 </button>
                 <div class="side-tab">
                   <button
-                    class="addText"
+                    class="addNavigation"
                     type="button"
                   >
-                    TEXT[텍스트]
+                  navigation
                   </button>
                   <button
-                    class="addSelect"
+                    class="addbutton"
                     type="button"
                   >
-                    SELECT[셀렉트]
+                    button
                   </button>
                   <button
-                    class="addCheckbox"
+                    class="addTable"
                     type="button"
                   >
-                    CHECKBOX[체크박스]
+                  table
                   </button>
                   <button
                     class="addRadio"
                     type="button"
                   >
-                    RADIO[라디오]
+                  radio
                   </button>
                   <button
-                    class="addTime"
+                    class="addInput"
                     type="button"
                   >
-                    TIME[타임]
+                  input
                   </button>
                   <button
-                    class="addRange"
+                    class="addDropdown"
                     type="button"
                   >
-                    RANGE[렌지]
+                  dropdown
                   </button>
                   <button
-                    class="addNumber"
+                    class="addCheckbox"
                     type="button"
                   >
-                    NUMBER[넘버]
+                  checkbox
                   </button>
                   <button
-                    class="addButton"
+                    class="addTabs"
                     type="button"
                   >
-                    BUTTON[버튼]
+                    tabs
                   </button>
+                  <button
+                    class="addModal"
+                    type="button"
+                  >
+                  modal
+                    </button>
+                    <button
+                      class="addConfirm"
+                      type="button"
+                    >
+                    confirm
+                    </button>
+                    <button
+                      class="addEmpty"
+                      type="button"
+                    >
+                    empty
+                    </button>
+                    <button
+                      class="addShadow"
+                      type="button"
+                    >
+                    shadow
+                    </button>
                 </div>
               </li>
               <li>
@@ -156,14 +184,38 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  TABLE[테이블]
+                  foundation
                 </button>
                 <div class="side-tab">
                   <button
-                    class="addTable"
+                    class="addFavicon"
                     type="button"
                   >
-                    TABLE[테이블]
+                  favicon
+                  </button>
+                  <button
+                    class="addColor"
+                    type="button"
+                  >
+                  color
+                  </button>
+                  <button
+                    class="addTypography"
+                    type="button"
+                  >
+                  typography
+                  </button>
+                  <button
+                    class="addSpacing"
+                    type="button"
+                  >
+                  spacing
+                  </button>
+                  <button
+                    class="addIconfraphy"
+                    type="button"
+                  >
+                  iconfraphy
                   </button>
                 </div>
               </li>
@@ -174,14 +226,14 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  TAB[탭]
+                Patterns
                 </button>
                 <div class="side-tab">
                   <button
                     class="addTab"
                     type="button"
                   >
-                    TAB[탭]
+                  Patterns
                   </button>
                 </div>
               </li>
@@ -192,68 +244,14 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  POPUP[팝업]
+                Brand
                 </button>
                 <div class="side-tab">
                   <button
                     class="addPopup"
                     type="button"
                   >
-                    POPUP[팝업]
-                  </button>
-                </div>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="depth-one"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  FONT[폰트]
-                </button>
-                <div class="side-tab">
-                  <button
-                    class="addFont"
-                    type="button"
-                  >
-                    FONT[폰트]
-                  </button>
-                </div>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="addLibrary depth-one"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  LIBRARY[라이브러리]
-                </button>
-                <div class="side-tab">
-                  <button
-                    class="addSwiper"
-                    type="button"
-                  >
-                    SWIPER[스와이퍼]
-                  </button>
-                  <button
-                    class="addNice"
-                    type="button"
-                  >
-                    NICESELECT[나이스셀렉트]
-                  </button>
-                  <button
-                    class="addSor"
-                    type="button"
-                  >
-                    SORTABLE[솔테이블]
-                  </button>
-                  <button
-                    class="addFlat"
-                    type="button"
-                  >
-                    FLATPICKR[플랫픽커]
+                  Brand
                   </button>
                 </div>
               </li>
@@ -263,7 +261,6 @@
 
         <!-- 메인 정보 -->
         <section id="content" class="main-content on" aria-label="메인 콘텐츠"></section>
-
       </article>
     </main>
 
@@ -279,6 +276,7 @@
     <!-- script -->
     <script src="./js/ajax.js"></script>
     <script src="./js/common.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
     <script src="./js/text.js"></script>
     <script src="./js/range.js"></script>
     <script src="./js/number.js"></script>

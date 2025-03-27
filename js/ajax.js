@@ -2,72 +2,66 @@
 const main = {
   main: "index.html"
 }
-const Wbutton = {
-    text: "Wbutton/text.html",
-    select: "Wbutton/select.html",
-    checkbox: "Wbutton/checkbox.html",
-    radio: "Wbutton/radio.html",
-    time: "Wbutton/time.html",
-    range: "Wbutton/range.html",
-    number: "Wbutton/number.html",
-    button: "Wbutton/button.html",
-  }
-  // 테이블
-  const Wtable = {
-    table: "Wtable/table.html",
-  }
-  // 폰트
-  const Wfont = {
-    font: "Wfont/font.html",
-  }
-  // 라이브러리
-  const Wlibrary = {
-    flatpicker: "Wlibrary/flatpicker.html",
-    niceselect: "Wlibrary/niceselect.html",
-    sortable: "Wlibrary/sortable.html",
-    swiper: "Wlibrary/swiper.html",
-  }
-  // 팝업
-  const Wpopup = {
-    popup: "Wpopup/popup.html",
-  }
-  // 탭
-  const Wtab = {
-    tab: "Wtab/tab.html",
-  }
+const Components = {
+  navigation: "Components/navigation.html",
+  button: "Components/button.html",
+  table: "Components/table.html",
+  radio: "Components/radio.html",
+  input: "Components/input.html",
+  dropdown: "Components/dropdown.html",
+  checkbox: "Components/checkbox.html",
+  tabs: "Components/tabs.html",
+  modal: "Components/modal.html",
+  confirm: "Components/confirm.html",
+  empty: "Components/empty.html",
+  shadow: "Components/shadow.html",
+}
+
+const foundation = {
+  favicon: "foundation/favicon.html",
+  color: "foundation/color.html",
+  typography: "foundation/typography.html",
+  spacing: "foundation/spacing.html",
+  icongraphy: "foundation/icongraphy.html",
+}
+
+// const patterns = {
   
-  // 버튼
-  const mainBtn = {
-    main:"logo-img"
-  }
-  const WbuttonClasses = {
-    text: "addText",
-    select: "addSelect",
-    checkbox: "addCheckbox",
-    radio: "addRadio",
-    time: "addTime",
-    range: "addRange",
-    number: "addNumber",
-    button: "addButton",
-  }
-  const WTableClasses = {
-    table: "addTable",
-  }
-  const WTabClasses = {
-    tab: "addTab",
-  }
-  const WpopupClasses = {
-    popup: "addPopup",
-  }
-  const WfontClasses = {
-    font: "addFont",
-  }
-  const WLibClasses = {
-    swiper: "addSwiper",
-    niceselect: "addNice",
-    sortable: "addSor",
-    flatpicker: "addFlat",
-  }
+// }
+
+// const brand = {
+
+// }
+
+// 메인 버튼 정의
+const mainBtn = {
+  main: "logo-img"
+}
+
+// 버튼 영역
+const ComponentsClasses = {
+  navigation: "addNavigation",
+  button: "addbutton",
+  table: "addTable",
+  radio: "addRadio",
+  input: "addInput",
+  dropdown: "addDropdown",
+  checkbox: "addCheckbox",
+  tabs: "addTabs",
+  modal: "addModal",
+  confirm: "addConfirm",
+  empty: "addEmpty",
+  shadow: "addShadow",
+}
+
+const foundationClasses = {
+  favicon: "addFavicon",
+  color: "addColor",
+  typography: "addTypography",
+  spacing: "addSpacing",
+  icongraphy: "addIconfraphy",
+}
+
   
   // 버튼과 페이지 매핑
   const pageMapping = {
@@ -75,104 +69,55 @@ const Wbutton = {
     [mainBtn.main] : main.main,
 
     // 컴포넌트
-    [WbuttonClasses.text]: Wbutton.text,
-    [WbuttonClasses.select]: Wbutton.select,
-    [WbuttonClasses.checkbox]: Wbutton.checkbox,
-    [WbuttonClasses.radio]: Wbutton.radio,
-    [WbuttonClasses.time]: Wbutton.time,
-    [WbuttonClasses.range]: Wbutton.range,
-    [WbuttonClasses.number]: Wbutton.number,
-    [WbuttonClasses.button]: Wbutton.button,
-  
-    // 테이블
-    [WTableClasses.table]: Wtable.table,
-  
-    // 탭
-    [WTabClasses.tab]: Wtab.tab,
-  
-    // 팝업
-    [WpopupClasses.popup]: Wpopup.popup,
-  
-    // 폰트
-    [WfontClasses.font]: Wfont.font,
-  
-    // 라이브러리
-    [WLibClasses.swiper]: Wlibrary.swiper,
-    [WLibClasses.niceselect]: Wlibrary.niceselect,
-    [WLibClasses.sortable]: Wlibrary.sortable,
-    [WLibClasses.flatpicker]: Wlibrary.flatpicker,
+    [ComponentsClasses.navigation]: Components.navigation,
+    [ComponentsClasses.button]: Components.button,
+    [ComponentsClasses.table]: Components.table,
+    [ComponentsClasses.radio]: Components.radio,
+    [ComponentsClasses.input]: Components.input,
+    [ComponentsClasses.dropdown]: Components.dropdown,
+    [ComponentsClasses.checkbox]: Components.checkbox,
+    [ComponentsClasses.tabs]: Components.tabs,
+    [ComponentsClasses.modal]: Components.modal,
+    [ComponentsClasses.confirm]: Components.confirm,
+    [ComponentsClasses.empty]: Components.empty,
+    [ComponentsClasses.shadow]: Components.shadow,
+
+    // 파운데이션
+    [foundationClasses.favicon]: foundation.favicon,
+    [foundationClasses.color]: foundation.color,
+    [foundationClasses.typography]: foundation.typography,
+    [foundationClasses.spacing]: foundation.spacing,
+    [foundationClasses.icongraphy]: foundation.icongraphy,
   }
   
   // 해시 매핑 자동 생성
   const hashMapping = {
     // 컴포넌트
-    ...Object.entries(Wbutton).reduce((acc, [key, value]) => ({
+    ...Object.entries(Components).reduce((acc, [key, value]) => ({
       ...acc,
       [`#/button/${key}`]: value
     }), {}),
     
-    // 테이블
-    ...Object.entries(Wtable).reduce((acc, [key, value]) => ({
-      ...acc,
-      [`#/table/${key}`]: value
-    }), {}),
-    
-    // 폰트
-    ...Object.entries(Wfont).reduce((acc, [key, value]) => ({
+    // 파운데이션
+    ...Object.entries(foundation).reduce((acc, [key, value]) => ({
       ...acc,
       [`#/font/${key}`]: value
     }), {}),
     
-    // 라이브러리
-    ...Object.entries(Wlibrary).reduce((acc, [key, value]) => ({
-      ...acc,
-      [`#/library/${key}`]: value
-    }), {}),
-    
-    // 팝업
-    ...Object.entries(Wpopup).reduce((acc, [key, value]) => ({
-      ...acc,
-      [`#/popup/${key}`]: value
-    }), {}),
-    
-    // 탭
-    ...Object.entries(Wtab).reduce((acc, [key, value]) => ({
-      ...acc,
-      [`#/tab/${key}`]: value
-    }), {})
   }
   
   // 클래스에서 해시로 변환하는 매핑 자동 생성
   const classToHash = {
-    ...Object.entries(WbuttonClasses).reduce((acc, [key, className]) => ({
+    ...Object.entries(ComponentsClasses).reduce((acc, [key, className]) => ({
       ...acc,
       [className]: `#/button/${key}`
     }), {}),
     
-    ...Object.entries(WTableClasses).reduce((acc, [key, className]) => ({
-      ...acc,
-      [className]: `#/table/${key}`
-    }), {}),
-    
-    ...Object.entries(WTabClasses).reduce((acc, [key, className]) => ({
-      ...acc,
-      [className]: `#/tab/${key}`
-    }), {}),
-    
-    ...Object.entries(WpopupClasses).reduce((acc, [key, className]) => ({
-      ...acc,
-      [className]: `#/popup/${key}`
-    }), {}),
-    
-    ...Object.entries(WfontClasses).reduce((acc, [key, className]) => ({
+    ...Object.entries(foundationClasses).reduce((acc, [key, className]) => ({
       ...acc,
       [className]: `#/font/${key}`
     }), {}),
     
-    ...Object.entries(WLibClasses).reduce((acc, [key, className]) => ({
-      ...acc,
-      [className]: `#/library/${key}`
-    }), {})
   }
   
   // 페이지 로드 함수
@@ -187,21 +132,20 @@ const Wbutton = {
         if (hash && window.location.hash !== hash) {
           window.location.hash = hash
         }
-        
-        const currentHash = window.location.hash
-        if (currentHash === '#/button/text') {
-          initText()
-        }
-        if (currentHash === '#/button/range') {
-          initRange()
-        }
-        if (currentHash === '#/button/number') {
-          initNumber()
-        }
-        if (currentHash === '#/button/button') {
-          fileUpload()
-          fileUploadImg()
-        }
+        // const currentHash = window.location.hash
+        // if (currentHash === '#/button/text') {
+        //   initText()
+        // }
+        // if (currentHash === '#/button/range') {
+        //   initRange()
+        // }
+        // if (currentHash === '#/button/number') {
+        //   initNumber()
+        // }
+        // if (currentHash === '#/button/button') {
+        //   fileUpload()
+        //   fileUploadImg()
+        // }
       }
     }
     xhr.send()

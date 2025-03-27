@@ -1,152 +1,56 @@
-
-/* 반응형 flex 추가 s */
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--border-radius-default );
-}
-.flex div {
-  flex: 1 0 auto;
-}
-.flex input {
-  flex: 1 0 auto;
-}
-/* 반응형 flex 추가 e */
-
-
 /* 반응형 미디어 쿼리 */
 @media (max-width: 1920px) {
 }
-@media (max-width: 1280px) {
-  .grid-box {
-    grid-template-columns: repeat(2, 1fr);
+
+@media (max-width: 1440px) {
+  .main-content .visaul .txtbox {
+    display: none;
   }
-  .solvek-home {
-    grid-column: 1 / 2;
-    /* aspect-ratio: 1 / 1; */
+  .visaul .solution-box {
+    grid-area: 1 / 2 / 4 / 3;
   }
-  .side-project {
-    grid-column: 2 / 3;
-    aspect-ratio: initial;
+  .visaul .line-box {
+    grid-area: 4 / 2 / 4 / 4;
+  }
+  .visaul .popuphello {
+    grid-area: 3 / 4 / 5 / 10;
+  }
+  .visaul .popupdiv {
+    grid-area: 3 / 6 / 1 / 5;
+  }
+  .visaul .line-box-2 {
+
+  }
+  .visaul .icon-list {
+
+  }
+  .visaul .shapes {
+    display: none;
+  }
+  .visaul .sol-txt {
+    display: none;
   }
 }
+
 @media (max-width: 1024px) {
-  .layout {
-    /* 2열 레이아웃 */
-    /* max-height: initial; */
+  main .aside-tab {
+    left: -30rem;
   }
-
-  .solvekdesign-system {
-    background-size: cover; /* 전체 너비 */
+  body main {
+    margin-left: 0;
+    width: 100%;
   }
-
-  .solvek-home {
-    /* grid-column: 1 / 2; */ /* 첫 번째 열 */
+  .menu-img {
+    display: block;
   }
-
-  .side-project {
-    /* grid-column: 2 / 3; */ /* 두 번째 열 */
-  }
-  .layout > div a {
-    padding: 3rem;
-    gap: 1rem;
-    /* text-align: center; */
-    max-width: 100%;
-    /* align-items: center; */
-  }
-  .title {
-    font-size: 2.8rem;
-    line-height: 4rem;
+  .main-content .visaul {
+    
   }
 }
 
 @media (max-width: 768px) {
-  /* 반응형 s */
-  .flex input,
-  .flex div {
-    flex: 1 0 100%;
-  }
-  /* 반응형 e */
-
-  /* 왼쪽 메뉴 탭 s */
-  .aside-tab {
-    left: -35rem;
-  }
-  .main-content {
-    width: 100%;
-    left: 0;
-    align-items: flex-start;
-  }
-  main .main-content.on {
-    width: 100%;
-    margin: 0;
-  }
-  .right-menu-img {
-    /* display: block; */
-  }
-  header,
-  header.on {
-    background: #fff;
-  }
-  .menu-bar.on {
-    width: 100%;
-  }
-  /* 왼쪽 메뉴 탭 e */
-
-  .layout {
-    /* 한 줄에 하나씩 표시 */
-    margin: 0;
-    width: 100%;
-  }
-  .layout > div a {
-      text-align: center; 
-      align-items: center;
-  }
-  .solvekdesign-system {
-    /* 한 열 전체 */
-    border-radius: 0;
-  }
-  .grid-box {
-    grid-template-columns: 1fr;
-    width: calc(100% - 4rem);
-    /* height: -webkit-fill-available; */
-  }
-  .solvek-home {
-    grid-column: 1 / 2; /* 한 열 전체 */
-    /* aspect-ratio: 1 / 1; */
-    min-height: 10rem;
-  }
-
-  .side-project {
-    grid-column: 1 /2; /* 한 열 전체 */
-    aspect-ratio: initial;
-    min-height: 10rem;
-  }
-  .scroll-box .main-title{
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 1rem;
-    margin: 4rem 0 3rem;
-  }
-  .scroll-box .work-tab {
-    width: 100%;
-  }
-  .scroll-box {
-    padding: 2rem
-  }
+ 
 }
 @media (max-width: 360px) {
-  .title {
-    font-size: 2.5rem;
-  }
-  .layout > div a {
-      padding: 3rem;
-      gap: 1rem;
-      /* justify-content: center; */
-      text-align: center;
-  }
-}
-
-@media (max-width: 320px) {
+ 
 }
