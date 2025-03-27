@@ -51,8 +51,16 @@ header .menu-bar-right .git {
   margin: 0;
   display: flex;
   align-items: center;
+  width: 25rem;
+  height: 35px;
   gap: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-white);
+  transition: .5s var(--transition-default);
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
 }
+
 .logo-img .logo-box {
   background: url(./img/logo_3x_w.png) 50% 50% / contain no-repeat ;
   width: 2.5rem;
@@ -60,12 +68,7 @@ header .menu-bar-right .git {
   display: block;
 }
 
-.logo-img span {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--color-white);
-  font-family: "Pretendard Variable", Pretendard, sans-serif;
-}
+
 
 .github-link-txt {
   font-size: 1.4rem;
@@ -120,11 +123,14 @@ header .menu-bar-right .git {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100% - 15rem);
+  height: 100%;
 }
 
 .tab ul {
   padding-left: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .tab li {
@@ -135,12 +141,12 @@ header .menu-bar-right .git {
 .tab li .depth-one {
   background: none;
   border: none;
-  font-size: var(--font-default);
   color: var(--color-black);
   height: 3.5rem;
   width: 100%;
   text-align: left;
   cursor: pointer;
+  font-size: 1.5rem;
   box-sizing: border-box;
 }
 
@@ -164,23 +170,25 @@ header .menu-bar-right .git {
 .side-tab {
   display: flex;
   flex-direction: column;
-  display: none;
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  gap: 1.2rem;
+  padding-left: 1.2rem;
 }
 
-.tab li.on .side-tab {
+/* .tab li.on .side-tab {
   display: block;
-}
+} */
 
 .side-tab button {
   width: 100%;
   height: 4rem;
-  font-size: var(--font-default);
+  font-size: 1.5rem;
   text-align: left;
-  padding-left: 3.6rem;
   cursor: pointer;
   color: var(--color-font);
   box-sizing: border-box;
-  transition: .3s var(--transition-default);
 }
 
 .side-tab button.on {

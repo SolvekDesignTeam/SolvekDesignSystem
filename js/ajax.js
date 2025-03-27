@@ -154,7 +154,14 @@ const foundationClasses = {
 
   // 네비게이션 클릭 이벤트 핸들러
   function handleNavigationClick(e) {
-    if(e.target.classList.contains('logo-img')) {
+    const logo = e.target.closest('.logo-img')
+    if(logo && logo.classList.contains('logo-img')) {
+      const sideTab = document.querySelector('.tab li')
+      const sideTabBtn = sideTab.querySelectorAll('button')
+      sideTab.classList.remove('on')
+      sideTabBtn.forEach(item => {
+        item.classList.remove('on')
+      });
       window.location.hash = '';
       loadPage('main.html');
       return;

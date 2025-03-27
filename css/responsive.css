@@ -46,6 +46,10 @@
   .main-content .visaul {
     
   }
+  .logo-img {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px) {
