@@ -46,15 +46,42 @@
   .main-content .visaul {
     
   }
-  .logo-img {
+  .main-bar .logo-img {
     visibility: hidden;
     opacity: 0;
+    display: none;
+  }
+  .main-bar .menu-img {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+  body .main-bar {
+    padding: 1.6rem;
   }
 }
 
 @media (max-width: 768px) {
- 
+  .main-content .icon-list {
+    display: none;
+  }
+  .visaul .popupdiv {
+    display: none;
+  }
+  .visaul .solution-box {
+    grid-area: 1 / 6 / 3 / 3;
+  }
+  .visaul .popuphello {
+    grid-area: 3 / 2 / 4 / 10;
+  }
+  .visaul .line-box {
+    grid-area: 4 / 2 / 4 / 6;
 }
+}
+
 @media (max-width: 360px) {
  
 }

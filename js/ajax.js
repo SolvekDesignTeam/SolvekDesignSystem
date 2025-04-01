@@ -156,11 +156,13 @@ const foundationClasses = {
   function handleNavigationClick(e) {
     const logo = e.target.closest('.logo-img')
     if(logo && logo.classList.contains('logo-img')) {
-      const sideTab = document.querySelector('.tab li')
-      const sideTabBtn = sideTab.querySelectorAll('button')
-      sideTab.classList.remove('on')
+      const tabLi = document.querySelector('.tab li')
+      const sideTab = tabLi.querySelector('.side-tab')
+      const sideTabBtn = tabLi.querySelectorAll('button')
+      tabLi.classList.remove('on')
       sideTabBtn.forEach(item => {
         item.classList.remove('on')
+        sideTab.style.maxHeight = '0'
       });
       window.location.hash = '';
       loadPage('main.html');
@@ -206,3 +208,4 @@ const foundationClasses = {
     const page = hashMapping[hash] || 'main.html'
     loadPage(page, hash)
   })
+

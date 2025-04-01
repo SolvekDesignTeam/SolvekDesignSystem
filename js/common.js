@@ -20,7 +20,6 @@ document.addEventListener("click", function (e) {
     }
     if(isopen) {
       sideTab.style.maxHeight = '0'
-      sideTab.style.visibility = 'hidden'
       sideTab.style.transition = 'max-height 0.5s var(--transition-default)'
     } else {
       sideTab.style.maxHeight = sideTab.scrollHeight + 'px'
@@ -40,17 +39,17 @@ document.addEventListener('click', (e) => {
   // 로고 클릭시 로드 초기화
 
   // 메뉴 열고 닫기
-  if(e.target.classList.contains('menu-img')){
-    document.querySelector(".aside-tab").classList.remove("on");
-    document.querySelector(".main-content").classList.remove("on");
-    document.querySelector("header").classList.remove("on");
-  }
-  if(e.target.classList.contains('right-menu-img')) {
-    document.querySelector(".aside-tab").classList.add("on");
-    document.querySelector("header").classList.add("on");
-    document.querySelector(".main-content").classList.add("on");
-    document.querySelector(".menu-bar").classList.remove("on");
-  }
+  // if(e.target.classList.contains('menu-img')){
+  //   document.querySelector(".aside-tab").classList.remove("on");
+  //   document.querySelector(".main-content").classList.remove("on");
+  //   document.querySelector("header").classList.remove("on");
+  // }
+  // if(e.target.classList.contains('right-menu-img')) {
+  //   document.querySelector(".aside-tab").classList.add("on");
+  //   document.querySelector("header").classList.add("on");
+  //   document.querySelector(".main-content").classList.add("on");
+  //   document.querySelector(".menu-bar").classList.remove("on");
+  // }
 
   // 페이징 버튼 클릭시 이벤트
   if (e.target.closest('.side-tab') && e.target.tagName === 'BUTTON') {
@@ -59,18 +58,26 @@ document.addEventListener('click', (e) => {
     });
     e.target.classList.add('on');
   }
+
+  if(e.target.closest('.menu-img')) {
+    const asideTab = document.querySelector('.aside-tab')
+    console.log(asideTab)
+    if(asideTab) {
+      asideTab.style.left = '0'
+    } else if(asideTab.style.left === '0') {
+      asideTab.style.left = '-30rem'
+    }
+  }
 })
 
 // 리사이즈 설정
 // window.addEventListener('resize', handleMenuState)
-
 // function handleMenuState() {
-//   if ($(window).width() <= 768) {
-//     $(".aside-tab, .main-content").removeClass("on");
-//     $("header").removeClass("on");
-//     setTimeout(function() {
-//       $(".menu-bar").addClass("on");
-//     }, 500);
+//   if (window.innerWidth <= 768) {
+//     const asideTab = document.querySelector('.aside-tab');
+//     const mainContent = document.querySelector('.main-content');
+//     if (asideTab) asideTab.style.left = '0';
+//     if (mainContent) mainContent.style.left = '-30rem';
 //   }
 // }
 
