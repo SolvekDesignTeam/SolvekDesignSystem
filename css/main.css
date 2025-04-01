@@ -13,6 +13,9 @@
   z-index: 3;
   box-shadow: 0 3px 8px #29334221;
 }
+.aside-tab.on {
+  left: 0;
+}
 header {
   z-index: 100;
   position: sticky;
