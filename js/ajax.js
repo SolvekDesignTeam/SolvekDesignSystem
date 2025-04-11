@@ -59,7 +59,7 @@ const foundationClasses = {
   color: "addColor",
   typography: "addTypography",
   spacing: "addSpacing",
-  icongraphy: "addIconfraphy",
+  icongraphy: "addIcongraphy",
 }
 
   
