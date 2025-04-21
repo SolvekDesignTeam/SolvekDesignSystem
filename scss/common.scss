@@ -205,7 +205,7 @@ textarea:focus:not(:focus-visible) {
 }
 /* width e */
 
-/* h1~h3 s */
+/* text size s */
 h2 {
   color: var(--gray-700);
   @include typography(Heading8-B-20);
@@ -223,16 +223,22 @@ h5 {
   @include typography(Heading6-B-24);
 }
 h6 {
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px; 
+  color: var(--black);
+  @include typography(Body3-M-14);
 }
 .top-info-txt {
   color: var(--gray-900);
   @include typography(Body2-R-16);
 }
-/* h1~h3 e */
+.top-container .infor p {
+  color: var(--gray-900);
+  @include typography(Body2-R-16);
+}
+.text-default {
+  color: var(--gray-700);
+  @include typography(Body3-R-14);
+}
+/* text size e */
 
 /* 기본값 수정 s*/
 p {

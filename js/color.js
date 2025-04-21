@@ -5,7 +5,6 @@ function initColor() {
   coloPaletteBtn.forEach(item => {
     if(item) {
       item.addEventListener('click', () => {
-        console.log('click', item)
         copyPopup.classList.add('active')
         setTimeout(() => {
           copyPopup.classList.remove('active')

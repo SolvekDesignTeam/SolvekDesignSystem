@@ -437,7 +437,7 @@ textarea:focus:not(:focus-visible) {
 }
 
 /* width e */
-/* h1~h3 s */
+/* text size s */
 h2 {
   color: var(--gray-700);
   font-size: var(--typography-Heading8-B-20-font-size);
@@ -471,10 +471,11 @@ h5 {
 }
 
 h6 {
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
+  color: var(--black);
+  font-size: var(--typography-Body3-M-14-font-size);
+  font-weight: var(--typography-Body3-M-14-font-weight);
+  line-height: var(--typography-Body3-M-14-line-height);
+  letter-spacing: var(--typography-Body3-M-14-letter-spacing);
 }
 
 .top-info-txt {
@@ -485,7 +486,23 @@ h6 {
   letter-spacing: var(--typography-Body2-R-16-letter-spacing);
 }
 
-/* h1~h3 e */
+.top-container .infor p {
+  color: var(--gray-900);
+  font-size: var(--typography-Body2-R-16-font-size);
+  font-weight: var(--typography-Body2-R-16-font-weight);
+  line-height: var(--typography-Body2-R-16-line-height);
+  letter-spacing: var(--typography-Body2-R-16-letter-spacing);
+}
+
+.text-default {
+  color: var(--gray-700);
+  font-size: var(--typography-Body3-R-14-font-size);
+  font-weight: var(--typography-Body3-R-14-font-weight);
+  line-height: var(--typography-Body3-R-14-line-height);
+  letter-spacing: var(--typography-Body3-R-14-letter-spacing);
+}
+
+/* text size e */
 /* 기본값 수정 s*/
 p {
   font-size: 1.5rem;
