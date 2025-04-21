@@ -95,13 +95,13 @@ const foundationClasses = {
     // 컴포넌트
     ...Object.entries(Components).reduce((acc, [key, value]) => ({
       ...acc,
-      [`#/button/${key}`]: value
+      [`#/Component/${key}`]: value
     }), {}),
     
     // 파운데이션
     ...Object.entries(foundation).reduce((acc, [key, value]) => ({
       ...acc,
-      [`#/font/${key}`]: value
+      [`#/Foundation/${key}`]: value
     }), {}),
     
   }
@@ -110,12 +110,12 @@ const foundationClasses = {
   const classToHash = {
     ...Object.entries(ComponentsClasses).reduce((acc, [key, className]) => ({
       ...acc,
-      [className]: `#/button/${key}`
+      [className]: `#/Component/${key}`
     }), {}),
     
     ...Object.entries(foundationClasses).reduce((acc, [key, className]) => ({
       ...acc,
-      [className]: `#/font/${key}`
+      [className]: `#/Foundation/${key}`
     }), {}),
     
   }
@@ -132,10 +132,10 @@ const foundationClasses = {
         if (hash && window.location.hash !== hash) {
           window.location.hash = hash
         }
-        // const currentHash = window.location.hash
-        // if (currentHash === '#/button/text') {
-        //   initText()
-        // }
+        const currentHash = window.location.hash
+        if (currentHash === '#/Foundation/color') {
+          initColor()
+        }
         // if (currentHash === '#/button/range') {
         //   initRange()
         // }
@@ -155,15 +155,20 @@ const foundationClasses = {
   // 네비게이션 클릭 이벤트 핸들러
   function handleNavigationClick(e) {
     const logo = e.target.closest('.logo-img')
+
     if(logo && logo.classList.contains('logo-img')) {
-      const tabLi = document.querySelector('.tab li')
-      const sideTab = tabLi.querySelector('.side-tab')
-      const sideTabBtn = tabLi.querySelectorAll('button')
-      tabLi.classList.remove('on')
-      sideTabBtn.forEach(item => {
-        item.classList.remove('on')
+      const tabLis = document.querySelectorAll('.tab li')
+      const sideTabs = document.querySelectorAll('.side-tab')
+      const sideTabBtn = document.querySelectorAll('button')
+      tabLis.forEach(tab => {
+        tab.classList.remove('on')
+      })
+      sideTabs.forEach(sideTab => {
         sideTab.style.maxHeight = '0'
-      });
+      })
+      sideTabBtn.forEach(btn => {
+        btn.classList.remove('on')
+      })
       window.location.hash = '';
       loadPage('main.html');
       return;

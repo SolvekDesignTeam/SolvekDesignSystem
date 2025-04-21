@@ -20,11 +20,11 @@ document.addEventListener("click", function (e) {
     }
     if(isopen) {
       sideTab.style.maxHeight = '0'
-      sideTab.style.transition = 'max-height 0.5s var(--transition-default)'
+      sideTab.style.transition = 'max-height 0.5s var(--transition-up)'
     } else {
       sideTab.style.maxHeight = sideTab.scrollHeight + 'px'
       sideTab.style.visibility = 'visible'
-      sideTab.style.transition = 'max-height 0.5s var(--transition-default)'
+      sideTab.style.transition = 'max-height 0.5s var(--transition-up)'
     }
   }
 })

@@ -1,0 +1,436 @@
+/* 컬러칩 복사 붙여넣기 팝업  e */
+.copy-popup {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--blue-400);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 10px 0px #0345c773;
+  transition: .6s cubic-bezier(0.63, 0, 0.14, 1.22);
+}
+.copy-popup.active {
+  top: 10rem;
+  opacity: 1;
+  visibility: visible;
+}
+.copy-popup p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+/* 컬러칩 복사 붙여넣기 팝업 e */
+
+/* 레이아웃 s */
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.color-palette h5 {
+  width: 100%;
+}
+
+.color-palette-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 0 0 calc(100% / 11 - 1.6rem);
+  min-width: 12rem;
+}
+
+.color-palette-box-item {
+  background: var(--white);
+  cursor: pointer;
+  padding: 1.2rem 1rem;
+  display: flex;
+  gap: .6rem;
+  border-radius: 1.2rem;
+  flex-direction: column;
+  transition: .3s ease;
+  min-height: 7.2rem;
+}
+.color-palette-box-item:hover {
+  transform: scale(1.02);
+  opacity: .8;
+}
+
+.color-palette-item-txt {
+  display: inline-flex;
+  max-width: fit-content;
+  border-radius: var(--border-radius-100);
+  border: 1px solid var(--gray-200);
+  padding: .4rem 1rem;
+  gap: .6rem;
+  opacity: .7;
+  background: var(--white);
+}
+
+.color-palette-item-txt span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: var(--border-radius-100);
+  border: 1px solid var(--gray-200);
+  background: var(--blue-50);
+}
+
+.color-palette-item-txt span.black {
+  background: #000;
+}
+
+.color-palette-item-txt span.white {
+  background: var(--white);
+}
+
+.color-palette-item-txt strong {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.color-palette-item-txt p {
+ font-size: .6rem;
+}
+
+.color-palette-box dl {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.color-palette-box dl dd {
+  font-size: 1rem;
+  color: var(--gray-700);
+}
+/* 레이아웃 e */
+
+/* 컬러  */
+.white .color-palette-box-item {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+}
+
+.grey-50 .color-palette-box-item {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+}
+
+.grey-100 .color-palette-box-item {
+  background: var(--gray-100);
+}
+
+.grey-200 .color-palette-box-item {
+  background: var(--gray-200);
+}
+
+.grey-300 .color-palette-box-item {
+  background: var(--gray-300);
+}
+
+.grey-400 .color-palette-box-item {
+  background: var(--gray-400);
+}
+
+.grey-500 .color-palette-box-item {
+  background: var(--gray-500);
+}
+
+.grey-600 .color-palette-box-item {
+  background: var(--gray-600);
+}
+
+.grey-700 .color-palette-box-item {
+  background: var(--gray-700);
+}
+
+.grey-800 .color-palette-box-item {
+  background: var(--gray-800);
+}
+
+.grey-900 .color-palette-box-item {
+  background: var(--gray-900);
+}
+
+.red-50 .color-palette-box-item {
+  background: var(--red-50);
+}
+
+.red-100 .color-palette-box-item {
+  background: var(--red-100);
+}
+
+.red-200 .color-palette-box-item {
+  background: var(--red-200);
+}
+
+.red-300 .color-palette-box-item {
+  background: var(--red-300);
+}
+
+.red-400 .color-palette-box-item {
+  background: var(--red-400);
+}
+
+.red-500 .color-palette-box-item {
+  background: var(--red-500);
+}
+
+.red-600 .color-palette-box-item {
+  background: var(--red-600);
+}
+
+.red-700 .color-palette-box-item {
+  background: var(--red-700);
+}
+
+.red-800 .color-palette-box-item {
+  background: var(--red-800);
+}
+
+.red-900 .color-palette-box-item {
+  background: var(--red-900);
+}
+
+.pink-50 .color-palette-box-item {
+  background: var(--pink-50);
+}
+
+.pink-100 .color-palette-box-item {
+  background: var(--pink-100);
+}
+
+.pink-200 .color-palette-box-item {
+  background: var(--pink-200);
+}
+
+.pink-300 .color-palette-box-item {
+  background: var(--pink-300);
+}
+
+.pink-400 .color-palette-box-item {
+  background: var(--pink-400);
+}
+
+.pink-500 .color-palette-box-item {
+  background: var(--pink-500);
+}
+
+.pink-600 .color-palette-box-item {
+  background: var(--pink-600);
+}
+
+.pink-700 .color-palette-box-item {
+  background: var(--pink-700);
+}
+
+.pink-800 .color-palette-box-item {
+  background: var(--pink-800);
+}
+
+.pink-900 .color-palette-box-item {
+  background: var(--pink-900);
+}
+  
+
+.deep-pink-50 .color-palette-box-item {
+  background: var(--deep-pink-50);
+}
+
+.deep-pink-100 .color-palette-box-item {
+  background: var(--deep-pink-100);
+}
+
+.deep-pink-200 .color-palette-box-item {
+  background: var(--deep-pink-200);
+}
+
+.deep-pink-300 .color-palette-box-item {
+  background: var(--deep-pink-300);
+}
+
+.deep-pink-400 .color-palette-box-item {
+  background: var(--deep-pink-400);
+}
+
+.deep-pink-500 .color-palette-box-item {
+  background: var(--deep-pink-500);
+}
+
+.deep-pink-600 .color-palette-box-item {
+  background: var(--deep-pink-600);
+}
+
+.deep-pink-700 .color-palette-box-item {
+  background: var(--deep-pink-700);
+}
+
+.deep-pink-800 .color-palette-box-item {
+  background: var(--deep-pink-800);
+}
+
+.deep-pink-900 .color-palette-box-item {
+  background: var(--deep-pink-900);
+}
+
+.navy-50 .color-palette-box-item {
+  background: var(--navy-50);
+}
+
+.navy-100 .color-palette-box-item {
+  background: var(--navy-100);
+}
+
+.navy-200 .color-palette-box-item {
+  background: var(--navy-200);
+}
+
+.navy-300 .color-palette-box-item {
+  background: var(--navy-300);
+}
+
+.navy-400 .color-palette-box-item {
+  background: var(--navy-400);
+}
+
+.navy-500 .color-palette-box-item {
+  background: var(--navy-500);
+}
+
+.navy-600 .color-palette-box-item {
+  background: var(--navy-600);
+}
+
+.navy-700 .color-palette-box-item {
+  background: var(--navy-700);
+}
+
+.navy-800 .color-palette-box-item {
+  background: var(--navy-800);
+}
+
+.navy-900 .color-palette-box-item {
+  background: var(--navy-900);
+}
+
+.yellow-50 .color-palette-box-item {
+  background: var(--yellow-50);
+}
+
+.yellow-100 .color-palette-box-item {
+  background: var(--yellow-100);
+}
+
+.yellow-200 .color-palette-box-item {
+  background: var(--yellow-200);
+}
+
+.yellow-300 .color-palette-box-item {
+  background: var(--yellow-300);
+}
+
+.yellow-400 .color-palette-box-item {
+  background: var(--yellow-400);
+}
+
+.yellow-500 .color-palette-box-item {
+  background: var(--yellow-500);
+}
+
+.yellow-600 .color-palette-box-item {
+  background: var(--yellow-600);
+}
+
+.yellow-700 .color-palette-box-item {
+  background: var(--yellow-700);
+}
+
+.yellow-800 .color-palette-box-item {
+  background: var(--yellow-800);
+}
+
+.yellow-900 .color-palette-box-item {
+  background: var(--yellow-900);
+}
+  
+.green-50 .color-palette-box-item {
+  background: var(--green-50);
+}
+
+.green-100 .color-palette-box-item {
+  background: var(--green-100);
+}
+
+.green-200 .color-palette-box-item {
+  background: var(--green-200);
+}
+
+.green-300 .color-palette-box-item {
+  background: var(--green-300);
+}
+
+.green-400 .color-palette-box-item {
+  background: var(--green-400);
+}
+
+.green-500 .color-palette-box-item {
+  background: var(--green-500);
+}
+
+.green-600 .color-palette-box-item {
+  background: var(--green-600);
+}
+
+.green-700 .color-palette-box-item {
+  background: var(--green-700);
+}
+
+.green-800 .color-palette-box-item {
+  background: var(--green-800);
+}
+
+.green-900 .color-palette-box-item {
+  background: var(--green-900);
+}
+
+.deep-green-50 .color-palette-box-item {
+  background: var(--deep-green-50);
+}
+
+.deep-green-100 .color-palette-box-item {
+  background: var(--deep-green-100);
+}
+
+.deep-green-200 .color-palette-box-item {
+  background: var(--deep-green-200);
+}
+
+.deep-green-300 .color-palette-box-item {
+  background: var(--deep-green-300);
+}
+
+.deep-green-400 .color-palette-box-item {
+  background: var(--deep-green-400);
+}
+
+.deep-green-500 .color-palette-box-item {
+  background: var(--deep-green-500);
+}
+
+.deep-green-600 .color-palette-box-item {
+  background: var(--deep-green-600);
+}
+
+.deep-green-700 .color-palette-box-item {
+  background: var(--deep-green-700);
+}
+
+.deep-green-800 .color-palette-box-item {
+  background: var(--deep-green-800);
+}
+
+.deep-green-900 .color-palette-box-item {
+  background: var(--deep-green-900);
+}

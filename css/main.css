@@ -1,3 +1,5 @@
+@import './root.css';
+
 /* 왼쪽 메뉴 탭 s */
 .aside-tab {
   width: 25rem;
@@ -5,7 +7,7 @@
   position: fixed;
   padding-top: 10rem;
   box-sizing: border-box;
-  transition: 0.5s var(--transition-default);
+  transition: 0.5s var(--transition-up);
   /* left: -30rem; */
   top: 0;
   left: 0;
@@ -29,7 +31,7 @@ header {
   background-color: #000;
   padding: 2rem 4rem;
   gap: 2rem;
-  transition: .3s var(--transition-default);
+  transition: .3s var(--transition-up);
 }
 
 header .menu-bar-left {
@@ -61,8 +63,8 @@ header .menu-bar-right .git {
   gap: 1.6rem;
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--color-white);
-  transition: .5s var(--transition-default);
+  color: var(--white);
+  transition: .5s var(--transition-up);
   font-family: "Pretendard Variable", Pretendard, sans-serif;
 }
 
@@ -79,14 +81,14 @@ header .menu-bar-right .git {
 .menu-img .line {
   width: 100%;
   height: 1.2rem;
-  background: var(--color-white);
+  background: var(,--white);
 }
 
 
 .github-link-txt {
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--white);
   font-family: "Pretendard Variable", Pretendard, sans-serif;
 }
 
@@ -96,7 +98,7 @@ header .menu-bar-right .git {
   height: 3.2rem;
   background: #4B4B4B url(./img/send.png) 50% 50% / 50% no-repeat;
   border-radius: 4px;
-  transition: .3s var(--transition-default);
+  transition: .3s var(--transition-up);
 }
 
 .github-link:hover {
@@ -177,7 +179,7 @@ header .menu-bar-right .git {
 
 .tab li.on button span {
   border-top-color: var(--color-main);
-  border-left-color: var(--color-white);
+  border-left-color: var(--white);
   vertical-align: middle;
   margin-right: 1.2rem;
 }
@@ -201,12 +203,13 @@ header .menu-bar-right .git {
   font-size: 1.5rem;
   text-align: left;
   cursor: pointer;
-  color: var(--color-font);
+  color: var(--gray-400);
   box-sizing: border-box;
+  transition: .3s var(--transition-up);
 }
 
 .side-tab button.on {
-  color: var(--color-black);
+  color: var(--navy-500);
   font-weight: 600;
 }
 
@@ -216,7 +219,7 @@ header .menu-bar-right .git {
 main {
   width: calc(100% - 25rem);
   margin-left: 25rem;
-  transition: .5s var(--transition-default);
+  transition: .5s var(--transition-up);
   height: 100%;
 }
 /* 메인 정보 e */
@@ -233,19 +236,19 @@ main {
   z-index: 1;
   padding: 2.4rem 2.4rem 2.4rem 7.2rem;
   pointer-events: none;
-  transition: .3s var(--transition-default);
+  transition: .3s var(--transition-up);
 }
 .main-content.on .top-title {
   padding: 2.4rem;
   top: 0;
-  background-color: var(--color-white);
+  background-color: var(--white);
   box-shadow: var(--shadow-default);
 }
 
 .sub-txt {
   margin: 0;
   font-size: var(--font-default);
-  color: var(--color-font);
+  color: var(--gray-400);
   margin-left: .3rem;
 }
 
@@ -299,7 +302,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-white);
+  color: var(,--white);
   cursor: pointer;
 }
 
@@ -394,7 +397,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(4, 25%); 
-  transition: .3s var(--transition-default);
+  transition: .3s var(--transition-up);
 }
 .visual .txtbox {
   grid-area: 1 / 1 / 2 / 5;
@@ -482,7 +485,7 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   align-content: space-between;
-  transition: .3s var(--transition-default);
+  transition: .3s var(--transition-up);
 }
 
 .hello p {
@@ -670,6 +673,7 @@ body {
 .content .flex ul {
   display: flex;
   gap: 3rem;
+  transition: .5s var(--transition-up);
   flex-wrap: wrap;
 }
 
@@ -689,7 +693,7 @@ body {
   position: relative;
   height: 15rem;
   justify-content: space-between;
-  transition: .3s var(--transition-default);
+  transition: .3s var(--transition-up);
 }
 .content .flex ul li a:hover {
   background-color: #edf0fe;
@@ -710,7 +714,7 @@ body {
   background: #4B4B4B;
   justify-content: center;
   align-items: center;
-  transition: .3s var(--transition-default);
+  transition: .3s var(--transition-up);
 }
 .content .flex ul li .more img {
   width: 60%;
@@ -776,3 +780,60 @@ body {
 }
 
 /* 메인 콘텐츠 e */
+
+
+/* 공통 스타일 s */
+.main-wrapper {
+  padding: 2rem 8rem 12.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.title-header {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+.main-top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.top-container {
+  display: flex;
+  gap: 4.8rem;
+  flex-direction: column;
+  
+}
+.top-container .top-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.top-container .infor {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+.top-container .infor p {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  color: var(--gray-400);
+  align-items: center;
+}
+.top-container .infor span.tip {
+  background: var(--gray-50);
+  color: var(--gray-400);
+  font-family: Pretendard;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: var(--border-radius-100);
+  padding: .6rem .8rem;
+}
+
+/* 공통 스타일 e */

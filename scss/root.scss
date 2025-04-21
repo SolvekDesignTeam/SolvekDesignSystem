@@ -1,0 +1,411 @@
+$default: (
+  font-family-main: "pretendard",
+  font-family-sub: "SUIT",
+  font-default: 1.4rem,
+  font-weight-default: 400,
+  border-default: 1px solid #d9d9d9,
+  border-radius-default: .6rem,
+  padding-default: .8rem,
+  height-default: 3.5rem,
+  transition-up: cubic-bezier(0.53, 0.01, 0.09, 0.99) 0s,
+  transition-down: cubic-bezier(0.63, 0, 0.14, 1.22),
+  color-focus: 1px solid #0066ff
+);
+
+$color: (
+  white: #fff,
+  gray-50: #F4F5F6,
+  gray-100: #E6E8EA,
+  gray-200: #CDD1D5,
+  gray-300: #B1B8BE,
+  gray-400: #8A949E,
+  gray-500: #6D7882,
+  gray-600: #58616A,
+  gray-700: #464C53,
+  gray-800: #33363D,
+  gray-900: #1E2124,
+
+  red-50:#FDEFEC,
+  red-100:#FCDFD9,
+  red-200:#F7AFA1,
+  red-300:#F48771,
+  red-400:#F05F42,
+  red-500:#DE3412,
+  red-600:#BD2C0F,
+  red-700:#8A240F,
+  red-800:#5C180A,
+  red-900:#390D05,
+
+  green-50:#EAF6EC,
+  green-100:#D8EEDD,
+  green-200:#A9DAB4,
+  green-300:#7EC88E,
+  green-400:#3FA654,
+  green-500:#228738,
+  green-600:#267337,
+  green-700:#285D33,
+  green-800:#1F4727,
+  green-900:#122B18,
+
+  deep-green-50:#EDF6F8,
+  deep-green-100:#D5EBF1,
+  deep-green-200:#ABD8E3,
+  deep-green-300:#75C0D1,
+  deep-green-400:#3D9FB8,
+  deep-green-500:#268097,
+  deep-green-600:#1F687A,
+  deep-green-700:#17505E,
+  deep-green-800:#113B45,
+  deep-green-900:#0E3139,
+
+  navy-50:#EEF2F7,
+  navy-100:#D6E0EB,
+  navy-200:#BACBDE,
+  navy-300:#90B0D5,
+  navy-400:#6B96C7,
+  navy-500:#346FB2,
+  navy-600:#1C589C,
+  navy-700:#063A74,
+  navy-800:#052B57,
+  navy-900:#031F3F,
+
+  deep-pink-50:#F6ECF3,
+  deep-pink-100:#E4C4DA,
+  deep-pink-200:#D7A8C9,
+  deep-pink-300:#C580B0,
+  deep-pink-400:#BA68A1,
+  deep-pink-500:#A94289,
+  deep-pink-600:#9A3C7D,
+  deep-pink-700:#782F61,
+  deep-pink-800:#5D244B,
+  deep-pink-900:#471C3A,
+
+  pink-50:#FBEFF0,
+  pink-100:#F5D6D9,
+  pink-200:#EBADB2,
+  pink-300:#E0858C,
+  pink-400:#D65C66,
+  pink-500:#D63D4A,
+  pink-600:#AB2B36,
+  pink-700:#7A1F26,
+  pink-800:#521419,
+  pink-900:#310C0F,
+
+  yellow-50:#FFF3DB,
+  yellow-100:#FFE0A3,
+  yellow-200:#FFC95C,
+  yellow-300:#FFB114,
+  yellow-400:#C78500,
+  yellow-500:#9E6A00,
+  yellow-600:#8A5C00,
+  yellow-700:#614100,
+  yellow-800:#422C00,
+  yellow-900:#2E1F00,
+
+  blue-50:#ECF2FE,
+  blue-100:#D8E5FD,
+  blue-200:#B1CEFB,
+  blue-300:#86AFF9,
+  blue-400:#4C87F6,
+  blue-500:#256EF4,
+  blue-600:#0B50D0,
+  blue-700:#083891,
+  blue-800:#052561,
+  blue-900:#03163A,
+);
+
+$typography: (
+  Heading1-B-48 : (
+    font-size: 4.8rem,
+    font-weight: 700,
+    line-height: 140%,
+    letter-spacing: 0
+  ),
+  Heading2-B-40 : (
+    font-size: 4rem,
+    font-weight: 700,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Heading3-B-36 : (
+    font-size: 3.6rem,
+    font-weight: 700,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Heading4-B-32 : (
+    font-size: 3.2rem,
+    font-weight: 700,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Heading5-B-28 : (
+    font-size: 2.8rem,
+    font-weight: 700,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Heading5-R-24 : (
+    font-size: 2.4rem,
+    font-weight: 400,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Heading6-B-24 : (
+    font-size: 2.4rem,
+    font-weight: 700,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Heading6-R-24 : (
+    font-size: 2.4rem,
+    font-weight: 400,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Heading6-B-22 : (
+    color: var(--Gray-gray-900, #1E2124),
+    font-family: Pretendard,
+    font-size: 22px,
+    font-weight: 700,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Heading7-R-22 : (
+    font-size: 2.2rem,
+    font-weight: 400,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Heading8-B-20 : (
+    font-size: 2rem,
+    font-weight: 700,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Heading8-R-20 : (
+    font-size: 2rem,
+    font-weight: 400,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Body1-B-18 : (
+    font-size: 1.8rem,
+    font-weight: 700,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Body1-M-18 : (
+    font-size: 1.8rem,
+    font-weight: 500,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Body1-R-18 : (
+    font-size: 1.8rem,
+    font-weight: 400,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Body2-B-16 : (
+    font-size: 1.6rem,
+    font-weight: 700,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Body2-M-16 : (
+    font-size: 1.6rem,
+    font-weight: 500,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Body2-R-16 : (
+    font-size: 1.6rem,
+    font-weight: 400,
+    line-height: 140%,
+    letter-spacing: -0.2px
+  ),
+  Body3-B-14 : (
+    font-size: 1.4rem,
+    font-weight: 700,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Body3-M-14 : (
+    font-size: 1.4rem,
+    font-weight: 500,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Body3-R-14 : (
+    font-size: 1.4rem,
+    font-weight: 400,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Body4-B-13 : (
+    font-size: 1.3rem,
+    font-weight: 700,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Body4-M-13 : (
+    font-size: 1.3rem,
+    font-weight: 500,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Body4-R-13 : (
+    font-size: 1.3rem,
+    font-weight: 400,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Body5-B-12 : (
+    font-size: 1.2rem,
+    font-weight: 700,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
+  Body5-R-12 : (
+    font-size: 1.2rem,
+    font-weight: 400,
+    letter-spacing: 0,
+    line-height: 140%
+  )
+);
+
+@mixin typography-vars {
+  @each $style-name, $properties in $typography {
+    @each $property, $value in $properties {
+      --typography-#{$style-name}-#{$property}: #{$value};
+    }
+  }
+}
+
+@mixin typography($style-name) {
+  font-size: var(--typography-#{$style-name}-font-size);
+  font-weight: var(--typography-#{$style-name}-font-weight);
+  line-height: var(--typography-#{$style-name}-line-height);
+  letter-spacing: var(--typography-#{$style-name}-letter-spacing);
+}
+
+
+
+:root {
+  @include typography-vars;
+  --font-family-main: #{map-get($default, font-family-main)};
+  --font-family-sub: #{map-get($default, font-family-sub)};
+  --font-default: #{map-get($default, font-default)};
+  --font-weight-default: #{map-get($default, font-weight-default)};
+  --border-default: #{map-get($default, border-default)};
+  --border-radius-default: #{map-get($default, border-radius-default)};
+  --padding-default: #{map-get($default, padding-default)};
+
+  --transition-up: #{map-get($default, transition-up)};
+  --transition-down: #{map-get($default, transition-down)};
+  --color-focus: #{map-get($default, color-focus)};
+  --height-default: #{map-get($default, height-default)};
+  
+  --white: #{map-get($color, white)};
+  --black: #{map-get($color, black)};
+  --gray-50: #{map-get($color, gray-50)};
+  --gray-100: #{map-get($color, gray-100)};
+  --gray-200: #{map-get($color, gray-200)};
+  --gray-300: #{map-get($color, gray-300)};
+  --gray-400: #{map-get($color, gray-400)};
+  --gray-500: #{map-get($color, gray-500)};
+  --gray-600: #{map-get($color, gray-600)};
+  --gray-700: #{map-get($color, gray-700)};
+  --gray-800: #{map-get($color, gray-800)};
+  --gray-900: #{map-get($color, gray-900)};
+  
+  --navy-50: #{map-get($color, navy-50)};
+  --navy-100: #{map-get($color, navy-100)};
+  --navy-200: #{map-get($color, navy-200)};
+  --navy-300: #{map-get($color, navy-300)};
+  --navy-400: #{map-get($color, navy-400)};
+  --navy-500: #{map-get($color, navy-500)};
+  --navy-600: #{map-get($color, navy-600)};
+  --navy-700: #{map-get($color, navy-700)};
+  --navy-800: #{map-get($color, navy-800)};
+  --navy-900: #{map-get($color, navy-900)};
+
+  --deep-pink-50: #{map-get($color, deep-pink-50)};
+  --deep-pink-100: #{map-get($color, deep-pink-100)};
+  --deep-pink-200: #{map-get($color, deep-pink-200)};
+  --deep-pink-300: #{map-get($color, deep-pink-300)};
+  --deep-pink-400: #{map-get($color, deep-pink-400)};
+  --deep-pink-500: #{map-get($color, deep-pink-500)};
+  --deep-pink-600: #{map-get($color, deep-pink-600)};
+  --deep-pink-700: #{map-get($color, deep-pink-700)};
+  --deep-pink-800: #{map-get($color, deep-pink-800)};
+  --deep-pink-900: #{map-get($color, deep-pink-900)};
+
+  --pink-50: #{map-get($color, pink-50)};
+  --pink-100: #{map-get($color, pink-100)};
+  --pink-200: #{map-get($color, pink-200)};
+  --pink-300: #{map-get($color, pink-300)};
+  --pink-400: #{map-get($color, pink-400)};
+  --pink-500: #{map-get($color, pink-500)};
+  --pink-600: #{map-get($color, pink-600)};
+  --pink-700: #{map-get($color, pink-700)};
+  --pink-800: #{map-get($color, pink-800)};
+  --pink-900: #{map-get($color, pink-900)};
+
+  --yellow-50: #{map-get($color, yellow-50)};
+  --yellow-100: #{map-get($color, yellow-100)};
+  --yellow-200: #{map-get($color, yellow-200)};
+  --yellow-300: #{map-get($color, yellow-300)};
+  --yellow-400: #{map-get($color, yellow-400)};
+  --yellow-500: #{map-get($color, yellow-500)};
+  --yellow-600: #{map-get($color, yellow-600)};
+  --yellow-700: #{map-get($color, yellow-700)};
+  --yellow-800: #{map-get($color, yellow-800)};
+  --yellow-900: #{map-get($color, yellow-900)};
+
+  --blue-50: #{map-get($color, blue-50)};
+  --blue-100: #{map-get($color, blue-100)};
+  --blue-200: #{map-get($color, blue-200)};
+  --blue-300: #{map-get($color, blue-300)};
+  --blue-400: #{map-get($color, blue-400)};
+  --blue-500: #{map-get($color, blue-500)};
+  --blue-600: #{map-get($color, blue-600)};
+  --blue-700: #{map-get($color, blue-700)};
+  --blue-800: #{map-get($color, blue-800)};
+  --blue-900: #{map-get($color, blue-900)};
+
+  --red-50: #{map-get($color, red-50)};
+  --red-100: #{map-get($color, red-100)};
+  --red-200: #{map-get($color, red-200)};
+  --red-300: #{map-get($color, red-300)};
+  --red-400: #{map-get($color, red-400)};
+  --red-500: #{map-get($color, red-500)};
+  --red-600: #{map-get($color, red-600)};
+  --red-700: #{map-get($color, red-700)};
+  --red-800: #{map-get($color, red-800)};
+  --red-900: #{map-get($color, red-900)};
+
+  --green-50: #{map-get($color, green-50)};
+  --green-100: #{map-get($color, green-100)};
+  --green-200: #{map-get($color, green-200)};
+  --green-300: #{map-get($color, green-300)};
+  --green-400: #{map-get($color, green-400)};
+  --green-500: #{map-get($color, green-500)};
+  --green-600: #{map-get($color, green-600)};
+  --green-700: #{map-get($color, green-700)};
+  --green-800: #{map-get($color, green-800)};
+  --green-900: #{map-get($color, green-900)};
+
+  --deep-green-50: #{map-get($color, deep-green-50)};
+  --deep-green-100: #{map-get($color, deep-green-100)};
+  --deep-green-200: #{map-get($color, deep-green-200)};
+  --deep-green-300: #{map-get($color, deep-green-300)};
+  --deep-green-400: #{map-get($color, deep-green-400)};
+  --deep-green-500: #{map-get($color, deep-green-500)};
+  --deep-green-600: #{map-get($color, deep-green-600)};
+  --deep-green-700: #{map-get($color, deep-green-700)};
+  --deep-green-800: #{map-get($color, deep-green-800)};
+  --deep-green-900: #{map-get($color, deep-green-900)};
+
+}
