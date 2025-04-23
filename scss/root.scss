@@ -145,6 +145,12 @@ $typography: (
     letter-spacing: 0,
     line-height: 140%
   ),
+  Heading5-R-28 : (
+    font-size: 2.8rem,
+    font-weight: 400,
+    letter-spacing: 0,
+    line-height: 140%
+  ),
   Heading5-R-24 : (
     font-size: 2.4rem,
     font-weight: 400,
@@ -163,7 +169,7 @@ $typography: (
     line-height: 140%,
     letter-spacing: -0.2px
   ),
-  Heading6-B-22 : (
+  Heading7-B-22 : (
     color: var(--Gray-gray-900, #1E2124),
     font-family: Pretendard,
     font-size: 22px,
@@ -193,84 +199,84 @@ $typography: (
     font-size: 1.8rem,
     font-weight: 700,
     line-height: 140%,
-    letter-spacing: -0.2px
+    letter-spacing: -0.3px
   ),
   Body1-M-18 : (
     font-size: 1.8rem,
     font-weight: 500,
     line-height: 140%,
-    letter-spacing: -0.2px
+    letter-spacing: -0.3px
   ),
   Body1-R-18 : (
     font-size: 1.8rem,
     font-weight: 400,
     line-height: 140%,
-    letter-spacing: -0.2px
+    letter-spacing: -0.3px
   ),
   Body2-B-16 : (
     font-size: 1.6rem,
     font-weight: 700,
     line-height: 140%,
-    letter-spacing: -0.2px
+    letter-spacing: -0.3px
   ),
   Body2-M-16 : (
     font-size: 1.6rem,
     font-weight: 500,
     line-height: 140%,
-    letter-spacing: -0.2px
+    letter-spacing: -0.3px
   ),
   Body2-R-16 : (
     font-size: 1.6rem,
     font-weight: 400,
     line-height: 140%,
-    letter-spacing: -0.2px
+    letter-spacing: -0.3px
   ),
   Body3-B-14 : (
     font-size: 1.4rem,
     font-weight: 700,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   ),
   Body3-M-14 : (
     font-size: 1.4rem,
     font-weight: 500,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   ),
   Body3-R-14 : (
     font-size: 1.4rem,
     font-weight: 400,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   ),
   Body4-B-13 : (
     font-size: 1.3rem,
     font-weight: 700,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   ),
   Body4-M-13 : (
     font-size: 1.3rem,
     font-weight: 500,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   ),
   Body4-R-13 : (
     font-size: 1.3rem,
     font-weight: 400,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   ),
   Body5-B-12 : (
     font-size: 1.2rem,
     font-weight: 700,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   ),
-  Body5-R-12 : (
+  Body5-R-12 : (  
     font-size: 1.2rem,
     font-weight: 400,
-    letter-spacing: 0,
+    letter-spacing: -0.3%,
     line-height: 140%
   )
 );

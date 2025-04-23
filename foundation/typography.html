@@ -54,8 +54,274 @@
           <td>50%</td>
           <td>8px</td>
         </tr>
-        <tr></tr>
       </tbody>
     </table>
+  </div>
+  <div class="typo-container">
+    <h5>Line height(Leading)</h5>
+    <p class="top-info-txt">웹접근성 가이드 WCAG 2.1(”행간은 적어도 문단내의 띄어쓰기space는 글자크기의 1.5배 이상이어야 한다”)에 따라 행간의 최소값은 1.5로 사용하며, 기본값은 1.6를 권장합니다.
+      이 때 결과값이 소수가 발생할 경우는 반올림한 수치를 적용합니다.</p>
+  </div>
+  <div class="typo-container margin-top-50">
+    <h5>Typography Naming Convention(폰트 네이밍 규칙 설명)</h5>
+    <p class="top-info-txt">솔브케이 디자인 시스템에서는 폰트 계층을 일관성 있고 직관적으로 정의하기 위해 다음과 같은 네이밍 규칙을 사용합니다.</p>
+    <div class="naming-container">
+      <h4 class="Heading3-B-36">Heading3-B-36</h4>
+      <div class="naming-container-inner">
+        <h5>Heading3</h5>
+        <span class="line"></span>
+        <p>폰트 스타일의 명칭 Heading 또는 Body 표시. 화면에서 제일 큰 폰트부터 계층 구조 1 시작</p>
+      </div>
+      <div class="naming-container-inner">
+        <h5>B</h5>
+        <span class="line"></span>
+        <p>폰트 굵기를 의미</p>
+      </div>
+      <div class="naming-container-inner">
+        <h5>36</h5>
+        <span class="line"></span>
+        <p>폰트 크기를 의미</p>
+      </div>
+    </div>
+  </div>
+  <div class="typo-container margin-top-50">
+    <h5>Font Weight Convention(폰트 두께 규정)</h5>
+    <p class="top-info-txt">font weight는 텍스트의 시각적 계층을 명확하게 구분하고, 가독성과 강조를 조절하는 핵심 요소입니다. UX 안정성을 유지하기 위해 아래와 같이 규정합니다.</p>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th><p>명칭</p></th>
+            <th><p>굵기(font-weight)</p></th>
+            <th><p>설명</p></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>  
+            <td>Bold</td>
+            <td>Regular</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>700</td>
+            <td>400</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>타이틀, 주요 강조 요소</td>
+            <td>일반 본문 텍스트</td>
+            <td>버튼,강조 텍스트</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="typo-container margin-top-50">
+    <h5>Type scale</h5>
+    <div class="table">
+      <table>
+        <caption class="blind">Type scale</caption>
+        <colgroup>
+          <col style="width: 50%;">
+          <col style="width: 15%;">
+          <col style="width: 15%;">
+          <col style="width: 15%;">
+          <col style="width: 15%;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th><p>Hierarchy</p></th>
+            <th><p>Pixels</p></th>
+            <th><p>Letter-spacing</p></th>
+            <th><p>Line-height</p></th>
+            <th><p>Font-weight</p></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p class="Heading1-B-48">Heading1-B-48</p></td>
+            <td>48px</td>
+            <td>0</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading2-B-40">Heading2-B-40</p></td>
+            <td>40px</td>
+            <td>0</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading3-B-36">Heading3-B-36</p></td>
+            <td>36px</td>
+            <td>0</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading4-B-32">Heading4-B-32</p></td>
+            <td>32px</td>
+            <td>0</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading5-B-28">Heading5-B-28</p></td>
+            <td>28px</td>
+            <td>0</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading5-R-28">Heading5-R-28</p></td>
+            <td>28px</td>
+            <td>0</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td><p class="Heading6-B-24">Heading6-B-24</p></td>
+            <td>24px</td>
+            <td>0</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading6-R-24">Heading6-R-24</p></td>
+            <td>24px</td>
+            <td>-0.2%</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td><p class="Heading7-B-22">Heading7-B-22</p></td>
+            <td>22px</td>
+            <td>-0.2%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading7-R-22">Heading7-R-22</p></td>
+            <td>22px</td>
+            <td>-0.2%</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td><p class="Heading8-B-20">Heading8-B-20</p></td>
+            <td>20px</td>
+            <td>-0.2%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Heading8-R-20">Heading8-R-20</p></td>
+            <td>20px</td>
+            <td>-0.2%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Body1-B-18">Body1-B-18</p></td>
+            <td>18px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Body1-M-18">Body1-M-18</p></td>
+            <td>18px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><p class="Body1-R-18">Body1-R-18</p></td>
+            <td>18px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td><p class="Body2-B-16">Body2-B-16</p></td>
+            <td>16px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Body2-M-16">Body2-M-16</p></td>
+            <td>16px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><p class="Body2-R-16">Body2-R-16</p></td>
+            <td>16px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td><p class="Body3-B-14">Body3-B-14</p></td>
+            <td>14px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Body3-M-14">Body3-M-14</p></td>
+            <td>14px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><p class="Body3-R-14">Body3-R-14</p></td>
+            <td>14px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td><p class="Body4-B-13">Body4-B-13</p></td>
+            <td>13px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Body4-M-13">Body4-M-13</p></td>
+            <td>13px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td><p class="Body4-R-13">Body4-R-13</p></td>
+            <td>13px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td><p class="Body5-B-12">Body5-B-12</p></td>
+            <td>12px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td><p class="Body5-R-12">Body5-R-12</p></td>
+            <td>12px</td>
+            <td>-0.3%</td>
+            <td>140%</td>
+            <td>Regular</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

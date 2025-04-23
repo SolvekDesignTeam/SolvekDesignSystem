@@ -1,3 +1,131 @@
+
 .typo-container {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
 }
+.naming-container {
+  border: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  &-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .line {
+      width: 2rem;
+      height: .1rem;
+      background-color: var(--gray-200);
+    }
+  }
+}
+
+// 폰트 사이즈
+.Heading1-B-48 {
+  @include typography(Heading1-B-48);
+  color: var(--gray-900);
+}
+.Heading2-B-40 {
+  @include typography(Heading2-B-40);
+  color: var(--gray-900);
+}
+.Heading3-B-36 {
+  @include typography(Heading3-B-36);
+  color: var(--gray-900);
+}
+.Heading4-B-32 {
+  @include typography(Heading4-B-32);
+  color: var(--gray-900);
+}
+.Heading5-B-28 {
+  @include typography(Heading5-B-28);
+  color: var(--gray-900);
+}
+.Heading5-R-28 {
+  @include typography(Heading5-R-28);
+  color: var(--gray-900);
+}
+.Heading6-B-24 {
+  @include typography(Heading6-B-24);
+  color: var(--gray-900);
+}
+.Heading6-R-24 {
+  @include typography(Heading6-R-24);
+  color: var(--gray-900);
+}
+.Heading7-B-22 {
+  @include typography(Heading7-B-22);
+  color: var(--gray-900);
+}
+.Heading7-R-22 {
+  @include typography(Heading7-R-22);
+  color: var(--gray-900);
+}
+.Heading8-B-20 {
+  @include typography(Heading8-B-20);
+  color: var(--gray-900);
+}
+.Heading8-R-20 {
+  @include typography(Heading8-R-20);
+  color: var(--gray-900);
+}
+.Body1-B-18 {
+  @include typography(Body1-B-18);
+  color: var(--gray-700);
+}
+.Body1-M-18 {
+  @include typography(Body1-M-18);
+  color: var(--gray-700);
+}
+.Body1-R-18 {
+  @include typography(Body1-R-18);
+  color: var(--gray-700);
+}
+.Body2-B-16 {
+  @include typography(Body2-B-16);
+  color: var(--gray-700);
+}
+.Body2-M-16 {
+  @include typography(Body2-M-16);
+  color: var(--gray-700);
+}
+.Body2-R-16 {
+  @include typography(Body2-R-16);
+  color: var(--gray-700);
+}
+.Body3-B-14 {
+  @include typography(Body3-B-14);
+  color: var(--gray-700);
+}
+.Body3-M-14 {
+  @include typography(Body3-M-14);
+  color: var(--gray-700);
+}
+.Body3-R-14 {
+  @include typography(Body3-R-14);
+  color: var(--gray-700);
+}
+.Body4-B-13 {
+  @include typography(Body4-B-13);
+  color: var(--gray-700);
+}
+.Body4-M-13 {
+  @include typography(Body4-M-13);
+  color: var(--gray-700);
+}
+.Body4-R-13 {
+  @include typography(Body4-R-13);
+  color: var(--gray-700);
+}
+.Body5-B-12 {
+  @include typography(Body5-B-12);
+  color: var(--gray-700);
+}
+.Body5-R-12 {
+  @include typography(Body5-R-12);
+  color: var(--gray-700);
+}
+
