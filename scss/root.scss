@@ -290,8 +290,6 @@ $typography: (
   letter-spacing: var(--typography-#{$style-name}-letter-spacing);
 }
 
-
-
 :root {
   @include typography-vars;
   --font-family-main: #{map-get($default, font-family-main)};

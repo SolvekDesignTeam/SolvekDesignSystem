@@ -297,6 +297,7 @@ form {
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -439,7 +440,7 @@ textarea:focus:not(:focus-visible) {
 /* width e */
 /* text size s */
 h2 {
-  color: var(--gray-700);
+  color: var(--gray-900);
   font-size: var(--typography-Heading8-B-20-font-size);
   font-weight: var(--typography-Heading8-B-20-font-weight);
   line-height: var(--typography-Heading8-B-20-line-height);
@@ -447,7 +448,7 @@ h2 {
 }
 
 h3 {
-  color: var(--gray-700);
+  color: var(--gray-900);
   font-size: var(--typography-Heading8-B-20-font-size);
   font-weight: var(--typography-Heading8-B-20-font-weight);
   line-height: var(--typography-Heading8-B-20-line-height);
@@ -455,11 +456,11 @@ h3 {
 }
 
 h4 {
-  color: var(--gray-900);
   font-size: var(--typography-Heading2-B-40-font-size);
   font-weight: var(--typography-Heading2-B-40-font-weight);
   line-height: var(--typography-Heading2-B-40-line-height);
   letter-spacing: var(--typography-Heading2-B-40-letter-spacing);
+  color: var(--gray-900);
 }
 
 h5 {
@@ -471,7 +472,7 @@ h5 {
 }
 
 h6 {
-  color: var(--black);
+  color: var(--gray-900);
   font-size: var(--typography-Body3-M-14-font-size);
   font-weight: var(--typography-Body3-M-14-font-weight);
   line-height: var(--typography-Body3-M-14-line-height);
@@ -479,7 +480,7 @@ h6 {
 }
 
 .top-info-txt {
-  color: var(--gray-900);
+  color: var(--gray-700);
   font-size: var(--typography-Body2-R-16-font-size);
   font-weight: var(--typography-Body2-R-16-font-weight);
   line-height: var(--typography-Body2-R-16-line-height);
@@ -487,7 +488,7 @@ h6 {
 }
 
 .top-container .infor p {
-  color: var(--gray-900);
+  color: var(--gray-700);
   font-size: var(--typography-Body2-R-16-font-size);
   font-weight: var(--typography-Body2-R-16-font-weight);
   line-height: var(--typography-Body2-R-16-line-height);
@@ -505,11 +506,11 @@ h6 {
 /* text size e */
 /* 기본값 수정 s*/
 p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.2px;
-  color: var(--gray-700, #5A5A5A);
+  color: var(--gray-700);
+  font-size: var(--typography-Body3-R-14-font-size);
+  font-weight: var(--typography-Body3-R-14-font-weight);
+  line-height: var(--typography-Body3-R-14-line-height);
+  letter-spacing: var(--typography-Body3-R-14-letter-spacing);
 }
 
 .color-d9 {
@@ -529,16 +530,64 @@ p {
 }
 
 /* 블라인드 e */
-/* 타이포그래피 s */
-table {
-  width: 100%;
+.flex-gap {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
 }
-table thead {
+
+.margin-top-50 {
+  margin-top: 5rem;
+}
+
+/* 테이블 s */
+.table {
+  width: 100%;
+  overflow-x: auto;
+}
+.table table {
+  width: 100%;
+  min-width: 1200px;
+}
+.table table thead {
   padding: 0 2rem;
 }
-table thead tr {
-  background-color: var(--gray-100);
+.table table thead tr {
   display: table-row;
-  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-200);
 }
-/* 타이포그래피 e *//*# sourceMappingURL=common.css.map */
+.table table thead tr th {
+  background-color: var(--gray-50);
+  text-align: left;
+  padding: 1.25rem 1.2rem;
+}
+.table table thead tr th p {
+  margin: 0.6rem 0;
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--gray-200);
+  color: var(--gray-700);
+  font-size: var(--typography-Body2-M-16-font-size);
+  font-weight: var(--typography-Body2-M-16-font-weight);
+  line-height: var(--typography-Body2-M-16-line-height);
+  letter-spacing: var(--typography-Body2-M-16-letter-spacing);
+}
+.table table tbody tr td {
+  color: var(--gray-700);
+  padding: 2.4rem 1.2rem;
+  box-sizing: border-box;
+  font-size: var(--typography-Body2-R-16-font-size);
+  font-weight: var(--typography-Body2-R-16-font-weight);
+  line-height: var(--typography-Body2-R-16-line-height);
+  letter-spacing: var(--typography-Body2-R-16-letter-spacing);
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+.table table tbody tr td strong {
+  color: var(--gray-700);
+  font-size: var(--typography-Body2-B-16-font-size);
+  font-weight: var(--typography-Body2-B-16-font-weight);
+  line-height: var(--typography-Body2-B-16-line-height);
+  letter-spacing: var(--typography-Body2-B-16-letter-spacing);
+}
+
+/* 테이블 e *//*# sourceMappingURL=common.css.map */

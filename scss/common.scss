@@ -81,6 +81,7 @@ form {
 }
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #636363;
@@ -207,31 +208,31 @@ textarea:focus:not(:focus-visible) {
 
 /* text size s */
 h2 {
-  color: var(--gray-700);
+  color: var(--gray-900);
   @include typography(Heading8-B-20);
 }
 h3 {
-  color: var(--gray-700);
+  color: var(--gray-900);
   @include typography(Heading8-B-20);
 }
 h4 {
-  color: var(--gray-900);
   @include typography(Heading2-B-40);
+  color: var(--gray-900);
 }
 h5 {
   color: var(--gray-900);
   @include typography(Heading6-B-24);
 }
 h6 {
-  color: var(--black);
+  color: var(--gray-900);
   @include typography(Body3-M-14);
 }
 .top-info-txt {
-  color: var(--gray-900);
+  color: var(--gray-700);
   @include typography(Body2-R-16);
 }
 .top-container .infor p {
-  color: var(--gray-900);
+  color: var(--gray-700);
   @include typography(Body2-R-16);
 }
 .text-default {
@@ -242,11 +243,8 @@ h6 {
 
 /* 기본값 수정 s*/
 p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 140%; 
-  letter-spacing: -0.2px;
-  color: var(--gray-700, #5A5A5A);
+  color: var(--gray-700);
+  @include typography(Body3-R-14);
 }
 
 .color-d9 {
@@ -266,22 +264,60 @@ p {
 }
 /* 블라인드 e */
 
-/* 타이포그래피 s */
-table {
-  width: 100%;
-  thead {
-    padding: 0 2rem;
-    tr {
-      background-color: var(--gray-100);
-      display: table-row;
-      padding: 1rem 0;
-    }
-  }
-  tbody {
-    tr{
-
-    }
-  } 
+// gap
+.flex-gap {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
 }
-/* 타이포그래피 e */
+.margin-top-50 {
+  margin-top: 5rem;
+}
+
+/* 테이블 s */
+.table {
+  width: 100%;
+  overflow-x: auto;  
+  table {
+    width: 100%;
+    min-width: 1200px;
+    thead {
+      padding: 0 2rem;
+      tr {
+        display: table-row;
+        border-bottom: 1px solid var(--gray-200);
+        th {
+          background-color: var(--gray-50);
+          text-align: left;
+          padding: 1.25rem 1.2rem;
+          p {
+            margin: .6rem 0;
+            padding-left: 1.2rem;
+            border-left: 1px solid var(--gray-200);
+            color: var(--gray-700);
+            @include typography(Body2-M-16);
+          }
+        }
+      }
+      
+    }
+    tbody {
+      tr{
+        td {
+          color: var(--gray-700);
+          padding: 2.4rem 1.2rem;
+          box-sizing: border-box;
+          @include typography(Body2-R-16);
+          text-align: left;
+          border-bottom: 1px solid var(--gray-200);
+          strong {
+            color: var(--gray-700);
+            @include typography(Body2-B-16);
+          }
+        }
+      }
+    } 
+  }
+}
+/* 테이블 e */
 
