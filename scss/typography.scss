@@ -1,8 +1,27 @@
+@import 'root';
 
 .typo-container {
   display: flex;
   flex-direction: column;
   gap: 1rem; 
+  table {
+    tr {
+      td {
+        &:first-child {
+          p {
+            cursor: pointer;
+            display: inline;
+            padding: 0 1rem;
+            transition: .3s var(--transition-up);
+            &:hover {
+              background-color: var(--blue-50);
+              border-radius: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .naming-container {
   border: 1px solid var(--gray-200);

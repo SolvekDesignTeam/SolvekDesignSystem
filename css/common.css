@@ -20,6 +20,10 @@
   --typography-Heading5-B-28-font-weight: 700;
   --typography-Heading5-B-28-letter-spacing: 0;
   --typography-Heading5-B-28-line-height: 140%;
+  --typography-Heading5-R-28-font-size: 2.8rem;
+  --typography-Heading5-R-28-font-weight: 400;
+  --typography-Heading5-R-28-letter-spacing: 0;
+  --typography-Heading5-R-28-line-height: 140%;
   --typography-Heading5-R-24-font-size: 2.4rem;
   --typography-Heading5-R-24-font-weight: 400;
   --typography-Heading5-R-24-letter-spacing: 0;
@@ -32,12 +36,12 @@
   --typography-Heading6-R-24-font-weight: 400;
   --typography-Heading6-R-24-line-height: 140%;
   --typography-Heading6-R-24-letter-spacing: -0.2px;
-  --typography-Heading6-B-22-color: var(--Gray-gray-900, #1E2124);
-  --typography-Heading6-B-22-font-family: Pretendard;
-  --typography-Heading6-B-22-font-size: 22px;
-  --typography-Heading6-B-22-font-weight: 700;
-  --typography-Heading6-B-22-line-height: 140%;
-  --typography-Heading6-B-22-letter-spacing: -0.2px;
+  --typography-Heading7-B-22-color: var(--Gray-gray-900, #1E2124);
+  --typography-Heading7-B-22-font-family: Pretendard;
+  --typography-Heading7-B-22-font-size: 22px;
+  --typography-Heading7-B-22-font-weight: 700;
+  --typography-Heading7-B-22-line-height: 140%;
+  --typography-Heading7-B-22-letter-spacing: -0.2px;
   --typography-Heading7-R-22-font-size: 2.2rem;
   --typography-Heading7-R-22-font-weight: 400;
   --typography-Heading7-R-22-line-height: 140%;
@@ -53,58 +57,58 @@
   --typography-Body1-B-18-font-size: 1.8rem;
   --typography-Body1-B-18-font-weight: 700;
   --typography-Body1-B-18-line-height: 140%;
-  --typography-Body1-B-18-letter-spacing: -0.2px;
+  --typography-Body1-B-18-letter-spacing: -0.3px;
   --typography-Body1-M-18-font-size: 1.8rem;
   --typography-Body1-M-18-font-weight: 500;
   --typography-Body1-M-18-line-height: 140%;
-  --typography-Body1-M-18-letter-spacing: -0.2px;
+  --typography-Body1-M-18-letter-spacing: -0.3px;
   --typography-Body1-R-18-font-size: 1.8rem;
   --typography-Body1-R-18-font-weight: 400;
   --typography-Body1-R-18-line-height: 140%;
-  --typography-Body1-R-18-letter-spacing: -0.2px;
+  --typography-Body1-R-18-letter-spacing: -0.3px;
   --typography-Body2-B-16-font-size: 1.6rem;
   --typography-Body2-B-16-font-weight: 700;
   --typography-Body2-B-16-line-height: 140%;
-  --typography-Body2-B-16-letter-spacing: -0.2px;
+  --typography-Body2-B-16-letter-spacing: -0.3px;
   --typography-Body2-M-16-font-size: 1.6rem;
   --typography-Body2-M-16-font-weight: 500;
   --typography-Body2-M-16-line-height: 140%;
-  --typography-Body2-M-16-letter-spacing: -0.2px;
+  --typography-Body2-M-16-letter-spacing: -0.3px;
   --typography-Body2-R-16-font-size: 1.6rem;
   --typography-Body2-R-16-font-weight: 400;
   --typography-Body2-R-16-line-height: 140%;
-  --typography-Body2-R-16-letter-spacing: -0.2px;
+  --typography-Body2-R-16-letter-spacing: -0.3px;
   --typography-Body3-B-14-font-size: 1.4rem;
   --typography-Body3-B-14-font-weight: 700;
-  --typography-Body3-B-14-letter-spacing: 0;
+  --typography-Body3-B-14-letter-spacing: -0.3%;
   --typography-Body3-B-14-line-height: 140%;
   --typography-Body3-M-14-font-size: 1.4rem;
   --typography-Body3-M-14-font-weight: 500;
-  --typography-Body3-M-14-letter-spacing: 0;
+  --typography-Body3-M-14-letter-spacing: -0.3%;
   --typography-Body3-M-14-line-height: 140%;
   --typography-Body3-R-14-font-size: 1.4rem;
   --typography-Body3-R-14-font-weight: 400;
-  --typography-Body3-R-14-letter-spacing: 0;
+  --typography-Body3-R-14-letter-spacing: -0.3%;
   --typography-Body3-R-14-line-height: 140%;
   --typography-Body4-B-13-font-size: 1.3rem;
   --typography-Body4-B-13-font-weight: 700;
-  --typography-Body4-B-13-letter-spacing: 0;
+  --typography-Body4-B-13-letter-spacing: -0.3%;
   --typography-Body4-B-13-line-height: 140%;
   --typography-Body4-M-13-font-size: 1.3rem;
   --typography-Body4-M-13-font-weight: 500;
-  --typography-Body4-M-13-letter-spacing: 0;
+  --typography-Body4-M-13-letter-spacing: -0.3%;
   --typography-Body4-M-13-line-height: 140%;
   --typography-Body4-R-13-font-size: 1.3rem;
   --typography-Body4-R-13-font-weight: 400;
-  --typography-Body4-R-13-letter-spacing: 0;
+  --typography-Body4-R-13-letter-spacing: -0.3%;
   --typography-Body4-R-13-line-height: 140%;
   --typography-Body5-B-12-font-size: 1.2rem;
   --typography-Body5-B-12-font-weight: 700;
-  --typography-Body5-B-12-letter-spacing: 0;
+  --typography-Body5-B-12-letter-spacing: -0.3%;
   --typography-Body5-B-12-line-height: 140%;
   --typography-Body5-R-12-font-size: 1.2rem;
   --typography-Body5-R-12-font-weight: 400;
-  --typography-Body5-R-12-letter-spacing: 0;
+  --typography-Body5-R-12-letter-spacing: -0.3%;
   --typography-Body5-R-12-line-height: 140%;
   --font-family-main: pretendard;
   --font-family-sub: SUIT;
@@ -518,6 +522,31 @@ p {
 }
 
 /* 기본값 수정 s*/
+/* 컬러칩 복사 붙여넣기 팝업  e */
+.copy-popup {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--blue-400);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 10px 0px rgba(3, 69, 199, 0.4509803922);
+  transition: 0.6s cubic-bezier(0.63, 0, 0.14, 1.22);
+}
+.copy-popup.active {
+  top: 10rem;
+  opacity: 1;
+  visibility: visible;
+}
+.copy-popup p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/* 컬러칩 복사 붙여넣기 팝업 e */
 /* 블라인드 s */
 .blind {
   overflow: hidden !important;
@@ -530,9 +559,28 @@ p {
 }
 
 /* 블라인드 e */
+.naming-container {
+  border: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.naming-container-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.naming-container-inner .line {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: var(--gray-200);
+}
+
 .flex-gap {
   display: flex;
-  gap: 3rem;
+  gap: 1.6rem;
   flex-direction: column;
 }
 

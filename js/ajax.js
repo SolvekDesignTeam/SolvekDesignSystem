@@ -136,6 +136,12 @@ const foundationClasses = {
         if (currentHash === '#/Foundation/color') {
           initColor()
         }
+        if (currentHash === '#/Foundation/typography') {
+          typography()
+        }
+        if (currentHash === '#/Foundation/spacing') {
+          spacing()
+        }
         // if (currentHash === '#/button/range') {
         //   initRange()
         // }
@@ -150,12 +156,11 @@ const foundationClasses = {
     }
     xhr.send()
   }
-  
 
   // 네비게이션 클릭 이벤트 핸들러
   function handleNavigationClick(e) {
     const logo = e.target.closest('.logo-img')
-
+    
     if(logo && logo.classList.contains('logo-img')) {
       const tabLis = document.querySelectorAll('.tab li')
       const sideTabs = document.querySelectorAll('.side-tab')
@@ -173,7 +178,6 @@ const foundationClasses = {
       loadPage('main.html');
       return;
     }
-
     const pageKey = Object.keys(pageMapping).find((className) =>
       e.target.classList.contains(className)
     )

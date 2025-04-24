@@ -1,27 +1,4 @@
-/* 컬러칩 복사 붙여넣기 팝업  e */
-.copy-popup {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--blue-400);
-  padding: 1rem 2rem;
-  border-radius: 5rem;
-  box-shadow: 0 0 10px 0px #0345c773;
-  transition: .6s cubic-bezier(0.63, 0, 0.14, 1.22);
-  &.active {
-    top: 10rem;
-    opacity: 1;
-    visibility: visible;
-  }
-  p {
-    color: #fff;
-    font-size: 1.6rem;
-  }
-}
-/* 컬러칩 복사 붙여넣기 팝업 e */
+
 
 /* 레이아웃 s */
 .color-palette {
