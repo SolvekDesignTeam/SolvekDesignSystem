@@ -127,6 +127,7 @@ const foundationClasses = {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         document.getElementById("content").innerHTML = xhr.responseText
+        initGsap()
         
         // URL 해시 업데이트
         if (hash && window.location.hash !== hash) {
