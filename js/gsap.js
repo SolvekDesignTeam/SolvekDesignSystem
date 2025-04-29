@@ -2,7 +2,6 @@
   function initGsap() {
     var tl = gsap.timeline();
 
-   // .to() 메서드는 요소를 특정 상태로 애니메이션
     tl.to('.txtbox ul li', {
       opacity: 1,
       scale: 1,
@@ -129,5 +128,57 @@
       ease: "elastic.out(1,1)",
     },'-=1.2');
     
+    tl.to([".line-03", ".line-04"], {
+      opacity: 1,
+      y:0,
+      duration: 1,
+      stagger: 0.2,
+      ease: "elastic.out(1,0.5)",
+    },'-=3');
+
+    tl.to('.icon-list .icon-img', {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.2,
+      scale: 1,
+      ease: "elastic.out(1,1)",
+    },'-=2');
+
+    tl.to('.icon-list .p-line', {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.2,
+      scale: 1,
+    },'-=2');
     
+    tl.to('.content .h3-title-01', {
+      opacity: 1,
+      duration: 1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.5')
+
+    tl.to('.content .flex:first-child ul li', {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.3');
+
+
+    tl.to('.content .h3-title-02', {
+      opacity: 1,
+      duration: 1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.2')
+
+    tl.to('.content .flex:last-child ul li', {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.1');
   }

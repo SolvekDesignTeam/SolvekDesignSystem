@@ -449,13 +449,16 @@ body {
 }
 
 .line-03 {
+  opacity: 0;
   height: 2rem;
   border-radius: 150px;
-  transform: rotate(180deg);
+  transform: translateY(1rem) rotate(180deg);
   background: linear-gradient(90deg, #D9DFFF 8.77%, #FFF 93.31%);
 }
 
 .line-04 {
+  opacity: 0;
+  transform: translateY(1rem);
   height: 2rem;
   border-radius: 150px;
   background: linear-gradient(90deg, #D9DFFF 27.16%, #FFF 93.83%);
@@ -647,6 +650,16 @@ body {
   align-items: center;
 }
 
+.icon-list .icon-img {
+  scale: 0;
+  opacity: 0;
+}
+
+.icon-list .p-line {
+  scale: 0;
+  opacity: 0;
+}
+
 .icon-list > div {
   width: 5rem;
   height: 5rem;
@@ -697,6 +710,8 @@ body {
 }
 
 .content h3 {
+  opacity: 0;
+  transform: translateY(1rem);
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -715,6 +730,8 @@ body {
 }
 
 .content .flex ul li {
+  opacity: 0;
+  transform: translateY(1rem);
   flex: 1 0 calc(100% / 3 - 2rem);
   box-sizing: border-box;
   display: flex;
