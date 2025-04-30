@@ -23,6 +23,7 @@ const foundation = {
   typography: "foundation/typography.html",
   spacing: "foundation/spacing.html",
   icongraphy: "foundation/icongraphy.html",
+  cornerRadius: "foundation/cornerRadius.html"
 }
 
 // const patterns = {
@@ -60,6 +61,7 @@ const foundationClasses = {
   typography: "addTypography",
   spacing: "addSpacing",
   icongraphy: "addIcongraphy",
+  cornerRadius: "addCornerRadius"
 }
 
   
@@ -88,6 +90,7 @@ const foundationClasses = {
     [foundationClasses.typography]: foundation.typography,
     [foundationClasses.spacing]: foundation.spacing,
     [foundationClasses.icongraphy]: foundation.icongraphy,
+    [foundationClasses.cornerRadius] : foundation.cornerRadius,
   }
   
   // 해시 매핑 자동 생성
@@ -127,8 +130,10 @@ const foundationClasses = {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         document.getElementById("content").innerHTML = xhr.responseText
-        initGsap()
-        
+        // main.html에서만 GSAP 초기화
+        if (page === 'main.html') {
+          initGsap()
+        }
         // URL 해시 업데이트
         if (hash && window.location.hash !== hash) {
           window.location.hash = hash
@@ -142,6 +147,9 @@ const foundationClasses = {
         }
         if (currentHash === '#/Foundation/spacing') {
           spacing()
+        }
+        if (currentHash === '#/Component/button') {
+          button()
         }
         // if (currentHash === '#/button/range') {
         //   initRange()

@@ -55,21 +55,21 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 // 클릭 이벤트
-document.addEventListener('click', (e) => {
+// document.addEventListener('click', (e) => {
 
-  // 페이징 버튼 클릭시 이벤트
-  if (e.target.closest('.side-tab') && e.target.tagName === 'BUTTON') {
-    document.querySelectorAll('.side-tab button').forEach(btn => {
-      btn.classList.remove('on');
-    });
-    e.target.classList.add('on');
-  }
+//   // 페이징 버튼 클릭시 이벤트
+//   if (e.target.closest('.side-tab') && e.target.tagName === 'BUTTON') {
+//     document.querySelectorAll('.side-tab button').forEach(btn => {
+//       btn.classList.remove('on');
+//     });
+//     e.target.classList.add('on');
+//   }
 
-  if(e.target.closest('.menu-img')) {
-    const asideTab = document.querySelector('.aside-tab')
-    console.log(asideTab)
-    if(asideTab) {
-      asideTab.classList.toggle('on')
-    } 
-  }
-})
+//   if(e.target.closest('.menu-img')) {
+//     const asideTab = document.querySelector('.aside-tab')
+//     console.log(asideTab)
+//     if(asideTab) {
+//       asideTab.classList.toggle('on')
+//     } 
+//   }
+// })

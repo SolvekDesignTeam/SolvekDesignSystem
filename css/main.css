@@ -549,9 +549,6 @@ body {
 .sol-txt rect, line {
   opacity: 0;
 }
-.sol-txt rect {
-}
-
 .sol-txt p {
   opacity: 0;
   color: #000;

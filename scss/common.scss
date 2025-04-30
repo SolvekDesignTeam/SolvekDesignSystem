@@ -289,6 +289,20 @@ p {
 }
 /* 블라인드 e */
 
+// 텍스트 붙여넣기 s
+.txt-click {
+  p {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0 1.6rem;
+    transition: .3s var(--transition-up);
+    &:hover {
+      background-color: var(--blue-50);
+    }
+  }
+}
+// 텍스트 붙여넣기 e
+
 // 네이밍 컨테이너
 .naming-container {
   border: 1px solid var(--gray-200);

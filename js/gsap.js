@@ -11,6 +11,37 @@
       stagger: 0.1
     });
     
+    tl.to('.content .h3-title-01', {
+      opacity: 1,
+      duration: 1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.5')
+
+    tl.to('.content .flex:first-child ul li', {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.3');
+
+
+    tl.to('.content .h3-title-02', {
+      opacity: 1,
+      duration: 1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.2')
+
+    tl.to('.content .flex:last-child ul li', {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.1,
+      y: 0,
+      ease: "elastic.out(1,1)",
+    },'-=1.1');
+    
     tl.to('.solution-box', {
       opacity: 1,
       scale: 1,
@@ -151,34 +182,4 @@
       scale: 1,
     },'-=2');
     
-    tl.to('.content .h3-title-01', {
-      opacity: 1,
-      duration: 1,
-      y: 0,
-      ease: "elastic.out(1,1)",
-    },'-=1.5')
-
-    tl.to('.content .flex:first-child ul li', {
-      opacity: 1,
-      duration: 1,
-      stagger: 0.1,
-      y: 0,
-      ease: "elastic.out(1,1)",
-    },'-=1.3');
-
-
-    tl.to('.content .h3-title-02', {
-      opacity: 1,
-      duration: 1,
-      y: 0,
-      ease: "elastic.out(1,1)",
-    },'-=1.2')
-
-    tl.to('.content .flex:last-child ul li', {
-      opacity: 1,
-      duration: 1,
-      stagger: 0.1,
-      y: 0,
-      ease: "elastic.out(1,1)",
-    },'-=1.1');
   }
