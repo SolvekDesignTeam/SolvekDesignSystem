@@ -251,4 +251,33 @@
   --radius-md-8: 0.8rem;
   --radius-lg-16: 1.6rem;
   --radius-full: 100%;
-}/*# sourceMappingURL=root.css.map */
+}
+
+.button-container {
+  width: 100%;
+  justify-content: center;
+  height: 25rem;
+}
+.button-container ul {
+  display: flex;
+  gap: 1.6rem;
+  box-sizing: border-box;
+}
+.button-container ul li {
+  height: 4rem;
+  background-color: var(--gray-50);
+}
+.button-container ul li .blue-button {
+  background-color: var(--blue-500);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-button-md-32-padding);
+  height: var(--button-button-md-32-height);
+  font-size: var(--typography-Body3-M-14-font-size);
+  font-weight: var(--typography-Body3-M-14-font-weight);
+  line-height: var(--typography-Body3-M-14-line-height);
+  letter-spacing: var(--typography-Body3-M-14-letter-spacing);
+  width: 20rem;
+}/*# sourceMappingURL=button.css.map */

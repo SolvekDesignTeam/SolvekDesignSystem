@@ -136,6 +136,7 @@ $spacing: (
 $radius : (
   radius-xs-2: .2rem,
   radius-sm-4: .4rem,
+  radius-md-6: .6rem,
   radius-md-8: .8rem,
   radius-lg-16: 1.6rem,
   radius-full : 100%,
@@ -323,7 +324,60 @@ $typography: (
   letter-spacing: var(--typography-#{$style-name}-letter-spacing);
 }
 
+$button : (
+  button-xs-24 : (
+    padding: 0 .8rem,
+    height: 2.4rem,
+    typography: Body4-R-13
+  ),
+  button-sm-28 : (
+    padding: 0 1rem,
+    height: 2.8rem,
+    typography: Body3-R-14
+  ),
+  button-md-32 : (
+    padding: 0 1.2rem,
+    height: 3.2rem,
+    typography: Body3-M-14
+  ),
+  button-lg-40 : (
+    padding: 0 1.6rem,
+    height: 4rem,
+    typography: Body2-M-16
+  ),
+  button-xl-48 : (
+    padding: 0 1.6rem,
+    height: 4.8rem,
+    typography: Body2-B-16
+  ),
+  button-2xl-56 : (
+    padding: 0 2rem,
+    height: 5.6rem,
+    typography: Body1-B-18
+  ),
+
+);
+
+@mixin button-vars {
+  @each $style-name, $properties in $button {
+    @each $property, $value in $properties {
+      --button-#{$style-name}-#{$property}: #{$value};
+    }
+  }
+}
+
+@mixin button($style-name) {
+  padding: var(--button-#{$style-name}-padding);
+  height: var(--button-#{$style-name}-height);
+  $typography-style: map-get($button, $style-name);
+  $typography-value: map-get($typography-style, typography);
+  @include typography($typography-value);
+}
+
+
+
 :root {
+  @include button-vars;
   @include typography-vars;
   --font-family-main: #{map-get($default, font-family-main)};
   --font-family-sub: #{map-get($default, font-family-sub)};

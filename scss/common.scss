@@ -321,6 +321,10 @@ p {
       background-color: var(--gray-200);
     }
   }
+  &.bg-gray {
+    background-color: var(--gray-50);
+    border: none;
+  }
 }
 // 네이밍 컨테이너 e
 // gap

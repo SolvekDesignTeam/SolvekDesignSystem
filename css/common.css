@@ -1,5 +1,29 @@
 @charset "UTF-8";
 :root {
+  --button-button-xs-24-font-size: var(--typography-Body4-M-13-font-size);
+  --button-button-xs-24-border-radius: var(--radius-sm-4);
+  --button-button-xs-24-padding: 0 0.8rem;
+  --button-button-xs-24-height: 2.4rem;
+  --button-button-sm-28-font-size: var(--typography-Body3-M-14-font-size);
+  --button-button-sm-28-border-radius: var(--radius-sm-4);
+  --button-button-sm-28-padding: 0 1rem;
+  --button-button-sm-28-height: 2.8rem;
+  --button-button-md-32-font-size: var(--typography-Body3-M-14-font-size);
+  --button-button-md-32-border-radius: var(--radius-md-6);
+  --button-button-md-32-padding: 0 1.2rem;
+  --button-button-md-32-height: 3.2rem;
+  --button-button-lg-40-font-size: var(--typography-Body2-M-16-font-size);
+  --button-button-lg-40-border-radius: var(--radius-md-8);
+  --button-button-lg-40-padding: 0 1.6rem;
+  --button-button-lg-40-height: 4rem;
+  --button-button-xl-48-font-size: var(--typography-Body2-M-16-font-size);
+  --button-button-xl-48-border-radius: var(--radius-md-8);
+  --button-button-xl-48-padding: 0 1.6rem;
+  --button-button-xl-48-height: 4.8rem;
+  --button-button-2xl-56-font-size: var(--typography-Body1-M-18-font-size);
+  --button-button-2xl-56-border-radius: var(--radius-md-8);
+  --button-button-2xl-56-padding: 0 2rem;
+  --button-button-2xl-56-height: 5.6rem;
   --typography-Heading1-B-48-font-size: 4.8rem;
   --typography-Heading1-B-48-font-weight: 700;
   --typography-Heading1-B-48-line-height: 140%;
@@ -229,6 +253,11 @@
   --spacing-92: 9.2rem;
   --spacing-100: 10rem;
   --spacing-120: 12rem;
+  --radius-xs-2: 0.2rem;
+  --radius-sm-4: 0.4rem;
+  --radius-md-8: 0.8rem;
+  --radius-lg-16: 1.6rem;
+  --radius-full: 100%;
 }
 
 body {
@@ -602,6 +631,10 @@ p {
   width: 2rem;
   height: 0.1rem;
   background-color: var(--gray-200);
+}
+.naming-container.bg-gray {
+  background-color: var(--gray-50);
+  border: none;
 }
 
 .flex-gap {

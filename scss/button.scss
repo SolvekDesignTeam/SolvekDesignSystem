@@ -1,0 +1,29 @@
+@import 'root';
+
+.button-container {
+  width: 100%;
+  justify-content: center;
+  height: 25rem;
+  ul {
+    display: flex;
+    gap: 1.6rem;
+    box-sizing: border-box;
+    li {
+      height: 4rem;
+      background-color: var(--gray-50);
+      .blue-button {
+        background-color: var(--blue-500);
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include button(button-md-32);
+        width: 20rem;
+      }
+      &:nth-child(2) {
+      }
+      &:nth-child(3) {
+      }
+    }
+  }
+}
