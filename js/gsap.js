@@ -149,7 +149,7 @@
       y:0,
       duration: 1.5,
       ease: "elastic.out(1,1)",
-    },'-=1.2');
+    },'-=1.3');
     
     tl.to('.popup-content div', {
       opacity: 1,
@@ -157,7 +157,7 @@
       duration: 1.5,
       stagger: 0.1,
       ease: "elastic.out(1,1)",
-    },'-=1.2');
+    },'-=1.5');
     
     tl.to([".line-03", ".line-04"], {
       opacity: 1,
@@ -173,13 +173,13 @@
       stagger: 0.2,
       scale: 1,
       ease: "elastic.out(1,1)",
-    },'-=2');
+    },'-=3');
 
     tl.to('.icon-list .p-line', {
       opacity: 1,
       duration: 1,
       stagger: 0.2,
       scale: 1,
-    },'-=2');
+    },'-=3');
     
   }
