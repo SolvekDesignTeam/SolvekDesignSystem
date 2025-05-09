@@ -598,60 +598,6 @@ p {
 }
 
 /* 컬러칩 복사 붙여넣기 팝업 e */
-.button-xs-24 {
-  padding: var(--button-button-xs-24-padding);
-  height: var(--button-button-xs-24-height);
-  font-size: var(--typography-Body4-R-13-font-size);
-  font-weight: var(--typography-Body4-R-13-font-weight);
-  line-height: var(--typography-Body4-R-13-line-height);
-  letter-spacing: var(--typography-Body4-R-13-letter-spacing);
-}
-
-.button-sm-28 {
-  padding: var(--button-button-sm-28-padding);
-  height: var(--button-button-sm-28-height);
-  font-size: var(--typography-Body3-R-14-font-size);
-  font-weight: var(--typography-Body3-R-14-font-weight);
-  line-height: var(--typography-Body3-R-14-line-height);
-  letter-spacing: var(--typography-Body3-R-14-letter-spacing);
-}
-
-.button-md-32 {
-  padding: var(--button-button-md-32-padding);
-  height: var(--button-button-md-32-height);
-  font-size: var(--typography-Body3-M-14-font-size);
-  font-weight: var(--typography-Body3-M-14-font-weight);
-  line-height: var(--typography-Body3-M-14-line-height);
-  letter-spacing: var(--typography-Body3-M-14-letter-spacing);
-}
-
-.button-lg-40 {
-  padding: var(--button-button-lg-40-padding);
-  height: var(--button-button-lg-40-height);
-  font-size: var(--typography-Body2-M-16-font-size);
-  font-weight: var(--typography-Body2-M-16-font-weight);
-  line-height: var(--typography-Body2-M-16-line-height);
-  letter-spacing: var(--typography-Body2-M-16-letter-spacing);
-}
-
-.button-xl-48 {
-  padding: var(--button-button-xl-48-padding);
-  height: var(--button-button-xl-48-height);
-  font-size: var(--typography-Body2-B-16-font-size);
-  font-weight: var(--typography-Body2-B-16-font-weight);
-  line-height: var(--typography-Body2-B-16-line-height);
-  letter-spacing: var(--typography-Body2-B-16-letter-spacing);
-}
-
-.button-2xl-56 {
-  padding: var(--button-button-2xl-56-padding);
-  height: var(--button-button-2xl-56-height);
-  font-size: var(--typography-Body1-B-18-font-size);
-  font-weight: var(--typography-Body1-B-18-font-weight);
-  line-height: var(--typography-Body1-B-18-line-height);
-  letter-spacing: var(--typography-Body1-B-18-letter-spacing);
-}
-
 /* 블라인드 s */
 .blind {
   overflow: hidden !important;

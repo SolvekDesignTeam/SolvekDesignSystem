@@ -289,27 +289,6 @@ p {
 /* 컬러칩 복사 붙여넣기 팝업 e */
 
 
-// button s
-.button-xs-24 {
-  @include button(button-xs-24);
-}
-.button-sm-28 {
-  @include button(button-sm-28);
-}
-.button-md-32 {
-  @include button(button-md-32);
-}
-.button-lg-40 {
-  @include button(button-lg-40);
-}
-.button-xl-48 {
-  @include button(button-xl-48);
-}
-.button-2xl-56 {
-  @include button(button-2xl-56);
-}
-
-// button e
 /* 블라인드 s */
 .blind {
   overflow: hidden !important;
