@@ -32,19 +32,502 @@
       <div class="naming-container-inner button-container">
           <ul>
             <li>
-              <div class="blue-button">button</div>
-              <p><span class="blind">버튼 1번, 2번</span></p>
+              <button type="button" class="blue-button">button
+              </button>
+              <span class="number-01">1</span>
+              <span class="number-02">2</span>
+              <p><span class="blind">버튼 1번, 기본형태</span></p>
             </li>
             <li>
-              <div class="blue-button">button</div>
-              <p><span class="blind">버튼 3번</span></p>
+              <button type="button" class="blue-button">button
+                <span class="arrow-icon"></span>
+              </button>
+              <span class="number-03">3</span>
+              <p><span class="blind">버튼 2번, arrow 아이콘 </span></p>
             </li>
             <li>
-              <div class="blue-button">button</div>
-              <p><span class="blind">버튼 4번</span></p>
+              <button type="button" class="blue-button">
+                <span class="download-icon"></span>
+                button
+              </button>
+              <span class="number-04">4</span>
+              <p><span class="blind">버튼 3번, 다운로드 아이콘</span></p>
             </li>
           </ul>
       </div>
+    </div>
+    <div class="naming-txt">
+      <ul>
+        <li>
+          <p class="point">1</p>
+          <p class="top-info-txt">Container : 버튼을 배경과 구분하는 시각적인 수단으로 면 또는 선으로 표현됩니다.</p>
+        </li>
+        <li>
+          <p class="point">2</p>
+          <p class="top-info-txt">Text label : 버튼 내부에 표시되는 텍스트 또는 아이콘입니다.</p>
+        </li>
+        <li>
+          <p class="point">3</p>
+          <p class="top-info-txt">Icon : 버튼에 텍스트 대신 테스트와 함께 포함될 수 있는 그래픽 요소입니다.</p>
+        </li>
+        <li>
+          <p class="point">4</p>
+          <p class="top-info-txt">Icon with label : 사용자가 동작의 의미를 더욱 빠르게 인식할 수 있도록 돕는 그래픽 요소입니다.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="table">
+    <table>
+      <caption class="blind">버튼 토큰 표시</caption>
+      <thead>
+        <tr>
+          <th>
+            <p>토큰 명칭</p>
+          </th>
+          <th>
+            <p>높이</p>
+          </th>
+          <th>
+            <p>최소 좌우 패딩</p>
+          </th>
+          <th>
+            <p>아이콘 포함 시 간격</p>
+          </th>
+          <th>
+            <p>Border Radius</p>
+          </th>
+          <th>
+            <p>폰트 토큰</p>
+          </th>
+          <th>
+            <p>사용 예시</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            button-xs-24
+          </td>
+          <td>
+            24px
+          </td>
+          <td>
+            8px
+          </td>
+          <td>
+            6px
+          </td>
+          <td>
+            radius-4
+          </td>
+          <td>
+            Body4-M-13 / Body4-M-12 
+          </td>
+          <td>
+            태그형 버튼, 필터, 아이콘 버튼 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            button-sm-28
+          </td>
+          <td>
+            28px
+          </td>
+          <td>
+            10px
+          </td>
+          <td>
+            6px
+          </td>
+          <td>
+            radius-4
+          </td>
+          <td>
+            Body3-M-14
+          </td>
+          <td>
+            보조 버튼, 목록 내 액션
+          </td>
+        </tr>
+        <tr>
+          <td>
+            button-md-32
+          </td>
+          <td>
+            32px
+          </td>
+          <td>
+            12px
+          </td>
+          <td>
+            8px
+          </td>
+          <td>
+            radius-6
+          </td>
+          <td>
+            Body3-M-14
+          </td>
+          <td>
+            테이블/리스트 내 버튼
+          </td>
+        </tr>
+        <tr>
+          <td>
+            button-lg-40
+          </td>
+          <td>
+            40px
+          </td>
+          <td>
+            16px
+          </td>
+          <td>
+            10px
+          </td>
+          <td>
+            radius-8
+          </td>
+          <td>
+            Body2-M-16
+          </td>
+          <td>
+            기본 버튼, form 제출
+          </td>
+        </tr>
+        <tr>
+          <td>
+            button-xl-48
+          </td>
+          <td>
+            48px
+          </td>
+          <td>
+            16px
+          </td>
+          <td>
+            10px
+          </td>
+          <td>
+            radius-8
+          </td>
+          <td>
+            Body2-M-16
+          </td>
+          <td>
+            기본 버튼
+          </td>
+        </tr>
+        <tr>
+          <td>
+            button-2xl-56
+          </td>
+          <td>
+            56px
+          </td>
+          <td>
+            20px
+          </td>
+          <td>
+            12px
+          </td>
+          <td>
+            radius-8
+          </td>
+          <td>
+            Body1-M-18
+          </td>
+          <td>
+            고정형 CTA, 메인 강조 액션
+          </td>
+        </tr>
+    </table>
+  </div>
+  <div class="flex-gap">
+    <h5>Emphasis</h5>
+    <div class="naming-container">
+      <div class="naming-container-gray flex-row">
+        <div class="high">
+          <div class="button button-lg-40">
+            button
+          </div>
+          <p>High emphasis</p>
+          <span>1순위</span>
+        </div>
+        <div class="medium-01">
+          <div class="button button-lg-40">
+            button
+          </div>
+          <p>Medium emphasis 1</p>
+          <span>2순위</span>
+        </div>
+        <div class="medium-02">
+          <div class="button button-lg-40">
+            button
+          </div>
+          <p>Medium emphasis 3</p>
+          <span>3순위</span>
+        </div>
+        <div class="medium-03">
+          <div class="button button-lg-40">
+            button
+          </div>
+          <p>Medium emphasis 4</p>
+          <span>4순위</span>
+        </div>
+        <div class="low">
+          <div class="more">
+            <p>더보기</p>
+          </div>
+          <p>Low emphasis</p>
+          <span>5순위</span>
+        </div>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <caption class="blind">버튼 강조 표시</caption>
+        <thead>
+          <tr>
+            <th>
+              <p>순위</p>
+            </th>
+            <th>
+              <p>강조</p>
+            </th>
+            <th>
+              <p>스타일</p>
+            </th>
+            <th>
+              <p>사용 예시</p>
+            </th>
+            <th>
+              <p>토큰 명칭</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1순위
+            </td>
+            <td>
+              High emphasis(매우 높음)
+            </td>
+            <td>
+              Contained button
+            </td>
+            <td>
+              메인 CTA (가입, 결제, 완료,저장 등)
+            </td>
+            <td>
+              button-1
+            </td>
+          </tr>
+          <tr>
+            <td>
+              2순위
+            </td>
+            <td>
+              Medium emphasis 중 1순위(높음)
+            </td>
+            <td>
+              Outline button
+            </td>
+            <td>
+              메인 CTA 외 버튼
+            </td>
+            <td>
+              button-2
+            </td>
+          </tr>
+          <tr>
+            <td>
+              3순위
+            </td>
+            <td>
+              Medium emphasis 중 2순위(중간)
+            </td>
+            <td>
+              Outline button
+            </td>
+            <td>
+              필터, 정렬, 보조 동작
+            </td>
+            <td>
+              button-3
+            </td>
+          </tr>
+          <tr>
+            <td>
+              4순위
+            </td>
+            <td>
+              Medium emphasis 중 3순위(낮음)
+            </td>
+            <td>
+              Contained light button
+            </td>
+            <td>
+              모달 내 취소, 덜 중요한 액션
+            </td>
+            <td>
+              button-4
+            </td>
+          </tr>
+          <tr>
+            <td>
+              5순위
+            </td>
+            <td>
+              Low emphasis
+            </td>
+            <td>
+              Text Only
+            </td>
+            <td>
+              더보기, 링크 이동, 부가 기능 버튼
+            </td>
+            <td>
+              button-5
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="flex-gap button-guide">
+    <h5>1순위 Contained Button Guidelines</h5>
+    <div class="table">
+      <table>
+        <caption class="blind">Contained Button Guidelines</caption>
+        <thead>
+          <tr>
+            <th>
+              <p>상태</p>
+            </th>
+            <th>
+              <p>배경색</p>
+            </th>
+            <th>
+              <p>effect</p>
+            </th>
+            <th>
+              <p>텍스트 색상</p>
+            </th>
+            <th>
+              <p>형태</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Default
+            </td>
+            <td>
+              color-500
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              white
+            </td>
+            <td>
+              <button type="button" class="button-lg-40 default">button</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Hover
+            </td>
+            <td>
+              color-600
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              white
+            </td>
+            <td>
+              <button type="button" class="button-lg-40 hover">button</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Focus
+            </td>
+            <td>
+              color-500
+            </td>
+            <td>
+              shadow: 0px 0px 0px 3px color-200
+            </td>
+            <td>
+              white
+            </td>
+            <td>
+              <button type="button" class="button-lg-40 Focus">button</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Focus+hover
+            </td>
+            <td>
+              color-600
+            </td>
+            <td>
+              shadow: 0px 0px 0px 3px color-200
+            </td>
+            <td>
+              white
+            </td>
+            <td>
+              <button type="button" class="button-lg-40 focus-hover">button</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pressed / Active
+            </td>
+            <td>
+              color-700
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              white
+            </td>
+            <td>
+              <button type="button" class="button-lg-40 pressed-active">button</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Disabled
+            </td>
+            <td>
+              gray-500
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              gray-200
+            </td>
+            <td>
+              <button type="button" class="button-lg-40 disabled">button</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

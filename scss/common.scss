@@ -239,6 +239,17 @@ h6 {
   color: var(--gray-700);
   @include typography(Body3-R-14);
 }
+.point {
+  color: var(--white);
+  background-color: var(--gray-700);
+  border-radius: var(--radius-lg-16);
+  font-size: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 /* text size e */
 
 /* 기본값 수정 s*/
@@ -277,6 +288,28 @@ p {
 }
 /* 컬러칩 복사 붙여넣기 팝업 e */
 
+
+// button s
+.button-xs-24 {
+  @include button(button-xs-24);
+}
+.button-sm-28 {
+  @include button(button-sm-28);
+}
+.button-md-32 {
+  @include button(button-md-32);
+}
+.button-lg-40 {
+  @include button(button-lg-40);
+}
+.button-xl-48 {
+  @include button(button-xl-48);
+}
+.button-2xl-56 {
+  @include button(button-2xl-56);
+}
+
+// button e
 /* 블라인드 s */
 .blind {
   overflow: hidden !important;
@@ -309,7 +342,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  padding: 6rem;
   box-sizing: border-box;
   &-inner {
     display: flex;
@@ -332,6 +365,11 @@ p {
   display: flex;
   gap: 1.6rem;
   flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
 }
 .margin-top-50 {
   margin-top: 5rem;

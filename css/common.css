@@ -1,29 +1,23 @@
 @charset "UTF-8";
 :root {
-  --button-button-xs-24-font-size: var(--typography-Body4-M-13-font-size);
-  --button-button-xs-24-border-radius: var(--radius-sm-4);
   --button-button-xs-24-padding: 0 0.8rem;
   --button-button-xs-24-height: 2.4rem;
-  --button-button-sm-28-font-size: var(--typography-Body3-M-14-font-size);
-  --button-button-sm-28-border-radius: var(--radius-sm-4);
+  --button-button-xs-24-typography: Body4-R-13;
   --button-button-sm-28-padding: 0 1rem;
   --button-button-sm-28-height: 2.8rem;
-  --button-button-md-32-font-size: var(--typography-Body3-M-14-font-size);
-  --button-button-md-32-border-radius: var(--radius-md-6);
+  --button-button-sm-28-typography: Body3-R-14;
   --button-button-md-32-padding: 0 1.2rem;
   --button-button-md-32-height: 3.2rem;
-  --button-button-lg-40-font-size: var(--typography-Body2-M-16-font-size);
-  --button-button-lg-40-border-radius: var(--radius-md-8);
+  --button-button-md-32-typography: Body3-M-14;
   --button-button-lg-40-padding: 0 1.6rem;
   --button-button-lg-40-height: 4rem;
-  --button-button-xl-48-font-size: var(--typography-Body2-M-16-font-size);
-  --button-button-xl-48-border-radius: var(--radius-md-8);
+  --button-button-lg-40-typography: Body2-M-16;
   --button-button-xl-48-padding: 0 1.6rem;
   --button-button-xl-48-height: 4.8rem;
-  --button-button-2xl-56-font-size: var(--typography-Body1-M-18-font-size);
-  --button-button-2xl-56-border-radius: var(--radius-md-8);
+  --button-button-xl-48-typography: Body2-B-16;
   --button-button-2xl-56-padding: 0 2rem;
   --button-button-2xl-56-height: 5.6rem;
+  --button-button-2xl-56-typography: Body1-B-18;
   --typography-Heading1-B-48-font-size: 4.8rem;
   --typography-Heading1-B-48-font-weight: 700;
   --typography-Heading1-B-48-line-height: 140%;
@@ -552,6 +546,18 @@ h6 {
   letter-spacing: var(--typography-Body3-R-14-letter-spacing);
 }
 
+.point {
+  color: var(--white);
+  background-color: var(--gray-700);
+  border-radius: var(--radius-lg-16);
+  font-size: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* text size e */
 /* 기본값 수정 s*/
 p {
@@ -592,6 +598,60 @@ p {
 }
 
 /* 컬러칩 복사 붙여넣기 팝업 e */
+.button-xs-24 {
+  padding: var(--button-button-xs-24-padding);
+  height: var(--button-button-xs-24-height);
+  font-size: var(--typography-Body4-R-13-font-size);
+  font-weight: var(--typography-Body4-R-13-font-weight);
+  line-height: var(--typography-Body4-R-13-line-height);
+  letter-spacing: var(--typography-Body4-R-13-letter-spacing);
+}
+
+.button-sm-28 {
+  padding: var(--button-button-sm-28-padding);
+  height: var(--button-button-sm-28-height);
+  font-size: var(--typography-Body3-R-14-font-size);
+  font-weight: var(--typography-Body3-R-14-font-weight);
+  line-height: var(--typography-Body3-R-14-line-height);
+  letter-spacing: var(--typography-Body3-R-14-letter-spacing);
+}
+
+.button-md-32 {
+  padding: var(--button-button-md-32-padding);
+  height: var(--button-button-md-32-height);
+  font-size: var(--typography-Body3-M-14-font-size);
+  font-weight: var(--typography-Body3-M-14-font-weight);
+  line-height: var(--typography-Body3-M-14-line-height);
+  letter-spacing: var(--typography-Body3-M-14-letter-spacing);
+}
+
+.button-lg-40 {
+  padding: var(--button-button-lg-40-padding);
+  height: var(--button-button-lg-40-height);
+  font-size: var(--typography-Body2-M-16-font-size);
+  font-weight: var(--typography-Body2-M-16-font-weight);
+  line-height: var(--typography-Body2-M-16-line-height);
+  letter-spacing: var(--typography-Body2-M-16-letter-spacing);
+}
+
+.button-xl-48 {
+  padding: var(--button-button-xl-48-padding);
+  height: var(--button-button-xl-48-height);
+  font-size: var(--typography-Body2-B-16-font-size);
+  font-weight: var(--typography-Body2-B-16-font-weight);
+  line-height: var(--typography-Body2-B-16-line-height);
+  letter-spacing: var(--typography-Body2-B-16-letter-spacing);
+}
+
+.button-2xl-56 {
+  padding: var(--button-button-2xl-56-padding);
+  height: var(--button-button-2xl-56-height);
+  font-size: var(--typography-Body1-B-18-font-size);
+  font-weight: var(--typography-Body1-B-18-font-weight);
+  line-height: var(--typography-Body1-B-18-line-height);
+  letter-spacing: var(--typography-Body1-B-18-letter-spacing);
+}
+
 /* 블라인드 s */
 .blind {
   overflow: hidden !important;
@@ -619,7 +679,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  padding: 6rem;
   box-sizing: border-box;
 }
 .naming-container-inner {
@@ -641,6 +701,12 @@ p {
   display: flex;
   gap: 1.6rem;
   flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
 }
 
 .margin-top-50 {

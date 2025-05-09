@@ -273,11 +273,250 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--button-button-md-32-padding);
-  height: var(--button-button-md-32-height);
+  padding: var(--button-button-lg-40-padding);
+  height: var(--button-button-lg-40-height);
+  font-size: var(--typography-Body2-M-16-font-size);
+  font-weight: var(--typography-Body2-M-16-font-weight);
+  line-height: var(--typography-Body2-M-16-line-height);
+  letter-spacing: var(--typography-Body2-M-16-letter-spacing);
+  border-radius: var(--radius-sm-4);
+  max-width: 20rem;
+  min-width: 10rem;
+  width: 12vw;
+}
+.button-container ul li .blue-button .arrow-icon {
+  width: 1rem;
+  height: 1rem;
+  background: url(./img/Icon_arrow.svg) 50% 50%/contain no-repeat;
+}
+.button-container ul li .blue-button .download-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(./img/Icon_down.svg) 50% 50%/contain no-repeat;
+}
+.button-container ul li:nth-child(1) {
+  position: relative;
+}
+.button-container ul li:nth-child(1) .number-01 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  color: var(--white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container ul li:nth-child(1) .number-01:before {
+  position: absolute;
+  left: 2rem;
+  display: block;
+  content: "";
+  width: 2.2rem;
+  height: 0.1rem;
+  background-color: black;
+}
+.button-container ul li:nth-child(1) .number-01:after {
+  position: absolute;
+  left: 3.8rem;
+  display: block;
+  border-radius: var(--radius-full);
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: black;
+}
+.button-container ul li:nth-child(1) .number-02 {
+  position: absolute;
+  transform: translateX(-50%);
+  top: -3rem;
+  left: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: var(--radius-full);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container ul li:nth-child(1) .number-02:before {
+  position: absolute;
+  display: block;
+  top: 2rem;
+  content: "";
+  height: 1rem;
+  width: 0.1rem;
+  background-color: black;
+}
+.button-container ul li:nth-child(1) .number-02:after {
+  position: absolute;
+  display: block;
+  border-radius: var(--radius-full);
+  content: "";
+  top: 2.9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: black;
+}
+.button-container ul li:nth-child(1) .blue-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container ul li:nth-child(2) {
+  position: relative;
+}
+.button-container ul li:nth-child(2) .blue-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-container ul li:nth-child(2) .number-03 {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: -3rem;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: var(--radius-full);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container ul li:nth-child(2) .number-03:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0.1rem;
+  top: -2rem;
+  height: 2rem;
+  background-color: black;
+}
+.button-container ul li:nth-child(2) .number-03:after {
+  position: absolute;
+  display: block;
+  border-radius: var(--radius-full);
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: black;
+  top: -2rem;
+}
+.button-container ul li:nth-child(3) {
+  position: relative;
+}
+.button-container ul li:nth-child(3) .blue-button {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.button-container ul li:nth-child(3) .number-04 {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: var(--radius-full);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container ul li:nth-child(3) .number-04:before {
+  top: -2rem;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0.1rem;
+  height: 2rem;
+  background-color: black;
+}
+.button-container ul li:nth-child(3) .number-04:after {
+  position: absolute;
+  display: block;
+  border-radius: var(--radius-full);
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: black;
+  top: -2rem;
+}
+
+.naming-txt ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.naming-txt ul li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.naming-container-gray {
+  flex-wrap: wrap;
+}
+.naming-container-gray div {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 1rem;
+}
+.naming-container-gray .high .button {
+  background-color: var(--blue-500);
+  color: var(--white);
+  border-radius: var(--radius-sm-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.naming-container-gray .medium-01 .button {
+  background-color: var(--white);
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+  border-radius: var(--radius-sm-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.naming-container-gray .medium-02 .button {
+  background-color: var(--white);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-700);
+  border-radius: var(--radius-sm-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.naming-container-gray .medium-03 .button {
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+  border-radius: var(--radius-sm-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.naming-container-gray .more {
   font-size: var(--typography-Body3-M-14-font-size);
   font-weight: var(--typography-Body3-M-14-font-weight);
   line-height: var(--typography-Body3-M-14-line-height);
   letter-spacing: var(--typography-Body3-M-14-letter-spacing);
-  width: 20rem;
+  text-decoration: underline;
+  color: var(--gray-700);
 }/*# sourceMappingURL=button.css.map */

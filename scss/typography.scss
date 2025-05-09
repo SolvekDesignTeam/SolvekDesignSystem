@@ -23,24 +23,6 @@
     }
   }
 }
-.naming-container {
-  border: 1px solid var(--gray-200);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  box-sizing: border-box;
-  &-inner {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    .line {
-      width: 2rem;
-      height: .1rem;
-      background-color: var(--gray-200);
-    }
-  }
-}
 
 // 폰트 사이즈
 .Heading1-B-48 {

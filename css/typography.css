@@ -1,28 +1,22 @@
 :root {
-  --button-button-xs-24-font-size: var(--typography-Body4-M-13-font-size);
-  --button-button-xs-24-border-radius: var(--radius-sm-4);
   --button-button-xs-24-padding: 0 0.8rem;
   --button-button-xs-24-height: 2.4rem;
-  --button-button-sm-28-font-size: var(--typography-Body3-M-14-font-size);
-  --button-button-sm-28-border-radius: var(--radius-sm-4);
+  --button-button-xs-24-typography: Body4-R-13;
   --button-button-sm-28-padding: 0 1rem;
   --button-button-sm-28-height: 2.8rem;
-  --button-button-md-32-font-size: var(--typography-Body3-M-14-font-size);
-  --button-button-md-32-border-radius: var(--radius-md-6);
+  --button-button-sm-28-typography: Body3-R-14;
   --button-button-md-32-padding: 0 1.2rem;
   --button-button-md-32-height: 3.2rem;
-  --button-button-lg-40-font-size: var(--typography-Body2-M-16-font-size);
-  --button-button-lg-40-border-radius: var(--radius-md-8);
+  --button-button-md-32-typography: Body3-M-14;
   --button-button-lg-40-padding: 0 1.6rem;
   --button-button-lg-40-height: 4rem;
-  --button-button-xl-48-font-size: var(--typography-Body2-M-16-font-size);
-  --button-button-xl-48-border-radius: var(--radius-md-8);
+  --button-button-lg-40-typography: Body2-M-16;
   --button-button-xl-48-padding: 0 1.6rem;
   --button-button-xl-48-height: 4.8rem;
-  --button-button-2xl-56-font-size: var(--typography-Body1-M-18-font-size);
-  --button-button-2xl-56-border-radius: var(--radius-md-8);
+  --button-button-xl-48-typography: Body2-B-16;
   --button-button-2xl-56-padding: 0 2rem;
   --button-button-2xl-56-height: 5.6rem;
+  --button-button-2xl-56-typography: Body1-B-18;
   --typography-Heading1-B-48-font-size: 4.8rem;
   --typography-Heading1-B-48-font-weight: 700;
   --typography-Heading1-B-48-line-height: 140%;
@@ -273,25 +267,6 @@
 .typo-container table tr td:first-child p:hover {
   background-color: var(--blue-50);
   border-radius: 1rem;
-}
-
-.naming-container {
-  border: 1px solid var(--gray-200);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-.naming-container-inner {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.naming-container-inner .line {
-  width: 2rem;
-  height: 0.1rem;
-  background-color: var(--gray-200);
 }
 
 .Heading1-B-48 {
