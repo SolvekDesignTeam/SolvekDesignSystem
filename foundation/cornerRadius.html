@@ -1,7 +1,7 @@
 <div class="main-wrapper">
   <div class="main-top-container">
     <div class="title-header">
-      <h2>Components</h2>
+      <h2>Foundation</h2>
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
         <g clip-path="url(#clip0_33_340)">
           <path d="M29.6563 14.4361C29.6559 14.4358 29.6556 14.4354 29.6552 14.435L23.532 8.34125C23.0732 7.88475 22.3313 7.88645 21.8746 8.34524C21.4181 8.80397 21.4198 9.54594 21.8786 10.0025L25.9897 14.0938H1.17188C0.524649 14.0938 0 14.6184 0 15.2656C0 15.9129 0.524649 16.4375 1.17188 16.4375H25.9897L21.8786 20.5288C21.4199 20.9853 21.4181 21.7273 21.8747 22.186C22.3313 22.6449 23.0733 22.6464 23.532 22.19L29.6553 16.0963C29.6556 16.0959 29.6559 16.0955 29.6564 16.0951C30.1153 15.6371 30.1139 14.8927 29.6563 14.4361Z" fill="#5A5A5A"/>
@@ -12,19 +12,105 @@
           </clipPath>
         </defs>
       </svg>
-      <h3>Button</h3>
+      <h3>Corner radius</h3>
     </div>
     <div class="top-container">
       <div class="top-box">
-        <h4>Button</h4>
+        <h4>Corner radius</h4>
         <p class="top-info-txt">
-          버튼는 사용자가 인터페이스와 상호작용할 수 있도록 돕는 핵심 컴포넌트입니다. 특정 작업을 수행하거나 다음 단계로 이동하도록 유도하는 명확한 행동 지점을 제공합니다. 
-          주로 콘텐츠 영역이나 화면 하단 영역에 배치되며, 페이지 내에서 중요한 기능을 실행하거나 흐름을 전환하는 트리거 역할을 합니다.
-          사용자는 버튼을 통해 저장, 제출, 이동, 공유 등 다양한 기능을 수행할 수 있으며, 버튼의 형태와 스타일은 기능의 중요도와 우선순위에 따라 달라집니다.
-          잘 설계된 버튼은 명확한 시각적 피드백을 제공하고, 터치 또는 클릭에 최적화되어 있어 직관적인 사용자 경험을 제공합니다.
+          일관된 둥근 모서리 스타일을 통해 제품의 전체적인 톤앤매너를 유지하고, 컴포넌트 간 통일성 있는 사용자 경험을 제공합니다.
         </p>
       </div>
     </div>
   </div>
-  <div class="flex-gap"></div>
+  <div class="flex-gap">
+    <h5>Corner radius Naming Convention(둥근 모서리 네이밍 규칙 설명)</h5>
+    <p class="top-info-txt">솔브케이 디자인 시스템에서는 둥근 모서리 계층을 일관성 있고 직관적으로 정의하기 위해 다음과 같은 네이밍 규칙을 사용합니다.</p>
+    <div class="naming-container">
+      <div class="naming-container-line">
+        <h5>Radius-XS-2</h5>
+        <span class="line"></span>
+        <p>CSS border-radius:2px를 의미</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex-gap">
+    <h5>Corner radius Naming Convention(둥근 모서리 네이밍 규칙 설명)</h5>
+    <p class="top-info-txt">radius-full은 단순히 모양을 위한 것이 아니라 기능적으로도 다른 버튼들과 구분되는 중요한 행동에 사용하세요. <br>
+      예를 들어 추가,삭제,수정 등 해당 페이지에 기본으로 수행하는 기능이 아닌 특수 기능 트리거 같은 버튼에는 사용자가 직관적으로 차이를 느낄 수 있도록 radius-full을 적용할 수 있습니다.</p>
+    <div class="table">
+      <table>
+        <caption class="blind">corner radius 토큰 정의</caption>
+        <thead>
+          <tr>
+            <th>
+              <p>Token Name</p>
+            </th>
+            <th>
+              <p>Pixel Value</p>
+            </th>
+            <th>
+              <p>사용 용도</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              radius-xs-2
+            </td>
+            <td>
+              2px
+            </td>
+            <td>
+              테이블 안에 들어가는 작고 정형화된 버튼, 태그, 뱃지 등
+            </td>
+          </tr>
+          <tr>
+            <td>
+              radius-sm-4
+            </td>
+            <td>
+              4px
+            </td>
+            <td>
+              소형 버튼, 입력 필드, 작은 카드 컴포넌트 등
+            </td>
+          </tr>
+          <tr>
+            <td>
+              radius-md-8
+            </td>
+            <td>
+              8px
+            </td>
+            <td>
+              일반 버튼, 입력창, 카드 등 대부분의 기본 컴포넌트에 사용
+            </td>
+          </tr>
+          <tr>
+            <td>
+              radius-lg-16
+            </td>
+            <td>
+              16px
+            </td>
+            <td>
+              모달, 팝업, 모바일 바텀시트 등 넓은 면적의 컴포넌트에 사용
+            </td>
+          </tr>
+          <tr>
+            <td>
+              radius-full
+            </td>
+            <td>
+              100%
+            </td>
+            <td>
+              완전한 원형 형태가 필요하거나, 특수한 기능을 시각적으로 강조할 때 사용.
+            </td>
+          </tr>
+      </table>
+    </div>
+  </div>
 </div>

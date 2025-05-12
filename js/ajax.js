@@ -148,11 +148,11 @@ const foundationClasses = {
         if (currentHash === '#/Foundation/spacing') {
           spacing()
         }
-        if (currentHash === '#/Component/button') {
-          button()
-        }
         if (currentHash === '#/Foundation/cornerRadius') {
           cornerRadius()
+        }
+        if (currentHash === '#/Component/button') {
+          button()
         }
       }
     }

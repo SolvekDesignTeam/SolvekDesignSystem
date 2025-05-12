@@ -344,6 +344,16 @@ p {
     background-color: var(--gray-50);
     border: none;
   }
+  &-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .line {
+      width: 2rem;
+      height: .1rem;
+      background-color: var(--gray-200);
+    }
+  }
 }
 // 네이밍 컨테이너 e
 // gap

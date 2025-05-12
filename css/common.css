@@ -650,6 +650,16 @@ p {
   background-color: var(--gray-50);
   border: none;
 }
+.naming-container-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.naming-container-line .line {
+  width: 2rem;
+  height: 0.1rem;
+  background-color: var(--gray-200);
+}
 
 .flex-gap {
   display: flex;

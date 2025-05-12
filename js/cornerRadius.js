@@ -1,6 +1,5 @@
-function CornerRadius() {
-
-  const tabli = document.querySelector('.tab li')
+function cornerRadius() {
+  const tabli = document.querySelector('.tab li:nth-child(2)')
   const sideTab = tabli.querySelector('.side-tab')
   const addCornerRadius = sideTab.querySelector('.addCornerRadius')
  
@@ -11,6 +10,4 @@ function CornerRadius() {
     sideTab.style.transition = 'max-height 0.5s var(--transition-up)'
     addCornerRadius.classList.add('on')
   }
-
-
 }
