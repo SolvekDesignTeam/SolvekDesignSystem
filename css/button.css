@@ -307,6 +307,237 @@
   letter-spacing: var(--typography-Body1-B-18-letter-spacing);
 }
 
+.h-e-default {
+  background-color: var(--blue-500);
+  color: var(--white);
+}
+
+.h-e-hover {
+  background-color: var(--blue-500);
+  color: var(--white);
+}
+
+.h-e-hover:hover {
+  background-color: var(--blue-600);
+}
+
+.h-e-focus {
+  background-color: var(--blue-500);
+  color: var(--white);
+}
+
+.h-e-focus:focus {
+  box-shadow: 0px 0px 0px 3px var(--blue-200);
+}
+
+.h-e-focus-hover {
+  background-color: var(--blue-500);
+  color: var(--white);
+}
+
+.h-e-focus-hover:hover {
+  background-color: var(--blue-700);
+}
+
+.h-e-focus-hover:focus {
+  box-shadow: 0px 0px 0px 3px var(--blue-200);
+}
+
+.h-e-pressed-active {
+  background-color: var(--blue-500);
+  color: var(--white);
+}
+
+.h-e-pressed-active:active {
+  background-color: var(--blue-700);
+}
+
+.disabled:disabled {
+  background-color: var(--gray-200);
+  color: var(--gray-500);
+}
+
+.o-2e-default {
+  background-color: var(--white);
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+
+.o-2e-hover {
+  border: 1px solid var(--blue-500);
+  background-color: var(--white);
+  color: var(--blue-500);
+}
+
+.o-2e-hover:hover {
+  color: var(--blue-600);
+  background-color: var(--blue-50);
+}
+
+.o-2e-focus {
+  background-color: var(--white);
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+
+.o-2e-focus:focus {
+  box-shadow: 0px 0px 0px 3px var(--blue-200);
+}
+
+.o-2e-focus-hover {
+  background-color: var(--white);
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+
+.o-2e-focus-hover:hover {
+  color: var(--blue-600);
+  border: 1px solid var(--blue-600);
+}
+
+.o-2e-focus-hover:focus {
+  background-color: var(--blue-50);
+  box-shadow: 0px 0px 0px 3px var(--blue-200);
+}
+
+.o-2e-pressed-active {
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+  background-color: var(--white);
+}
+
+.o-2e-pressed-active:active {
+  background-color: var(--blue-200);
+}
+
+.o-3e-default {
+  background-color: var(--white);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-700);
+}
+
+.o-3e-hover {
+  background-color: var(--white);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-700);
+}
+
+.o-3e-hover:hover {
+  color: var(--gray-800);
+  background-color: var(--gray-50);
+}
+
+.o-3e-focus {
+  background-color: var(--white);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-700);
+}
+
+.o-3e-focus:focus {
+  box-shadow: 0px 0px 0px 3px var(--gray-200);
+}
+
+.o-3e-focus-hover {
+  background-color: var(--white);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-700);
+}
+
+.o-3e-focus-hover:hover {
+  background-color: var(--gray-50);
+}
+
+.o-3e-focus-hover:focus {
+  box-shadow: 0px 0px 0px 3px var(--gray-200);
+}
+
+.o-3e-pressed-active {
+  background-color: var(--white);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-700);
+}
+
+.o-3e-pressed-active:active {
+  background-color: var(--gray-200);
+}
+
+.o-4e-default {
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+}
+
+.o-4e-hover {
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+}
+
+.o-4e-hover:hover {
+  background-color: var(--gray-100);
+}
+
+.o-4e-focus {
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+}
+
+.o-4e-focus:focus {
+  box-shadow: 0px 0px 0px 3px var(--gray-200);
+}
+
+.o-4e-focus-hover {
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+}
+
+.o-4e-focus-hover:hover {
+  background-color: var(--gray-100);
+}
+
+.o-4e-focus-hover:focus {
+  box-shadow: 0px 0px 0px 3px var(--gray-200);
+}
+
+.o-4e-pressed-active {
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+}
+
+.o-4e-pressed-active:active {
+  background-color: var(--gray-200);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.c-l-default {
+  color: var(--blue-500);
+}
+
+.c-l-hover {
+  color: var(--blue-500);
+}
+
+.c-l-hover:hover {
+  color: var(--blue-600);
+}
+
+.c-l-pressed-active {
+  color: var(--blue-500);
+}
+
+.c-l-pressed-active:active {
+  color: var(--blue-600);
+}
+
+.c-l-visited {
+  color: var(--red-800);
+}
+
+.c-l-disabled {
+  color: var(--gray-200);
+}
+
 .button-container {
   width: 100%;
   justify-content: center;
@@ -316,6 +547,7 @@
   display: flex;
   gap: 1.6rem;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .button-container ul li {
   height: 4rem;
@@ -573,4 +805,11 @@
   letter-spacing: var(--typography-Body3-M-14-letter-spacing);
   text-decoration: underline;
   color: var(--gray-700);
+}
+
+.button-guide button {
+  border-radius: var(--radius-sm-4);
+  width: 100%;
+  max-width: 20rem;
+  min-width: 10rem;
 }/*# sourceMappingURL=button.css.map */

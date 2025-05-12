@@ -151,16 +151,9 @@ const foundationClasses = {
         if (currentHash === '#/Component/button') {
           button()
         }
-        // if (currentHash === '#/button/range') {
-        //   initRange()
-        // }
-        // if (currentHash === '#/button/number') {
-        //   initNumber()
-        // }
-        // if (currentHash === '#/button/button') {
-        //   fileUpload()
-        //   fileUploadImg()
-        // }
+        if (currentHash === '#/Foundation/cornerRadius') {
+          cornerRadius()
+        }
       }
     }
     xhr.send()

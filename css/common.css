@@ -379,13 +379,21 @@ table td {
 button {
   background: none;
   border: none;
+  cursor: pointer;
+  transition: 0.3s var(--transition-up);
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+.left {
+  text-align: left;
 }
 
 /* 기본값 e */
 /* 포커스 s */
 :focus {
   outline: 3px solid #5890ff;
-  transition: 0.3s var(--transition-default);
 }
 
 :focus:not(:focus-visible) {
